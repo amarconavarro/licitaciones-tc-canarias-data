@@ -1,0 +1,60 @@
+name: Actualizar licitaciones TC
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-data.yml"
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+    inputs:
+      full_backfill:
+        description: "Reconstruir todo el histórico desde 2012"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-licitaciones-tc
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ejecutar pruebas
+        run: python -m unittest discover -s tests -v
+
+      - name: Actualizar datos oficiales
+        shell: bash
+        run: |
+          if [[ "${{ inputs.full_backfill }}" == "true" || ! -f data/state.json ]]; then
+            python scripts/update_data.py --backfill
+          else
+            python scripts/update_data.py
+          fi
+
+      - name: Guardar cambios si existen
+        shell: bash
+        run: |
+          if git diff --quiet -- data; then
+            echo "No hay cambios de datos."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json data/licitaciones-tc.json
+          git commit -m "Actualizar licitaciones TC"
+          git push

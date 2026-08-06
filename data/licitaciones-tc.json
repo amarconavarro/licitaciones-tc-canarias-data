@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "data": [],
+  "generatedAt": null,
+  "sourceUpdated": null,
+  "source": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom",
+  "filters": {
+    "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
+    "tipo": "Obras",
+    "objetoContieneAcronimo": "TC"
+  },
+  "count": 0,
+  "status": "pending_initial_backfill",
+  "preservaDatosOpenPLACSP": true
+}
