@@ -17,7 +17,7 @@ La fuente es el conjunto oficial de datos abiertos de la Plataforma de Contratac
 
 ## Funcionamiento
 
-La primera ejecución procesa los archivos anuales oficiales desde 2012. Después se conserva el estado más reciente de cada identificador único de licitación. Las ejecuciones diarias leen el feed incremental y solo recorren páginas posteriores a la última marca temporal guardada.
+La primera ejecución procesa los archivos anuales oficiales desde 2025. Después se conserva el estado más reciente de cada identificador único de licitación. Las ejecuciones diarias leen el feed incremental y solo recorren páginas posteriores a la última marca temporal guardada.
 
 Cuando un expediente cambia de estado, la versión nueva sustituye a la anterior. Si deja de cumplir los filtros, desaparece del JSON público.
 

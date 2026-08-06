@@ -489,6 +489,7 @@ def save(state: dict[str, object], processed: int, mode: str) -> None:
             "count": len(rows),
             "processedUpdates": processed,
             "mode": mode,
+            "historyStartYear": state.get("startYear"),
             "preservaDatosOpenPLACSP": True,
         },
     )
@@ -498,7 +499,7 @@ def save(state: dict[str, object], processed: int, mode: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backfill", action="store_true")
-    parser.add_argument("--start-year", type=int, default=2012)
+    parser.add_argument("--start-year", type=int, default=2025)
     parser.add_argument("--end-year", type=int, default=datetime.now().year)
     args = parser.parse_args()
 
@@ -509,6 +510,7 @@ def main() -> None:
     if needs_backfill:
         processed, watermark = backfill(records, args.start_year, args.end_year)
         state["watermark"] = watermark
+        state["startYear"] = args.start_year
         save(state, processed, "backfill")
         return
 

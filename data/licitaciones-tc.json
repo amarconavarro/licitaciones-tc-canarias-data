@@ -11,5 +11,6 @@
   },
   "count": 0,
   "status": "pending_initial_backfill",
+  "historyStartYear": 2025,
   "preservaDatosOpenPLACSP": true
 }
