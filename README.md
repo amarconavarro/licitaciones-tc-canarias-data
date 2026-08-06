@@ -21,6 +21,12 @@ La primera ejecución procesa los archivos anuales oficiales desde 2012. Despué
 
 Cuando un expediente cambia de estado, la versión nueva sustituye a la anterior. Si deja de cumplir los filtros, desaparece del JSON público.
 
+## Datos conservados
+
+Cada fila de `data/licitaciones-tc.json` mantiene los campos normalizados que usan la web y Excel —expediente, tipo, objeto, estado, importe y fechas— junto con otros campos prácticos como los códigos, el órgano, su identificador y el enlace oficial.
+
+Además, `datosOpenPLACSP` conserva recursivamente todo el contenido del último registro XML oficial del expediente: textos, atributos y elementos repetidos. De este modo no se descartan campos que puedan resultar útiles más adelante y Power Query puede expandir o filtrar ese bloque sin modificar el scraper.
+
 ## Ejecución local
 
 Requiere Python 3.11 o posterior y no utiliza dependencias externas.
