@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       full_backfill:
-        description: "Reconstruir todo el histórico desde 2012"
+        description: "Reconstruir el histórico desde 2025"
         required: false
         default: false
         type: boolean
@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: update-licitaciones-tc
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -40,8 +40,8 @@ jobs:
       - name: Actualizar datos oficiales
         shell: bash
         run: |
-          if [[ "${{ inputs.full_backfill }}" == "true" || ! -f data/state.json ]]; then
-            python scripts/update_data.py --backfill
+          if [[ "${{ github.event_name }}" == "push" || "${{ inputs.full_backfill }}" == "true" || ! -f data/state.json ]]; then
+            python scripts/update_data.py --backfill --start-year 2025
           else
             python scripts/update_data.py
           fi
