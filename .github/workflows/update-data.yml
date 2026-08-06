@@ -1,6 +1,11 @@
 name: Actualizar licitaciones TC
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-data.yml"
   schedule:
     - cron: "23 5 * * *"
   workflow_dispatch:
