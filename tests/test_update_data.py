@@ -21,7 +21,7 @@ def feed(objeto="Acto Hoya Fría TC 507-20/25", updated="2026-07-30T10:00:00+02:
    <cbc:ContractFolderID>2026/ETSAE0814/00002179E</cbc:ContractFolderID>
    <cbc-place-ext:ContractFolderStatusCode>{estado}</cbc-place-ext:ContractFolderStatusCode>
    <cac-place-ext:LocatedContractingParty><cac:Party><cac:PartyName><cbc:Name>{TARGET_ORGAN}</cbc:Name></cac:PartyName></cac:Party></cac-place-ext:LocatedContractingParty>
-   <cac:ProcurementProject><cbc:Name>{objeto}</cbc:Name><cbc:TypeCode>{tipo}</cbc:TypeCode><cac:BudgetAmount><cbc:EstimatedOverallContractAmount>329999.10</cbc:EstimatedOverallContractAmount></cac:BudgetAmount></cac:ProcurementProject>
+   <cac:ProcurementProject><cbc:Name>{objeto}</cbc:Name><cbc:Description>Información adicional conservada</cbc:Description><cbc:TypeCode>{tipo}</cbc:TypeCode><cac:BudgetAmount><cbc:EstimatedOverallContractAmount currencyID="EUR">329999.10</cbc:EstimatedOverallContractAmount></cac:BudgetAmount></cac:ProcurementProject>
    <cac:TenderingProcess><cac:TenderSubmissionDeadlinePeriod><cbc:EndDate>2026-07-29</cbc:EndDate></cac:TenderSubmissionDeadlinePeriod></cac:TenderingProcess>
   </cac-place-ext:ContractFolderStatus>
  </entry>
@@ -51,6 +51,16 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(record["importe"], 329999.10)
         self.assertEqual(record["fechaLimite"], "2026-07-29")
 
+    def test_preserves_additional_xml_fields_and_attributes(self):
+        records = {}
+        process_atom(io.BytesIO(feed()), records)
+        source = records[next(iter(records))]["datosOpenPLACSP"]
+        project = source["cac-place-ext:ContractFolderStatus"]["cac:ProcurementProject"]
+        self.assertEqual(project["cbc:Description"], "Información adicional conservada")
+        amount = project["cac:BudgetAmount"]["cbc:EstimatedOverallContractAmount"]
+        self.assertEqual(amount["@currencyID"], "EUR")
+        self.assertEqual(amount["#text"], "329999.10")
+
     def test_newer_update_replaces_state(self):
         records = {}
         process_atom(io.BytesIO(feed()), records)
@@ -75,6 +85,15 @@ class UpdateDataTests(unittest.TestCase):
         process_atom(io.BytesIO(feed(tipo="2")), records)
         process_atom(io.BytesIO(feed(objeto="Reforma sin acrónimo", updated="2026-08-01T10:00:00+02:00")), records)
         self.assertEqual(public_rows(records.values()), [])
+
+    def test_public_json_keeps_normalized_and_complete_source_data(self):
+        records = {}
+        process_atom(io.BytesIO(feed()), records)
+        row = public_rows(records.values())[0]
+        self.assertEqual(row["organ"], TARGET_ORGAN)
+        self.assertEqual(row["tipoCodigo"], "3")
+        self.assertIn("datosOpenPLACSP", row)
+        self.assertNotIn("deleted", row)
 
 
 if __name__ == "__main__":
