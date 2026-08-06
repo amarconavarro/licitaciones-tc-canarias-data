@@ -47,6 +47,8 @@ NS = {
     "cac-place-ext": "urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonAggregateComponents-2",
 }
 
+NS_PREFIXES = {uri: prefix for prefix, uri in NS.items()}
+
 STATUS_NAMES = {
     "PRE": "Anuncio previo",
     "PUB": "Publicada",
@@ -97,6 +99,40 @@ def node_text(element: ET.Element, path: str) -> str | None:
         return None
     value = node.text.strip()
     return value or None
+
+
+def xml_name(name: str) -> str:
+    """Convierte una etiqueta de ElementTree en un nombre estable y legible."""
+    if name.startswith("{") and "}" in name:
+        namespace, local_name = name[1:].split("}", 1)
+        prefix = NS_PREFIXES.get(namespace, namespace)
+        return f"{prefix}:{local_name}"
+    return name
+
+
+def xml_to_data(element: ET.Element) -> object:
+    """Conserva recursivamente textos, atributos y elementos repetidos del XML."""
+    children = list(element)
+    attributes = {f"@{xml_name(key)}": value for key, value in element.attrib.items()}
+    text = (element.text or "").strip()
+
+    if not children and not attributes:
+        return text
+
+    result: dict[str, object] = dict(attributes)
+    if text:
+        result["#text"] = text
+
+    for child in children:
+        key = xml_name(child.tag)
+        value = xml_to_data(child)
+        if key not in result:
+            result[key] = value
+        elif isinstance(result[key], list):
+            result[key].append(value)
+        else:
+            result[key] = [result[key], value]
+    return result
 
 
 def number(value: str | None) -> float | None:
@@ -176,9 +212,11 @@ def entry_to_record(entry: ET.Element) -> dict[str, object]:
         "estadoCodigo": estado_codigo,
         "estado": STATUS_NAMES.get(estado_codigo, estado_codigo),
         "importe": importe,
+        "fechaPublicacion": node_text(entry, "atom:published"),
         "fechaLimite": fecha_limite,
         "fechaActualizacion": updated,
         "enlace": link.get("href") if link is not None else None,
+        "datosOpenPLACSP": xml_to_data(entry),
     }
 
 
@@ -410,20 +448,13 @@ def public_rows(records: Iterable[dict[str, object]]) -> list[dict[str, object]]
         objeto = str(record.get("objeto") or "")
         if not matches_acronym(objeto):
             continue
-        rows.append(
-            {
-                "expediente": record.get("expediente"),
-                "tipo": "Obras",
-                "objeto": objeto,
-                "estado": record.get("estado"),
-                "estadoCodigo": record.get("estadoCodigo"),
-                "importe": record.get("importe"),
-                "fechaPublicacion": None,
-                "fechaLimite": record.get("fechaLimite"),
-                "fechaActualizacion": record.get("fechaActualizacion"),
-                "enlace": record.get("enlace"),
-            }
-        )
+        row = {
+            key: value
+            for key, value in record.items()
+            if key not in {"deleted", "excluded"}
+        }
+        row["tipo"] = "Obras"
+        rows.append(row)
     return sorted(
         rows,
         key=lambda row: (
@@ -445,6 +476,7 @@ def save(state: dict[str, object], processed: int, mode: str) -> None:
     write_json(
         OUTPUT_PATH,
         {
+            "schemaVersion": 2,
             "data": rows,
             "generatedAt": generated,
             "sourceUpdated": state.get("watermark"),
@@ -457,6 +489,7 @@ def save(state: dict[str, object], processed: int, mode: str) -> None:
             "count": len(rows),
             "processedUpdates": processed,
             "mode": mode,
+            "preservaDatosOpenPLACSP": True,
         },
     )
     print(f"JSON generado: {len(rows)} licitaciones TC", flush=True)
