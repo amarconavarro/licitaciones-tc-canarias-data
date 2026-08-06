@@ -2,42 +2,34 @@
 
 Genera diariamente un JSON con las licitaciones que cumplen estos criterios:
 
-- Órgano de contratación: **Jefatura de Asuntos Económicos del Mando de Canarias**.
+- Perfil de contratante: **Jefatura de Asuntos Económicos del Mando de Canarias** (`idBp=gwHbdMZ49t4=`).
+- Año del expediente: **2025 o posterior**.
 - Tipo de contrato: **Obras**.
 - El objeto contiene el acrónimo completo **TC**.
 
-La fuente es el conjunto oficial de datos abiertos de la Plataforma de Contratación del Sector Público, sindicación 643, en formato Atom/XML CODICE. No se utilizan capturas de pantalla ni OCR.
+El scraper abre exclusivamente ese perfil público de la Plataforma de Contratación del Sector Público, selecciona «Obras», recorre sus páginas y aplica localmente el filtro de texto. No descarga los ZIP nacionales, no usa capturas de pantalla y no utiliza OCR.
 
 ## Archivos
 
-- `scripts/update_data.py`: descarga, interpreta y consolida los datos.
-- `data/state.json`: estado interno más reciente de las licitaciones del órgano; lo genera la primera ejecución.
-- `data/licitaciones-tc.json`: salida pública consumible por la web y por Excel.
+- `scripts/update_data.py`: consulta el perfil, pagina los resultados y genera el JSON.
+- `data/licitaciones-tc.json`: salida consumible por la web, Power Query y Excel.
 - `.github/workflows/update-data.yml`: actualización automática diaria y ejecución manual.
-
-## Funcionamiento
-
-La primera ejecución procesa los archivos anuales oficiales desde 2025. Después se conserva el estado más reciente de cada identificador único de licitación. Las ejecuciones diarias leen el feed incremental y solo recorren páginas posteriores a la última marca temporal guardada.
-
-Cuando un expediente cambia de estado, la versión nueva sustituye a la anterior. Si deja de cumplir los filtros, desaparece del JSON público.
 
 ## Datos conservados
 
-Cada fila de `data/licitaciones-tc.json` mantiene los campos normalizados que usan la web y Excel —expediente, tipo, objeto, estado, importe y fechas— junto con otros campos prácticos como los códigos, el órgano, su identificador y el enlace oficial.
+Cada fila mantiene las seis columnas visibles —expediente, tipo, objeto, estado, importe y fechas—, el enlace oficial y los identificadores del perfil. Para los expedientes seleccionados también se descarga el documento XML más reciente publicado por PLACSP y se conserva completo y recursivamente en `datosOpenPLACSP` (textos, atributos, elementos repetidos y campos adicionales).
 
-Además, `datosOpenPLACSP` conserva recursivamente todo el contenido del último registro XML oficial del expediente: textos, atributos y elementos repetidos. De este modo no se descartan campos que puedan resultar útiles más adelante y Power Query puede expandir o filtrar ese bloque sin modificar el scraper.
+En ejecuciones sucesivas se reutiliza ese XML si los campos visibles del expediente no han cambiado. Si un documento XML puntual falla, la licitación permanece en el JSON con un aviso en vez de perderse.
 
 ## Ejecución local
 
-Requiere Python 3.11 o posterior y no utiliza dependencias externas.
-
 ```bash
+python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python scripts/update_data.py --backfill
-python scripts/update_data.py
+python scripts/update_data.py --start-year 2025
 ```
 
 ## Fuente oficial
 
-- [Catálogo de licitaciones publicadas en PLACSP](https://www.hacienda.gob.es/es-es/gobiernoabierto/datos%20abiertos/paginas/licitacionescontratante.aspx)
-- [Manual de OpenPLACSP](https://contrataciondelestado.es/datosabiertos/DGPE_PLACSP_OpenPLACSP_v.2.2.pdf)
+- [Perfil de contratante](https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D)
+- [Datos abiertos de PLACSP](https://contrataciondelestado.es/wps/portal/plataforma/datos_abiertos)
