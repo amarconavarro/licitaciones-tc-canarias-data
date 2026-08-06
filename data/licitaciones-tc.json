@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 2,
   "data": [],
   "generatedAt": null,
   "sourceUpdated": null,
@@ -9,5 +10,6 @@
     "objetoContieneAcronimo": "TC"
   },
   "count": 0,
-  "status": "pending_initial_backfill"
+  "status": "pending_initial_backfill",
+  "preservaDatosOpenPLACSP": true
 }
