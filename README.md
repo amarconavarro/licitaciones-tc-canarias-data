@@ -17,9 +17,19 @@ El scraper abre exclusivamente ese perfil público de la Plataforma de Contratac
 
 ## Datos conservados
 
-Cada fila mantiene las seis columnas visibles —expediente, tipo, objeto, estado, importe y fechas—, el enlace oficial y los identificadores del perfil. Para los expedientes seleccionados también se descarga el documento XML más reciente publicado por PLACSP y se conserva completo y recursivamente en `datosOpenPLACSP` (textos, atributos, elementos repetidos y campos adicionales).
+El JSON se entrega en formato tabular: una fila por resultado/lote. Si un expediente tiene varios lotes, cada lote sale como una fila distinta, repitiendo los datos generales del expediente. Las licitaciones sin resultado siguen apareciendo una sola vez con las columnas de resultado vacías.
 
-En ejecuciones sucesivas se reutiliza ese XML si los campos visibles del expediente no han cambiado. Si un documento XML puntual falla, la licitación permanece en el JSON con un aviso en vez de perderse.
+Además de expediente, tipo, objeto, estado, importe, fechas y enlace, cada fila incluye directamente:
+
+- `lote`
+- `resultado`
+- `adjudicatario`
+- `nifAdjudicatario` (NIF o identificador de la UTE)
+- `importeAdjudicacionSinIVA` y `importeAdjudicacionConIVA`
+- `fechaAcuerdoAdjudicacion`, `fechaFormalizacion` y `fechaEntradaVigor`
+- `numeroOfertasRecibidas`
+
+Para los expedientes seleccionados también se descarga el documento XML más reciente publicado por PLACSP y se conserva completo y recursivamente en `datosOpenPLACSP` (textos, atributos, elementos repetidos y campos adicionales). En ejecuciones sucesivas se reutiliza ese XML si los campos visibles del expediente no han cambiado. Si un documento XML puntual falla, la licitación permanece en el JSON con un aviso en vez de perderse.
 
 ## Ejecución local
 
