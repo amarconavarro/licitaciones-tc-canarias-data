@@ -10,6 +10,7 @@ from scripts.update_data import (
     parse_listing,
     select_rows,
     xml_to_data,
+    unchanged,
     flatten_result_rows,
     result_rows_from_xml,
 )
@@ -83,7 +84,7 @@ class UpdateDataTests(unittest.TestCase):
         root = ET.fromstring(
             """<ContractFolderStatus>
                 <TenderResult>
-                  <ResultCode>Formalizado</ResultCode>
+                  <ResultCode name="Formalizado">9</ResultCode>
                   <AwardDate>2026-08-01</AwardDate>
                   <ReceivedTenderQuantity>4</ReceivedTenderQuantity>
                   <WinningParty><PartyName>UTE Alfa Beta</PartyName><CompanyID>U12345678</CompanyID></WinningParty>
@@ -117,6 +118,14 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(results[0]["numeroOfertasRecibidas"], 4.0)
         rows = flatten_result_rows([{"expediente": "2026/TC/1", "resultados": results}])
         self.assertEqual([row["lote"] for row in rows], ["1", "2"])
+
+    def test_invalidates_cache_created_before_results_schema(self):
+        keys = ("tipo", "objeto", "estado", "importe", "fechas", "enlace")
+        current = {key: "igual" for key in keys}
+        previous = dict(current, datosOpenPLACSP={"xml": "conservado"})
+        self.assertFalse(unchanged(current, previous))
+        previous["resultados"] = []
+        self.assertTrue(unchanged(current, previous))
 
 
 if __name__ == "__main__":
