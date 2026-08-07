@@ -10,6 +10,8 @@ from scripts.update_data import (
     parse_listing,
     select_rows,
     xml_to_data,
+    flatten_result_rows,
+    result_rows_from_xml,
 )
 from xml.etree import ElementTree as ET
 
@@ -75,6 +77,46 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(data["x"][0]["@currencyID"], "EUR")
         self.assertEqual(data["x"][1], "20")
         self.assertEqual(data["extra"], "dato")
+
+
+    def test_extracts_one_row_per_lot_and_winning_party(self):
+        root = ET.fromstring(
+            """<ContractFolderStatus>
+                <TenderResult>
+                  <ResultCode>Formalizado</ResultCode>
+                  <AwardDate>2026-08-01</AwardDate>
+                  <ReceivedTenderQuantity>4</ReceivedTenderQuantity>
+                  <WinningParty><PartyName>UTE Alfa Beta</PartyName><CompanyID>U12345678</CompanyID></WinningParty>
+                  <AwardedTenderedProject>
+                    <ProcurementProjectLot><ID>1</ID></ProcurementProjectLot>
+                    <LegalMonetaryTotal>
+                      <TaxExclusiveAmount>100.00</TaxExclusiveAmount>
+                      <PayableAmount>107.00</PayableAmount>
+                    </LegalMonetaryTotal>
+                  </AwardedTenderedProject>
+                  <Contract><IssueDate>2026-08-06</IssueDate><StartDate>2026-08-08</StartDate></Contract>
+                </TenderResult>
+                <TenderResult>
+                  <ResultCode>Adjudicado</ResultCode>
+                  <WinningParty><PartyName>Constructora Gamma</PartyName><CompanyID>B87654321</CompanyID></WinningParty>
+                  <AwardedTenderedProject><ProcurementProjectLot><ID>2</ID></ProcurementProjectLot></AwardedTenderedProject>
+                </TenderResult>
+            </ContractFolderStatus>"""
+        )
+        results = result_rows_from_xml(root, "Resuelta")
+        self.assertEqual(len(results), 2)
+        self.assertEqual(results[0]["lote"], "1")
+        self.assertEqual(results[0]["resultado"], "Formalizado")
+        self.assertEqual(results[0]["adjudicatario"], "UTE Alfa Beta")
+        self.assertEqual(results[0]["nifAdjudicatario"], "U12345678")
+        self.assertEqual(results[0]["importeAdjudicacionSinIVA"], 100.0)
+        self.assertEqual(results[0]["importeAdjudicacionConIVA"], 107.0)
+        self.assertEqual(results[0]["fechaAcuerdoAdjudicacion"], "2026-08-01")
+        self.assertEqual(results[0]["fechaFormalizacion"], "2026-08-06")
+        self.assertEqual(results[0]["fechaEntradaVigor"], "2026-08-08")
+        self.assertEqual(results[0]["numeroOfertasRecibidas"], 4.0)
+        rows = flatten_result_rows([{"expediente": "2026/TC/1", "resultados": results}])
+        self.assertEqual([row["lote"] for row in rows], ["1", "2"])
 
 
 if __name__ == "__main__":
