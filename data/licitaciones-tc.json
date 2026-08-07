@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "data": [
     {
       "id": "2026/ETSAE0814/00002613E",
@@ -666,7 +666,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=1GfOACMZ0PGVwPHbcTYdTFu21hEi6e2NTWxbNZteETbh5Jw8LWYVWrioDW2yXmTxgxR01nhVJfMPTwkUfyEllAh5cJJcvIojLe26ygbGg2KB0nvVKRzfe4rpHcnlPhSZ",
         "fecha": "27/07/2026",
         "descripcion": "27/07/2026 12:36:15Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00002385E",
@@ -1423,7 +1434,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=e7qclapBbYADdoy4BgDb4bakNCATWyY6F2LZudh82hUZtEk3BXK8b8J5wRmwChZRr6Ycj9CuUSDFDbTTdnvaYf2S59lsPjOHkavaTPlAtXN45ClyWkoJ44mKM70IFcOu",
         "fecha": "28/07/2026",
         "descripcion": "28/07/2026 13:53:22Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00002197E",
@@ -2209,7 +2231,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=yrutaLgx5K4UldpwT6eC8t3v5OVGRiSN/adV1bFBiweEh9SU7m9n748hV2x8j5KGi0sTdjdxNDsPlIqVkONrlp9Ooi3INkDsGXU/pTXY2bdJOVDbGCDM%2BMigrvuVS7Rv",
         "fecha": "10/07/2026",
         "descripcion": "10/07/2026 15:01:46Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00002179E",
@@ -2896,7 +2929,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=RFapTf5fosrpVWopojgk8fbWwWxjxbAxb%2Ba7QQFdkntqTQxjAU4UipgAaf4kXW%2ByPj92xdp/UmwS9d1K2CLNgnXCuBe1sSupQ6Xfiz02YiBt/o8fNevwsujgRzaBbugn",
         "fecha": "15/07/2026",
         "descripcion": "15/07/2026 16:10:59Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00002064E",
@@ -3563,7 +3607,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=xCLyg4/vLZqOkTj6bGY9gqmnizsRXDVjlf/gMuG7mycl9Nm%2B74BRF8bHPgGVxQ5rCaAzcOXHL6ls96sIXmfgvygpDM8whpGmTeJqUrLSyEjDdQD9RyhUmzT4jZ2In4zL",
         "fecha": "31/07/2026",
         "descripcion": "31/07/2026 10:52:44Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001966E",
@@ -4227,7 +4282,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Uf0KOYI3bVgr3EEBuYNv4GtsmQhnT%2BafWfJgrlfYC64AlwTrV4VpkJDWja36FxbHrsatX6C3cZa%2BHsWHpoz6%2BTauXLHaQeThANakcozhVqIC1/zDIE0Kw/PWNnLS0Z0z",
         "fecha": "15/07/2026",
         "descripcion": "15/07/2026 16:51:49Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001677E",
@@ -4892,7 +4958,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kcbHdy%2BRMGjMu6haHVfSdYziSuiLkpYQ691j730EB1jEwuc8CqNNqBbrV5S4gblFaDLeM3HVXfevzBQM%2B6K%2BQs3hcLZfcK3rP4LuUAdQloAZyAJWGsSt0OzTSTyw9JAs",
         "fecha": "02/07/2026",
         "descripcion": "02/07/2026 14:44:01Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001412E",
@@ -5556,7 +5633,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Kxn7XWR5rgTXqYF06%2BV8ijMDzyakyxfMs%2BVLwg3l8VhYIC1pEAK9bOVqv44EdYuV2WH2C9uRkgfKoV9U4dY8QW3qHaJaCOwRSk9BRDYFxuWHAj0WEJrB5sP7amrh2jBD",
         "fecha": "14/07/2026",
         "descripcion": "14/07/2026 14:14:19Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001393E",
@@ -6167,7 +6255,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=/jdAdNoREJ1npfBkXHdH2q1MqmHkqIt2lZhSxv%2B648susVUL7cdI4xNQT1Yqjk8iX4BnhLasR4T/QIYLQj9V4mlrgHKR633kLm7ETR0nnbeB0nvVKRzfe4rpHcnlPhSZ",
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 13:40:28Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001352E",
@@ -6802,7 +6901,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=JDTew4DVW1IJrS%2BEzTF7xgjgFdR82dLuB6VRYoPeVateU63L7YRPkVYjMup1nAlCVtFjr2P6pceUmcgvT7418m779rOKLaDunJ0VyRhoEq3VTD3T98KC0nSgQFM0q%2B5s",
         "fecha": "06/07/2026",
         "descripcion": "06/07/2026 10:58:20Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001348E",
@@ -7633,7 +7743,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=61bQDv1xhJsnMZApKUX%2BMT8tal1M/W5TwUwa46MaZ%2BUaLbdgNkM8%2BbINPWCrTeHMwF0sh6N5PUQAE58csWsw5ppKAVmWtJh7bch7BoygY176CYyL7SIrUOBFfNf52ZqA",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 10:52:18Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001345E",
@@ -8222,7 +8343,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=xCLyg4/vLZqOkTj6bGY9gpsTuWC%2BoODHTBv3k%2BamL/Ph/mLiyrsL8sKg9o1ZF37I4nl1o0p%2BDX7Np1yGrdUrQLEMGs5ywSJPUUUlSpaEnC97QB3HKyQaFUExmUVQCerk",
         "fecha": "03/07/2026",
         "descripcion": "03/07/2026 10:07:55Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001342E",
@@ -8887,7 +9019,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=S14nX20NFePV8quO9dFY%2BHD0yoIoC7DK6EZOxaTtHCWOB3NbCX1y9m8incHrwJ57l2oX1pr6IITsUJzd9iPO2qxPEW%2BtMv8JpkxggTYBtAmCx2e6p7hqtlp2aFupgHMr",
         "fecha": "27/05/2026",
         "descripcion": "27/05/2026 12:42:44Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001305E",
@@ -9695,7 +9838,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=hfY/6xdrukxdNh2YDrpBZ6425yw3kyYK2GH9ZqgxDJ7izzXdvhqQr3/sfGm6URkzKmg2bX51QIDkuieprsRCNCVLO9c4%2Bojo7EM8ei/N0eb3GVhXrFFqN7yFncy7YfRK",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 12:57:25Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001296E",
@@ -10307,7 +10461,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=f9RSvAqnpnJ%2Bl2BUwi9w5dt0KUHQk9oYzYah50YiwCQRe5dUmzSYf//UTbOoMTBMi4tNf0MDNWJA8x7jO8%2Bo8M%2BBfjkVAALLGKBcTF%2BCuASCx2e6p7hqtlp2aFupgHMr",
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 20:10:56Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001289E",
@@ -10917,7 +11082,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=T8XjLW6kXt885/Jb4MWU0ztuJCEr24preII/1NjIGyYR73q3aZ%2BBw6Fk2H5bDgb6P9PG05UxFtQi7F86KIYTcAKKlxATHrk6UtZj0xxi%2BW97QB3HKyQaFUExmUVQCerk",
         "fecha": "10/07/2026",
         "descripcion": "10/07/2026 11:02:34Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001284E",
@@ -11752,7 +11928,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=kz9zBmmcK3wk69XQVvVlrHcKqaX6Y5gEMhBvZ%2BPmVr0kx6u5kygbE0bPxuETRN%2B0SpLnHtdTWQJEhY9mln%2BzZo0FMbVJF76%2BAEdh8nutajyHAj0WEJrB5sP7amrh2jBD",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 12:23:40Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001281E",
@@ -12404,7 +12591,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=K4Y1HUj/vep3Up9yXB1L9d/P85LQTRWsUCBGfyyY/GQ1L3mBWeezCxdtYC5c%2B1OIepF%2BRATFR0l7Hs%2B%2BYwH6VEpQjOH9AIwcSbgv7gQchrOHAj0WEJrB5sP7amrh2jBD",
         "fecha": "09/06/2026",
         "descripcion": "09/06/2026 15:08:36Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001279E",
@@ -13254,7 +13452,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=frJtPz1zkrVv4LAIEIwJGzeby3pqEdeIzSptmw2GndM4gfphsXnm25ViqZCzxsxBmcYv5Rkz7CHbyo86mwfAVDY9jo1S7QlEXasxdQudEryB0nvVKRzfe4rpHcnlPhSZ",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:18:56Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001273E",
@@ -13930,7 +14139,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ksAYSV1G8DIVB9KE21XjuuO2lyl6ONzgyU16FEMUMGUGxggzVqukKxgs5VGfkjSIZ4me0yW0g03ypOw6Nz5jseO58bXDIEGGjaSL9wqfWVrDdQD9RyhUmzT4jZ2In4zL",
         "fecha": "22/06/2026",
         "descripcion": "22/06/2026 14:07:35Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001269E",
@@ -14739,7 +14959,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=xBf%2BvKognyHlfyJ84qh7CpXSWVZ%2BsrwM9fkLZ8yt91K4qf/wpPCi17SEISVhwzA6MFOYreF9Y0/qy%2BRsvd/ljokSDd9NZzMkOCvc%2Bl0PiMTDdQD9RyhUmzT4jZ2In4zL",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 14:37:53Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001255E",
@@ -15402,7 +15633,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Z3OfEY6PKAiyE3PdSn5gKl%2BAer9vAESBjc//DxcFtZOwtvRY7vwfyaF%2BdBB%2Bxryl%2B8Sn5SNW4vmBEC4Uy9FX/TNXpOgwz0p1jzOsHdqawSV7QB3HKyQaFUExmUVQCerk",
         "fecha": "19/05/2026",
         "descripcion": "19/05/2026 16:50:27Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001252E",
@@ -16275,7 +16517,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Tu98zyEQpLdJ8VrBPx2UOGnCJ%2BLa4K2iSDtW7BhGiBpwQN31xdmkhoR2DBFxPWud4324gUX2UI0izJ8WdmxrjrsaGRCkDOeKtNmk2c60XGZ45ClyWkoJ44mKM70IFcOu",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:10:17Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001251E",
@@ -16961,7 +17214,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=xwa58zc0rLD7vaMtr9OO6Nd4fdqpqq7qnXbQvQOuyISufZAkJAYl8w%2BMgaZlUC4vG1VPcJXZloaL%2BEkkYKiVAPHgFSe53sgITvIqxINuwNfDdQD9RyhUmzT4jZ2In4zL",
         "fecha": "19/05/2026",
         "descripcion": "19/05/2026 13:51:23Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001171E",
@@ -17784,7 +18048,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=c4SkXL/SLEbyxLKV/dJuaRHlaAATB8MhJ89Q/vWJsJpkvu0B%2BchUM5zDEO9L1uXq4Y2Z%2BdY1A%2Bmfgx6WSrAuvO%2B2DqrETtKP2VJFZmJT18o//q7NB2iMZvNyf0xrJmjt",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:40:15Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001169E",
@@ -18377,7 +18652,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=sUeLRB5DUkeM6ZzLd9RqZSZEliqTX2M0CoicPQ59Ijfmxk2SWgkAw5qfgluQVxXg9G2eLT0L0YSQGtQDf4FUWHKrTPsntc2DYTmzacSZeB%2BHAj0WEJrB5sP7amrh2jBD",
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 13:13:21Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2026/ETSAE0814/00001089E",
@@ -18971,149 +19257,64 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=i2X28vfgntMY0aRsKfcaYKhoYwpbCzzRxFmlbzwZJGMEtxFAPxi5opEpa/17frHVWuzY2kbgf3/Qnp2ioEgtPHC1tMdeenPpSDopyaKfQlKCx2e6p7hqtlp2aFupgHMr",
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 12:42:02Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
-      "id": "2026/ETSAE0814/00000893E",
+      "id": "2026/ETSAE0814/00000893E#1-1",
       "expediente": "2026/ETSAE0814/00000893E",
       "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
       "organId": "gwHbdMZ49t4=",
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "Acuartelamiento \"Hoya Fría\".TC 507-52/24_Desamiantado cubierta Unidad de Música (E0068) (26/0037)",
-      "estado": "Evaluación",
+      "estado": "Resuelta",
       "importe": 175454.02,
       "importeTexto": "175,454.02",
-      "fechas": "Present. Oferta:11/06/2026",
+      "fechas": "Publicación PLACSP:Adjudicación:07/08/2026",
       "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=8C%2BL2NWmKb%2BExvMJXBMHHQ%3D%3D",
       "datosOpenPLACSP": {
-        "urn:dgpe:names:draft:codice:schema:xsd:CallforTenders-2:CallForTenders": {
+        "urn:dgpe:names:draft:codice:schema:xsd:ContractAwardNotice-2:ContractAwardNotice": {
           "cbc:UBLVersionID": "2.3",
           "cbc:CustomizationID": "CODICE 2.8.0",
           "cbc:ProfileID": "CiP 2.1",
-          "cbc:ID": "0000019097994",
-          "cbc:UUID": "2026-000097609",
+          "cbc:ID": "0000019675163",
+          "cbc:UUID": "2026-000399859",
           "cbc:ContractFolderID": "2026/ETSAE0814/00000893E",
-          "cbc:IssueDate": "2026-05-28+02:00",
-          "cbc:IssueTime": "09:01:36.075",
-          "cac:LegalDocumentReference": {
+          "cbc:IssueDate": "2026-08-07+02:00",
+          "cbc:IssueTime": "12:31:57.343",
+          "cbc:Note": "En virtud de las facultades delegadas que me confiere la Orden DEF/244/2014, de 10 de febrero (BOE nº 46), por la que se delegan facultades en materia de contratos, acuerdos técnicos y otros negocios jurídicos onerosos en el ámbito del Ministerio de Defensa HE RESUELTO ADJUDICAR",
+          "cac:MinutesDocumentReference": {
             "cbc:ID": {
               "@schemeName": "ID_DOC_PLACE",
-              "#text": "26-0037 ANEXO II DOC_LICITACION.pdf"
+              "#text": "26-0893 RES ADJUDICACION.pdf"
             },
             "cbc:CopyIndicator": "false",
-            "cbc:UUID": "DOC2026052808424926-0037 ANEXO II DOC_LICITACION.pdf",
+            "cbc:UUID": "DOC2026080712275426-0893 RES ADJUDICACION.pdf",
+            "cbc:DocumentTypeCode": {
+              "@listVersionID": "2.11",
+              "@name": "Documento de Acta de Adjudicación",
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.11/TenderingDocumentTypeCode-2.11.gc",
+              "#text": "ACTA_ADJ"
+            },
             "cac:Attachment": {
               "cac:ExternalReference": {
-                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=YwnwdssqGZt9plo7X9v7IVPrPN3fV7wAc5QireZ4Hhi9CV6TWN4MqsV23tuGSGZ9fa6DlTxJ1F%2BQlJbkFsH6Dq/rDOOwq1ge%2BnD1wt%2BAIvIZyAJWGsSt0OzTSTyw9JAs",
-                "cbc:DocumentHash": "b3mQs7Rygg5/nYnMmAdLHNtKH7g="
+                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Y0T0xMB6mBc/D42kg%2B916ojH%2B3oCbmJPNZEGHzbVeZ6lBGu/z4xV71R%2B3RSW%2BfnlQsiIkL0Xp4kWreS8eO5sFRXDOPsGYvdsgyklxAPfZ1b6CYyL7SIrUOBFfNf52ZqA",
+                "cbc:DocumentHash": "Rrc0e6OZlZPRByrlu3dNHLrmkpY="
               }
             }
           },
-          "cac:TechnicalDocumentReference": {
-            "cbc:ID": {
-              "@schemeName": "ID_DOC_PLACE",
-              "#text": "26-0037 PPT Y PROYECTO.pdf"
-            },
-            "cbc:CopyIndicator": "false",
-            "cbc:UUID": "DOC2026052808410626-0037 PPT Y PROYECTO.pdf",
-            "cac:Attachment": {
-              "cac:ExternalReference": {
-                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=ihKowu21j5t8CwPcm4L4FI%2BI7S1vYF0n/rxhmkkDRDHlvH4Uw03l/t5yr6aPlsYBOQotetYGvvJa73XMeeDQ3tktiqQSdRYFw9iHzpzngiF45ClyWkoJ44mKM70IFcOu",
-                "cbc:DocumentHash": "CM4YzdgsE21BmIlNajZPl6fSoI8="
-              }
-            }
-          },
-          "cac:AdditionalDocumentReference": [
-            {
-              "cbc:ID": "ANEXO III PROP ECONOMICA.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528085334ANEXO III PROP ECONOMICA.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=90VjABXAA2grl8DBrx5FMOUeFR/0T4iiWdr0sUYDyhJI6UeHJfZjue9ormbI4VE86wbXbboZ/lejsBscXphgbHGzRFmrqs1uxW%2BdGSwqx8aHAj0WEJrB5sP7amrh2jBD",
-                  "cbc:DocumentHash": "ciRQZ33EDGEHDi6r5l4pU9bh6eY="
-                }
-              }
-            },
-            {
-              "cbc:ID": "CODIGO ETICO.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084624CODIGO ETICO.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=7oOx6ax2zPZNUrEqHDitJNY1SJ6XINe%2Bzyum1AxTEQDZtiiJPplov76ZxI%2BIY5XOzTGulzuC/1gDQHEVC8aU29AlwBXDBP/AIrzyxbRfaTWB0nvVKRzfe4rpHcnlPhSZ",
-                  "cbc:DocumentHash": "7X2HtX84MIK+mrNx5IEF+T6LGgI="
-                }
-              }
-            },
-            {
-              "cbc:ID": "COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084636COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=cAsaGMbTUfKh3wW1kVbOfVrOnPaIMNYRpX1tEE5wfwzBnQE1s77a6spwRUHvpMUCJ1Onpsl2hfoN%2Be11v0ECzeY0gZPVQhMTwntc4qa8nWnfdyQgZAdTm3EfcUAC7CJ6",
-                  "cbc:DocumentHash": "rXYNqK+AvzToix7+T2ARcghv5zM="
-                }
-              }
-            },
-            {
-              "cbc:ID": "COMPROMISO UTE.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084650COMPROMISO UTE.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=SzmoDhNmuwktbMW9MT9myGxM2r92VnnL1Pcof%2BZpfG3acw/Q9naUolKDKH2GvgK8dR13Ly0AxoJwVOwn4cyOChwRe0eGqgQsp/YQRnzU0AbDdQD9RyhUmzT4jZ2In4zL",
-                  "cbc:DocumentHash": "4HMFV9nZEVlnjY6iB1lsMZg4828="
-                }
-              }
-            },
-            {
-              "cbc:ID": "DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084703DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=mWYExmK%2BXJzUQVBq4cetIrYnVFpVModO1u6tPcaXH4iXXRsb882xDVTLI2oi3/Dg0RqqZQaGBJYC7RzleSI6BzVHBhaYHuP5pQKxkYdO4juHAj0WEJrB5sP7amrh2jBD",
-                  "cbc:DocumentHash": "xt44hfWFUdZcPb8ZqnawIUEfZGs="
-                }
-              }
-            },
-            {
-              "cbc:ID": "DISCAPACIDAD E IGUALDAD.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084716DISCAPACIDAD E IGUALDAD.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=6xJIIiKk8M20egnT%2BG%2B1JsubAv6Wy5/dKjcIHxTvIQUTXi2F47Arj59QbNFRwhLeVQA3BNMh0oTypQQssBUQ5VCUreRS5ogUm/jFvUYIwS36CYyL7SIrUOBFfNf52ZqA",
-                  "cbc:DocumentHash": "tRa9kFUZjmlRoT0hFhMPmHtpcrU="
-                }
-              }
-            },
-            {
-              "cbc:ID": "INTEGRACION SOLVENCIA MEDIOS EXTERNOS.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084731INTEGRACION SOLVENCIA MEDIOS EXTERNOS.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=46/pvHcRrt/EPgpDDf/lmKpjH5UK4OUlTyF0B1vLrz2ulc6jC50EMmyu7FmnDVDcj%2BWyu8Im3ttjIhk4hqGBZVZucYgI8gGjXoy5iNW%2B8IA//q7NB2iMZvNyf0xrJmjt",
-                  "cbc:DocumentHash": "dkE7vqSCJcJoAbuEbvPjYtsV9Cc="
-                }
-              }
-            },
-            {
-              "cbc:ID": "SUBCONTRATACION.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260528084743SUBCONTRATACION.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=R4BI6V1vuivWPzx8JnYY9MPWSqor%2BToFjPAfu4qX2GWg769ffL3GN5P4q3/b7dFCmmLR0IUST5WqVz/KXRGeL5n8sZ2uNDmLhntD8azfGElJOVDbGCDM%2BMigrvuVS7Rv",
-                  "cbc:DocumentHash": "QGB/ZxNzP62RayC8c+mFRXweQ8w="
-                }
-              }
-            }
-          ],
           "cac:ContractingParty": {
             "cbc:ContractingPartyTypeCode": {
               "@listVersionID": "2.10",
@@ -19218,56 +19419,221 @@
               "cbc:UnknownPriceIndicator": "true",
               "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación y en el Pliego de Cláusulas Administrativas Particulares (PCAP)"
             },
-            "cac:TenderPreparation": {
-              "cbc:TenderEnvelopeID": "SOBRE ÚNICO: OFERTA ECONÓMICA",
-              "cbc:TenderEnvelopeTypeCode": {
-                "@listVersionID": "2.08",
-                "@name": "Oferta económica o evaluable mediante fórmulas",
-                "@languageID": "es",
-                "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
-                "#text": "3"
-              },
-              "cbc:Description": "En el sobre se deberán incluir los siguientes documentos:\r\n\r\n - Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF).",
-              "cac:DocumentTenderRequirement": {
-                "cbc:RequiredSignatureIndicator": "true",
-                "cbc:MandatoryIndicator": "false",
-                "cac:TemplateDocumentReference": [
-                  {
-                    "cbc:ID": "ANEXO III PROPOSICION ECONOMICA (en formato pdf)",
-                    "cbc:DocumentTypeCode": {
-                      "@listVersionID": "2.07",
-                      "@name": "Documento requerido",
-                      "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
-                      "#text": "DOC_REQUIRED"
+            "cac:TenderPreparation": [
+              {
+                "cbc:TenderEnvelopeID": "SOBRE ÚNICO: OFERTA ECONÓMICA",
+                "cbc:TenderEnvelopeTypeCode": {
+                  "@listVersionID": "2.08",
+                  "@name": "Oferta económica o evaluable mediante fórmulas",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                  "#text": "3"
+                },
+                "cbc:OpenEventID": "Apertura criterios evaluables automáticamente",
+                "cbc:Description": "En el sobre se deberán incluir los siguientes documentos:\r\n\r\n - Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF).",
+                "cac:DocumentTenderRequirement": {
+                  "cbc:RequiredSignatureIndicator": "true",
+                  "cbc:MandatoryIndicator": "false",
+                  "cac:TemplateDocumentReference": [
+                    {
+                      "cbc:ID": "ANEXO III PROPOSICION ECONOMICA (en formato pdf)",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF"
                     },
-                    "cbc:DocumentType": "PDF"
+                    {
+                      "cbc:ID": "ANEXO_III_PROP_ECONOMICA.docx",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Plantilla",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_TEMPLATE"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "cbc:TenderEnvelopeID": "REQ. DOC. PROPUESTA OEM",
+                "cbc:TenderEnvelopeTypeCode": {
+                  "@listVersionID": "2.08",
+                  "@name": "Requerimiento de documentación",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                  "#text": "6"
+                },
+                "cbc:Description": "Deberá presentar la documentación solicitada en el plazo máximo de DIEZ días hábiles.",
+                "cac:DocumentTenderRequirement": [
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de estar al dia en las obligaciones con la Seguridad Social",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
                   },
                   {
-                    "cbc:ID": "ANEXO_III_PROP_ECONOMICA.docx",
-                    "cbc:DocumentTypeCode": {
-                      "@listVersionID": "2.07",
-                      "@name": "Plantilla",
-                      "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
-                      "#text": "DOC_TEMPLATE"
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Copia de seguro de responsabilidad civil",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "false",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "GARANTIA DEFINITIVA",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación, deberá presentar documento que acredite la constitución de una garantía definitiva correspondiente al 5 por 100 del importe de adjudicación excluido el Impuesto General Indirecto Canario, a disposición de: Ministerio de Defensa- Jefatura de Intendencia Económico-Administrativa del MCANA NIF S-3830012-E, en cualquiera de las formas previstas en el artículo 108 de la LCSP. dicha garantía tendrá que ser depositada en la Caja General de Depósitos del Ministerio de Hacienda, cuyo importe asciende a 7.230,63 €"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de estar al dia en el IGIC. (adjudicación de contratos con las AA.PP.)",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificación de Alta en el Registro de Empresas Acreditadas en el Sector de la Construcción",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de ADHESIÓN AL CÓDIGO ÉTICO O DE CONDUCTA DE LA FUNCIÓN COMPRAS DEL MINISTERIO DE DEFENSA",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Justificante de pago del seguro - de responsabilidad civil.",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Manifestación de la voluntad de celebrar subcontratos y, si procede, identificación de los subcontratistas",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Datos de persona de contacto durante la ejecución del contrato",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Deberá aportar un documento, firmado mediante firma digital, donde consten los datos completos  (nombre y apellidos, teléfono, correo electrónico)."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "true",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Justificante pago del Impuesto de Actividades Económicas (o declaración de no estar obligado al pago del IAE. Anexo E)",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación"
                     }
                   }
                 ]
               }
-            },
+            ],
             "cac:ContractExecutionRequirement": [
-              {
-                "cbc:Name": "Consideraciones de tipo social",
-                "cbc:ExecutionRequirementCode": {
-                  "@listVersionID": "2.08",
-                  "@name": "Consideraciones de tipo social",
-                  "@languageID": "es",
-                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
-                  "#text": "2"
-                },
-                "cbc:Description": "Cumplimiento de los convenios colectivos que resulten aplicables. Cumplimiento de la legislación y normativa específica sobre prevención de riesgos laborales."
-              },
               {
                 "cbc:Name": "Consideraciones de tipo medioambiental",
                 "cbc:ExecutionRequirementCode": {
@@ -19278,6 +19644,17 @@
                   "#text": "1"
                 },
                 "cbc:Description": "Cumplimiento del sistema de gestión ambiental basado en la norma ISO 14001. Adecuada difusión de la normativa ambiental entre todo el personal responsable de la ejecución de la prestación contratada."
+              },
+              {
+                "cbc:Name": "Consideraciones de tipo social",
+                "cbc:ExecutionRequirementCode": {
+                  "@listVersionID": "2.08",
+                  "@name": "Consideraciones de tipo social",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
+                  "#text": "2"
+                },
+                "cbc:Description": "Cumplimiento de los convenios colectivos que resulten aplicables. Cumplimiento de la legislación y normativa específica sobre prevención de riesgos laborales."
               }
             ],
             "cac:AwardingTerms": {
@@ -19497,55 +19874,97 @@
                 }
               }
             },
-            "cac:OpenTenderEvent": {
-              "cbc:IdentificationID": "Apertura ofertas económicas",
-              "cbc:OccurrenceDate": "2026-06-12+02:00",
-              "cbc:OccurrenceTime": "09:00:00.000",
-              "cbc:TypeCode": {
-                "@listVersionID": "2.09",
-                "@name": "Apertura sobre oferta económica",
-                "@languageID": "es",
-                "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
-                "#text": "4"
-              },
-              "cbc:Description": "Hora insular",
-              "cac:OccurrenceLocation": {
-                "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
-                "cac:Address": {
-                  "cbc:AddressFormatCode": {
-                    "@listVersionID": "2007",
-                    "@name": "Spanish Format",
-                    "@languageID": "es",
-                    "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
-                    "#text": "1"
-                  },
-                  "cbc:CityName": "Santa Cruz de Tenerife",
-                  "cbc:PostalZone": "38004",
-                  "cac:AddressLine": {
-                    "cbc:Line": "Avda. 25 de julio, 2"
-                  },
-                  "cac:Country": {
-                    "cbc:IdentificationCode": {
-                      "@listVersionID": "2.08",
-                      "@name": "España",
+            "cac:OpenTenderEvent": [
+              {
+                "cbc:IdentificationID": "Apertura criterios evaluables automáticamente",
+                "cbc:OccurrenceDate": "2026-06-12+02:00",
+                "cbc:OccurrenceTime": "00:00:00.000",
+                "cbc:TypeCode": {
+                  "@listVersionID": "2.09",
+                  "@name": "Apertura sobre oferta económica",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                  "#text": "4"
+                },
+                "cbc:Description": "Apertura de criterios cuantificables automáticamente",
+                "cac:OccurrenceLocation": {
+                  "cbc:Description": "Ofertas",
+                  "cac:Address": {
+                    "cbc:AddressFormatCode": {
+                      "@listVersionID": "2007",
+                      "@name": "Spanish Format",
                       "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
-                      "#text": "ES"
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                      "#text": "1"
                     },
-                    "cbc:Name": "España"
+                    "cbc:CityName": "Santa Cruz de Tenerife",
+                    "cbc:PostalZone": "38004",
+                    "cac:AddressLine": {
+                      "cbc:Line": "AVDA. 25 DE JULIO Nº2"
+                    },
+                    "cac:Country": {
+                      "cbc:IdentificationCode": {
+                        "@listVersionID": "2.08",
+                        "@name": "España",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                        "#text": "ES"
+                      },
+                      "cbc:Name": "España"
+                    }
                   }
                 }
               },
-              "cac:AttendanceConditions": {
-                "cbc:AttendanceRestrictionCode": {
-                  "@listVersionID": "2.05",
-                  "@name": "Privado",
+              {
+                "cbc:IdentificationID": "Apertura ofertas económicas",
+                "cbc:OccurrenceDate": "2026-06-12+02:00",
+                "cbc:OccurrenceTime": "09:00:00.000",
+                "cbc:TypeCode": {
+                  "@listVersionID": "2.09",
+                  "@name": "Apertura sobre oferta económica",
                   "@languageID": "es",
-                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
-                  "#text": "2"
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                  "#text": "4"
+                },
+                "cbc:Description": "Hora insular",
+                "cac:OccurrenceLocation": {
+                  "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                  "cac:Address": {
+                    "cbc:AddressFormatCode": {
+                      "@listVersionID": "2007",
+                      "@name": "Spanish Format",
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                      "#text": "1"
+                    },
+                    "cbc:CityName": "Santa Cruz de Tenerife",
+                    "cbc:PostalZone": "38004",
+                    "cac:AddressLine": {
+                      "cbc:Line": "Avda. 25 de julio, 2"
+                    },
+                    "cac:Country": {
+                      "cbc:IdentificationCode": {
+                        "@listVersionID": "2.08",
+                        "@name": "España",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                        "#text": "ES"
+                      },
+                      "cbc:Name": "España"
+                    }
+                  }
+                },
+                "cac:AttendanceConditions": {
+                  "cbc:AttendanceRestrictionCode": {
+                    "@listVersionID": "2.05",
+                    "@name": "Privado",
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
+                    "#text": "2"
+                  }
                 }
               }
-            }
+            ]
           },
           "cac:ProcurementProject": {
             "cbc:Name": "Acuartelamiento \"Hoya Fría\".TC 507-52/24_Desamiantado cubierta Unidad de Música (E0068) (26/0037)",
@@ -19630,14 +20049,121 @@
               },
               "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación, el plazo de ejecución de la obra será: CUATRO (4) meses desde la comprobación de replanteo."
             }
+          },
+          "cac:TenderResult": {
+            "cbc:ResultCode": {
+              "@listVersionID": "2.09",
+              "@name": "Adjudicado",
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/TenderResultCode-2.09.gc",
+              "#text": "8"
+            },
+            "cbc:Description": "Por obtener la mayor puntuación en aplicación de los criterios de valoración y cumplir los requisitos exigidos en los Pliegos que rigen este expediente.",
+            "cbc:AwardDate": "2026-08-07+02:00",
+            "cbc:AwardTime": "00:00:00.000",
+            "cbc:ReceivedTenderQuantity": "2",
+            "cbc:LowerTenderAmount": {
+              "@currencyID": "EUR",
+              "#text": "0"
+            },
+            "cbc:HigherTenderAmount": {
+              "@currencyID": "EUR",
+              "#text": "0"
+            },
+            "cbc:SMEsReceivedTenderQuantity": "2",
+            "cbc:SMEAwardedIndicator": "true",
+            "cac:WinningParty": {
+              "cac:PartyIdentification": {
+                "cbc:ID": {
+                  "@schemeName": "NIF",
+                  "#text": "B76649060"
+                }
+              },
+              "cac:PartyName": {
+                "cbc:Name": "AMIANTO TRABAJOS Y CONSTRUCCIONES SL"
+              },
+              "cac:PhysicalLocation": {
+                "cbc:CountrySubentity": "España",
+                "cbc:CountrySubentityCode": {
+                  "@listVersionID": "2.12",
+                  "@name": "España",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                  "#text": "ES"
+                },
+                "cac:Address": {
+                  "cbc:CityName": "EL ROSARIO",
+                  "cbc:PostalZone": "38109",
+                  "cac:AddressLine": {
+                    "cbc:Line": "ELCANO S/N CC RADAZUL PLANTA 1ª LOCAL 8"
+                  },
+                  "cac:Country": {
+                    "cbc:IdentificationCode": {
+                      "@listVersionID": "2.08",
+                      "@name": "España",
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                      "#text": "ES"
+                    },
+                    "cbc:Name": "España"
+                  }
+                }
+              },
+              "cac:AgentParty": {
+                "cac:Contact": {
+                  "cbc:Telephone": "+34 922048243",
+                  "cbc:ElectronicMail": "info@serviciosatc.com"
+                }
+              }
+            },
+            "cac:AwardedTenderedProject": {
+              "cac:LegalMonetaryTotal": {
+                "cbc:TaxExclusiveAmount": {
+                  "@currencyID": "EUR",
+                  "#text": "144612.6"
+                },
+                "cbc:PayableAmount": {
+                  "@currencyID": "EUR",
+                  "#text": "154735.49"
+                }
+              }
+            },
+            "cac:ContractFormalizationPeriod": {
+              "cbc:Description": "Según lo establecido en el art. 153.1 de la LCSP en los contratos basados en acuerdo marco no resultará necesaria la formalización del contrato."
+            }
           }
         }
       },
+      "resultados": [
+        {
+          "idResultado": "1-1",
+          "lote": null,
+          "resultado": "8",
+          "adjudicatario": "AMIANTO TRABAJOS Y CONSTRUCCIONES SL",
+          "nifAdjudicatario": "B76649060",
+          "importeAdjudicacionSinIVA": 144612.6,
+          "importeAdjudicacionConIVA": 154735.49,
+          "fechaAcuerdoAdjudicacion": "2026-08-07+02:00",
+          "fechaFormalizacion": null,
+          "fechaEntradaVigor": null,
+          "numeroOfertasRecibidas": 2.0
+        }
+      ],
       "xmlFuente": {
-        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=1KVu/4eisTRNqr4W4Wnwif3pUMbGETG8o1mrWphl8UEMXdoU0NAFqyscuHG/mdVGBPCOfNRSJciSNEoQmZUc/dqaPlf90cuJ%2B9Y5ya/wSmJJOVDbGCDM%2BMigrvuVS7Rv",
-        "fecha": "28/05/2026",
-        "descripcion": "28/05/2026 09:01:35Pliego"
-      }
+        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=s4vQW3/n3poJRwhDG14Nr2bwohJ6jT9OHYXb0gA2pinG0b06tjQ9e30eFXD6352HXK03XYd8xuDNpqSOa1O4JDHuaPoTQgWOH4%2Bp1dCgRBSCx2e6p7hqtlp2aFupgHMr",
+        "fecha": "07/08/2026",
+        "descripcion": "07/08/2026 12:31:56Adjudicación"
+      },
+      "idResultado": "1-1",
+      "lote": null,
+      "resultado": "8",
+      "adjudicatario": "AMIANTO TRABAJOS Y CONSTRUCCIONES SL",
+      "nifAdjudicatario": "B76649060",
+      "importeAdjudicacionSinIVA": 144612.6,
+      "importeAdjudicacionConIVA": 154735.49,
+      "fechaAcuerdoAdjudicacion": "2026-08-07+02:00",
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": 2.0
     },
     {
       "id": "2026/ETSAE0814/00000711E",
@@ -20450,7 +20976,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=xeYZZx2zyzzzZq5CYdJrDFMLVeHMcZawkSb2Br/YilXzgznkhhXsZbjXfGiVZfbLDpuqguZ1FWKjpjnY5SBZAxllh4oCxdIdZBtdOSG9bzlt/o8fNevwsujgRzaBbugn",
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:56:27Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2025/ETSAE0814/00001902E",
@@ -21375,7 +21912,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=DGiWaFfddv5z0RBfr%2Bkjp1SYaegt81UUOAVXVryzyE6zu58IgDQwXO8J4f3trnaUcAJPz2u/7Ezs3vkOh/EN0MKzAoDgYW7YhWXWIhfDlU17QB3HKyQaFUExmUVQCerk",
         "fecha": "23/10/2025",
         "descripcion": "23/10/2025 16:38:02Formalización"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2025/ETSAE0814/00001421E",
@@ -22380,7 +22928,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=24hdPKyhal8Sy5O1cl5RZdm90ZA6N9UC1WJPUD/2ri3Kpa/PZulTKMNbdo54/Z79drB7ueeiClhLLKQf5Cx8N2EWRVrQmLPoq8cxBIyMBeBt/o8fNevwsujgRzaBbugn",
         "fecha": "19/11/2025",
         "descripcion": "19/11/2025 08:44:13Adjudicación"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2025/ETSAE0814/00001403E",
@@ -23037,7 +23596,18 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=XiQZGm7JtBYM2y1wF3/QAn3H3zMRlJQKMnLM4oYtKjaCyrcgnSZjERc2cq0KY3RRn6TUOTgC/wWVZ9u3GqEJ6FBFrASLneLwvFq1E6jotFffdyQgZAdTm3EfcUAC7CJ6",
         "fecha": "12/09/2025",
         "descripcion": "12/09/2025 09:18:56Desistimiento"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     },
     {
       "id": "2025/ETSAE0814/00001267E",
@@ -23818,11 +24388,22 @@
         "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0w3S6zB9x0scjnNPEd6Bndaoc/TrGCfxaVLZPStYkcc1NLrad9fDBcU1g8s3u34VL72/8omtXVguTBtifnNXfX5wH4rxerK81WSa9gwyz6nDdQD9RyhUmzT4jZ2In4zL",
         "fecha": "27/08/2025",
         "descripcion": "27/08/2025 16:57:25Pliego"
-      }
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-08-07T06:36:16.720199Z",
-  "sourceUpdated": "2026-08-07T06:36:16.720199Z",
+  "generatedAt": "2026-08-07T10:36:51.981533Z",
+  "sourceUpdated": "2026-08-07T10:36:51.981533Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -23833,7 +24414,9 @@
     "desdeAnio": 2025
   },
   "count": 33,
-  "profileWorksScanned": 318,
+  "expedientesCount": 33,
+  "rowModel": "una fila por resultado y lote",
+  "profileWorksScanned": 319,
   "mode": "perfil-contratante",
   "preservaDatosOpenPLACSP": true
 }
