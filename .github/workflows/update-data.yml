@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - ".github/workflows/update-data.yml"
+      - "scripts/update_data.py"
+      - "tests/test_update_data.py"
   schedule:
     - cron: "23 5 * * *"
   workflow_dispatch:
