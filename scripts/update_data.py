@@ -132,6 +132,20 @@ def first_text(element: ET.Element, *names: str) -> str | None:
     return None
 
 
+def first_code_label(element: ET.Element, *names: str) -> str | None:
+    """Etiqueta legible de un código CODICE; usa el valor si no trae @name."""
+    wanted = set(names)
+    for child in element.iter():
+        if local_name(child.tag) in wanted:
+            label = clean_text(child.attrib.get("name", ""))
+            if label:
+                return label
+            text = clean_text(child.text)
+            if text:
+                return text
+    return None
+
+
 def amount_text(element: ET.Element, *names: str) -> float | None:
     text = first_text(element, *names)
     return parse_amount(text or "") if text else None
@@ -158,7 +172,7 @@ def result_rows_from_xml(root: ET.Element, estado_listado: str) -> list[dict[str
             if local_name(node.tag) == "ProcurementProjectLot"
         ]
         lote = first_text(lot_nodes[0], "ID") if lot_nodes else None
-        resultado = first_text(
+        resultado = first_code_label(
             tender_result, "ResultCode", "ResultStatus", "TenderResultCode"
         ) or estado_listado
         fecha_acuerdo = first_text(
@@ -457,8 +471,11 @@ def load_previous() -> dict[str, dict[str, object]]:
 
 def unchanged(row, previous):
     keys = ("tipo", "objeto", "estado", "importe", "fechas", "enlace")
-    return previous and previous.get("datosOpenPLACSP") is not None and all(
-        row.get(key) == previous.get(key) for key in keys
+    return (
+        previous
+        and previous.get("datosOpenPLACSP") is not None
+        and "resultados" in previous
+        and all(row.get(key) == previous.get(key) for key in keys)
     )
 
 
