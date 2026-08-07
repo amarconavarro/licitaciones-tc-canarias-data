@@ -110,6 +110,140 @@ def xml_to_data(element: ET.Element) -> object:
     return result
 
 
+
+def local_name(tag: str) -> str:
+    """Nombre XML sin espacio de nombres."""
+    return tag.rsplit("}", 1)[-1].rsplit(":", 1)[-1]
+
+
+def direct_children(element: ET.Element, *names: str) -> list[ET.Element]:
+    wanted = set(names)
+    return [child for child in element if local_name(child.tag) in wanted]
+
+
+def first_text(element: ET.Element, *names: str) -> str | None:
+    """Primer texto no vacío de un descendiente con uno de esos nombres."""
+    wanted = set(names)
+    for child in element.iter():
+        if local_name(child.tag) in wanted:
+            text = clean_text(child.text)
+            if text:
+                return text
+    return None
+
+
+def amount_text(element: ET.Element, *names: str) -> float | None:
+    text = first_text(element, *names)
+    return parse_amount(text or "") if text else None
+
+
+def result_rows_from_xml(root: ET.Element, estado_listado: str) -> list[dict[str, object]]:
+    """Normaliza el resultado CODICE a una fila por lote/adjudicatario.
+
+    El XML CODICE puede expresar una misma licitación con varios TenderResult.
+    Cada uno se conserva como una fila independiente para que Excel trate los
+    lotes como contratos operativos separados.
+    """
+    rows: list[dict[str, object]] = []
+    for ordinal, tender_result in enumerate(
+        (node for node in root.iter() if local_name(node.tag) == "TenderResult"), 1
+    ):
+        awarded = direct_children(tender_result, "AwardedTenderedProject")
+        awarded_project = awarded[0] if awarded else tender_result
+        monetary = direct_children(awarded_project, "LegalMonetaryTotal")
+        monetary_total = monetary[0] if monetary else awarded_project
+        lot_nodes = [
+            node
+            for node in awarded_project.iter()
+            if local_name(node.tag) == "ProcurementProjectLot"
+        ]
+        lote = first_text(lot_nodes[0], "ID") if lot_nodes else None
+        resultado = first_text(
+            tender_result, "ResultCode", "ResultStatus", "TenderResultCode"
+        ) or estado_listado
+        fecha_acuerdo = first_text(
+            tender_result, "AwardDate", "DecisionDate", "AwardingDecisionDate"
+        )
+        contract_nodes = direct_children(tender_result, "Contract")
+        contract = contract_nodes[0] if contract_nodes else tender_result
+        fecha_formalizacion = first_text(
+            contract, "FormalizationDate", "ContractFormalizationDate", "IssueDate"
+        )
+        fecha_vigor = first_text(
+            contract, "EffectiveDate", "StartDate", "ContractStartDate"
+        )
+        importe_sin_iva = amount_text(
+            monetary_total, "TaxExclusiveAmount", "TaxExclusiveTotalAmount"
+        )
+        importe_con_iva = amount_text(
+            monetary_total, "PayableAmount", "TaxInclusiveAmount"
+        )
+        if importe_sin_iva is None:
+            importe_sin_iva = amount_text(
+                awarded_project, "TaxExclusiveAmount", "EstimatedOverallContractAmount"
+            )
+        if importe_con_iva is None:
+            importe_con_iva = amount_text(
+                awarded_project, "PayableAmount", "TaxInclusiveAmount"
+            )
+        numero_ofertas = amount_text(
+            tender_result, "ReceivedTenderQuantity", "TendererRequirement"
+        )
+        winning_parties = direct_children(tender_result, "WinningParty") or [None]
+        for party_ordinal, party in enumerate(winning_parties, 1):
+            adjudicatario = (
+                first_text(party, "PartyName", "Name") if party is not None else None
+            )
+            nif = (
+                first_text(party, "CompanyID", "ID") if party is not None else None
+            )
+            rows.append(
+                {
+                    "idResultado": f"{ordinal}-{party_ordinal}",
+                    "lote": lote,
+                    "resultado": resultado,
+                    "adjudicatario": adjudicatario,
+                    "nifAdjudicatario": nif,
+                    "importeAdjudicacionSinIVA": importe_sin_iva,
+                    "importeAdjudicacionConIVA": importe_con_iva,
+                    "fechaAcuerdoAdjudicacion": fecha_acuerdo,
+                    "fechaFormalizacion": fecha_formalizacion,
+                    "fechaEntradaVigor": fecha_vigor,
+                    "numeroOfertasRecibidas": numero_ofertas,
+                }
+            )
+    return rows
+
+
+def flatten_result_rows(expedientes: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Repite el expediente por cada resultado/lote para carga tabular."""
+    flat: list[dict[str, object]] = []
+    empty_result = {
+        "idResultado": None,
+        "lote": None,
+        "resultado": None,
+        "adjudicatario": None,
+        "nifAdjudicatario": None,
+        "importeAdjudicacionSinIVA": None,
+        "importeAdjudicacionConIVA": None,
+        "fechaAcuerdoAdjudicacion": None,
+        "fechaFormalizacion": None,
+        "fechaEntradaVigor": None,
+        "numeroOfertasRecibidas": None,
+    }
+    for expediente in expedientes:
+        results = expediente.get("resultados") or [empty_result]
+        for result in results:
+            row = dict(expediente)
+            row.update(result)
+            row["id"] = (
+                f"{expediente['expediente']}#{result['idResultado']}"
+                if result.get("idResultado")
+                else str(expediente["expediente"])
+            )
+            flat.append(row)
+    return flat
+
 def suffix(name: str) -> str:
     return name.rsplit(":", 1)[-1]
 
@@ -289,6 +423,7 @@ class PortalClient:
         source = latest_xml_link(detail)
         if not source:
             row["datosOpenPLACSP"] = None
+            row["resultados"] = []
             row["avisoXML"] = "El expediente no publica un documento XML"
             return row
         payload = self.request(source["url"], accept="application/xml,text/xml,*/*")
@@ -305,6 +440,7 @@ class PortalClient:
                 )
         root = ET.fromstring(payload)
         row["datosOpenPLACSP"] = {xml_name(root.tag): xml_to_data(root)}
+        row["resultados"] = result_rows_from_xml(root, str(row["estado"]))
         row["xmlFuente"] = source
         return row
 
@@ -334,6 +470,7 @@ def enrich_in_new_session(row: dict[str, object]) -> dict[str, object]:
         return client.enrich_xml(row)
     except Exception as error:  # Un XML ausente no debe borrar la fila visible.
         row["datosOpenPLACSP"] = None
+        row["resultados"] = []
         row["avisoXML"] = str(error)
         return row
 
@@ -374,11 +511,12 @@ def main() -> None:
         old = previous.get(str(row["expediente"]))
         if unchanged(row, old):
             row.update(
-                {key: value for key, value in old.items() if key in {"datosOpenPLACSP", "xmlFuente"}}
+                {key: value for key, value in old.items() if key in {"datosOpenPLACSP", "xmlFuente", "resultados"}}
             )
             enriched.append(row)
         elif args.skip_xml:
             row["datosOpenPLACSP"] = None
+            row["resultados"] = []
             enriched.append(row)
         else:
             pending.append(row)
@@ -396,11 +534,16 @@ def main() -> None:
     print(f"Seleccionadas: {len(selected)} licitaciones TC", flush=True)
 
     enriched.sort(key=lambda row: str(row["expediente"]), reverse=True)
+    output_rows = flatten_result_rows(enriched)
+    output_rows.sort(
+        key=lambda row: (str(row["expediente"]), str(row.get("lote") or "")),
+        reverse=True,
+    )
     generated = utc_now()
     write_json(
         {
-            "schemaVersion": 3,
-            "data": enriched,
+            "schemaVersion": 4,
+            "data": output_rows,
             "generatedAt": generated,
             "sourceUpdated": generated,
             "source": PROFILE_URL,
@@ -412,13 +555,18 @@ def main() -> None:
                 "objetoContieneAcronimo": TARGET_ACRONYM,
                 "desdeAnio": args.start_year,
             },
-            "count": len(enriched),
+            "count": len(output_rows),
+            "expedientesCount": len(enriched),
+            "rowModel": "una fila por resultado y lote",
             "profileWorksScanned": len(works),
             "mode": "perfil-contratante",
             "preservaDatosOpenPLACSP": True,
         }
     )
-    print(f"JSON generado: {len(enriched)} licitaciones TC", flush=True)
+    print(
+        f"JSON generado: {len(enriched)} expedientes / {len(output_rows)} filas",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":
