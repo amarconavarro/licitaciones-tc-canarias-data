@@ -762,7 +762,7 @@
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "Base GAR TC 503-10/25 Adecuación de taller para manto. BIA NASAMS",
-      "estado": "Publicada",
+      "estado": "Evaluación",
       "importe": 687498.95,
       "importeTexto": "687,498.95",
       "fechas": "Present. Oferta:12/08/2026",
@@ -24774,8 +24774,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-08-12T06:46:19.463272Z",
-  "sourceUpdated": "2026-08-12T06:46:19.463272Z",
+  "generatedAt": "2026-08-13T06:50:47.535527Z",
+  "sourceUpdated": "2026-08-13T06:50:47.535527Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -24788,7 +24788,7 @@
   "count": 33,
   "expedientesCount": 33,
   "rowModel": "una fila por resultado y lote",
-  "profileWorksScanned": 321,
+  "profileWorksScanned": 322,
   "mode": "perfil-contratante",
   "preservaDatosOpenPLACSP": true
 }
