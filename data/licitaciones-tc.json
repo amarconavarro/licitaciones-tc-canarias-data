@@ -1,6 +1,748 @@
 {
-  "schemaVersion": 4,
+  "schemaVersion": 5,
   "data": [
+    {
+      "id": "2026/ETSAE0814/00002696",
+      "expediente": "2026/ETSAE0814/00002696",
+      "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
+      "organId": "gwHbdMZ49t4=",
+      "tipoCodigo": "3",
+      "tipo": "Obras",
+      "objeto": "Sustitución de la cubierta del taller de mecánica de la UST 812",
+      "estado": "Publicada",
+      "importe": 372194.28,
+      "importeTexto": "372,194.28",
+      "fechas": "Present. Oferta:03/09/2026",
+      "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Vw0%2B2VjiI%2BuKeVWTb9Scog%3D%3D",
+      "datosOpenPLACSP": {
+        "urn:dgpe:names:draft:codice:schema:xsd:CallforTenders-2:CallForTenders": {
+          "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2:UBLExtensions": {
+            "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2:UBLExtension": {
+              "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2:ExtensionContent": {
+                "urn:dgpe:names:draft:codice-place-ext:schema:xsd:difference:difference": {
+                  "URL": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=CWeB6Y1ahRVYzaRf1NAqb9%2BxQ3YyYZuG3jxX8bWmexyqkYLlxF5%2BdfdZWcndNMKipzqZPChCyJlpK7houpH9BBYc29E2GAs/ajqmXx3rZIPDdQD9RyhUmzT4jZ2In4zL",
+                  "text": "",
+                  "corrections": {
+                    "correction": [
+                      {
+                        "@location": "/CallForTenders[1]/TenderingProcess[1]/TenderSubmissionDeadlinePeriod[1]/EndDate[1]/text()[1]",
+                        "@type": "replace",
+                        "old": {
+                          "cbc:EndDate": "2026-08-26+02:00"
+                        },
+                        "new": {
+                          "cbc:EndDate": "2026-09-03+02:00"
+                        }
+                      },
+                      {
+                        "@location": "/CallForTenders[1]/IssueTime[1]/text()[1]",
+                        "@type": "replace",
+                        "old": {
+                          "cbc:IssueTime": "12:59:15.934"
+                        },
+                        "new": {
+                          "cbc:IssueTime": "17:03:30.645"
+                        }
+                      },
+                      {
+                        "@location": "/CallForTenders[1]/IssueDate[1]/text()[1]",
+                        "@type": "replace",
+                        "old": {
+                          "cbc:IssueDate": "2026-08-12+02:00"
+                        },
+                        "new": {
+                          "cbc:IssueDate": "2026-08-26+02:00"
+                        }
+                      },
+                      {
+                        "@location": "/CallForTenders[1]/UUID[1]/text()[1]",
+                        "@type": "replace",
+                        "old": {
+                          "cbc:UUID": "2026-000413061"
+                        },
+                        "new": {
+                          "cbc:UUID": "2026-000459480"
+                        }
+                      },
+                      {
+                        "@location": "/CallForTenders[1]/ID[1]/text()[1]",
+                        "@type": "replace",
+                        "old": {
+                          "cbc:ID": "0000019700658"
+                        },
+                        "new": {
+                          "cbc:ID": "0000019788077"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "cbc:UBLVersionID": "2.3",
+          "cbc:CustomizationID": "CODICE 2.8.0",
+          "cbc:ProfileID": "CiP 2.1",
+          "cbc:ID": "0000019788077",
+          "cbc:UUID": "2026-000459480",
+          "cbc:ContractFolderID": "2026/ETSAE0814/00002696",
+          "cbc:IssueDate": "2026-08-26+02:00",
+          "cbc:IssueTime": "17:03:30.645",
+          "cac:LegalDocumentReference": {
+            "cbc:ID": {
+              "@schemeName": "ID_DOC_PLACE",
+              "#text": "ANEXO II DOC LICITACION.pdf"
+            },
+            "cbc:CopyIndicator": "false",
+            "cbc:UUID": "DOC20260812120005ANEXO II DOC LICITACION.pdf",
+            "cac:Attachment": {
+              "cac:ExternalReference": {
+                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=yjGH9rRUDTNJKXaKtgMCRfqqreV4Q2gCEhiYMR575WxizxP6NpbHWh7D4rPlgiXRMlGa1dh0MxeTyfBtsqJ%2BCIlJGjSujz58WRggNdR0MUkC1/zDIE0Kw/PWNnLS0Z0z",
+                "cbc:DocumentHash": "rmza8YMDyDPqWKt06//LtAMgQIQ="
+              }
+            }
+          },
+          "cac:TechnicalDocumentReference": {
+            "cbc:ID": {
+              "@schemeName": "ID_DOC_PLACE",
+              "#text": "26-0147 PPT Y PROYECTO.pdf"
+            },
+            "cbc:CopyIndicator": "false",
+            "cbc:UUID": "DOC2026081211583826-0147 PPT Y PROYECTO.pdf",
+            "cac:Attachment": {
+              "cac:ExternalReference": {
+                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=4SkProNXk53BA0IkirQ7pdGOWTE12Qu75eorZ1Mdy74uoWECpuTMek0qrHjgaBjWDbXBcDCqixpXHRZ4cycfcYlBVmNJ4wjx3PW6MWqQeE%2BCx2e6p7hqtlp2aFupgHMr",
+                "cbc:DocumentHash": "qZB/GFpGuLOoXa1mGWqO3lJ5HKA="
+              }
+            }
+          },
+          "cac:AdditionalDocumentReference": [
+            {
+              "cbc:ID": "ANEXO III PROP ECONOMICA.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123256ANEXO III PROP ECONOMICA.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=S2TpWP5lrkMmABP7SgS73furyiPuF2RKWAUE%2BOhrfWerHPc1zEyG8iTvCkQDeo/2QsPopQQjei9P2Ma7rblTKtdMW/g7dxAQxtIKMp5cn8%2BHAj0WEJrB5sP7amrh2jBD",
+                  "cbc:DocumentHash": "MHGp8Qqcgo5YwyyFO5ajF04P51I="
+                }
+              }
+            },
+            {
+              "cbc:ID": "CODIGO ETICO.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123312CODIGO ETICO.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=prF1fR7BS3rwTbTzQKCLl8caaSnkrPy9FjYCq/ohKAOo4FQV8%2B7%2BUjJUY1JZv/vnIqWkIQ%2BazMIi4oDVpeZsBMEfovj2/v%2Bm/a0fFs5Y5ah7QB3HKyQaFUExmUVQCerk",
+                  "cbc:DocumentHash": "tszfZZsDwjg79HXSrkwk9aOVt3s="
+                }
+              }
+            },
+            {
+              "cbc:ID": "COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123328COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=I8voOPC1ZakYtvTLSE2thUaduEkPucd4ESeKkBLeiBH4SCnwRJCD5Xq5ARRsGiPXBYuggTbEij/MpAITjvDHjZin03FIlPjHwVgwG/jwnMzDdQD9RyhUmzT4jZ2In4zL",
+                  "cbc:DocumentHash": "8vYz5zEMd4dVEnNjxDUMXchd1Hw="
+                }
+              }
+            },
+            {
+              "cbc:ID": "COMPROMISO UTE.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123339COMPROMISO UTE.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=83oVTpRmxiO/2TL2JyZDXvN0aQJ8fEktq/DXtH6J27QrkplxBwO3btFeW3mGZNuLL0Qbu0je2tgAC3LsdWS2tADSAo4kCWsVoI6luiMTkI%2BCx2e6p7hqtlp2aFupgHMr",
+                  "cbc:DocumentHash": "eBi5I7VRAzCGXYa147X+PoiSCY0="
+                }
+              }
+            },
+            {
+              "cbc:ID": "DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123352DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=5x/Imp/QmanxRGIL7T1Y318/QcaWMc3xMTfW8OeyT1uZIQ04zQAbmOgbpWXoipF7Bmewg8B/aRUpoCDG8YpytK1hrQ2844T8vRzQm5gyopb3GVhXrFFqN7yFncy7YfRK",
+                  "cbc:DocumentHash": "Ra22Zv3VnFJQiayK7vm5BfD4tYQ="
+                }
+              }
+            },
+            {
+              "cbc:ID": "DISCAPACIDAD E IGUALDAD.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123404DISCAPACIDAD E IGUALDAD.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=KwixiVkKqCW0QtFoSNXDMMf5jf1F1YNlWM61aq5SKO17dN7ZREbroUCYL/l%2BtFP2qQ0tejffdDsBzOysqg0rmETfebnXh2TGG771WnSKK9n3GVhXrFFqN7yFncy7YfRK",
+                  "cbc:DocumentHash": "u9yricN2RexHbxBPLf4dH40c6G0="
+                }
+              }
+            },
+            {
+              "cbc:ID": "SOLVENCIA MEDIOS EXTERNOS.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123421SOLVENCIA MEDIOS EXTERNOS.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=VLBh22o%2BXxejgeXsPpGbtpSRrmaDd7/KQ0e9VFnkWPhh/NsHQcIHrceZ465MzwGehDt3CM6U9XeodotlL13/l5S6m5c9YNDCGw8PGjUGrip7QB3HKyQaFUExmUVQCerk",
+                  "cbc:DocumentHash": "XfLJuRzBiYGUnJePcmciO2wiwjc="
+                }
+              }
+            },
+            {
+              "cbc:ID": "SUBCONTRATACION.docx",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "DOC20260812123434SUBCONTRATACION.docx",
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=p%2BClhsch8QYT2AYP3KiQJ9CRwgOD7fqKlpYYacQ8MVLO3ekBh98KBAmMW14knhRuHa7422khEHSSi3OxQQ0g/upt2IZIGoXNDfNI4GNk2Qn3GVhXrFFqN7yFncy7YfRK",
+                  "cbc:DocumentHash": "vR4CLKTJNml1sKVLFqNnANnOYjQ="
+                }
+              }
+            }
+          ],
+          "cac:ContractingParty": {
+            "cbc:ContractingPartyTypeCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.10/ContractingAuthorityCode-2.10.gc",
+              "@listVersionID": "2.10",
+              "@name": "Autoridad estatal",
+              "#text": "1"
+            },
+            "cbc:ActivityCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.10/ContractingAuthorityActivityCode-2.10.gc",
+              "@listVersionID": "2.10",
+              "@name": "Defensa",
+              "#text": "2"
+            },
+            "cbc:BuyerProfileURIID": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
+            "cac:Party": {
+              "cac:PartyIdentification": [
+                {
+                  "cbc:ID": {
+                    "@schemeName": "ID_PLATAFORMA",
+                    "#text": "10000140000447"
+                  }
+                },
+                {
+                  "cbc:ID": {
+                    "@schemeName": "NIF",
+                    "#text": "S3830012E"
+                  }
+                }
+              ],
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@listVersionID": "2007",
+                  "@name": "Spanish Format",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cbc:CountrySubentity": "Canarias",
+                "cbc:CountrySubentityCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                  "@listVersionID": "2.12",
+                  "@name": "Canarias",
+                  "#text": "ES70"
+                },
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de Julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@listVersionID": "2.08",
+                    "@name": "España",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                "cbc:Telephone": "922845671",
+                "cbc:Telefax": "922845829",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              },
+              "cac:Person": {
+                "cbc:JobTitle": "Jefe de la Jefatura de Asuntos Económicos del Mando de Canarias"
+              }
+            }
+          },
+          "cac:TenderingTerms": {
+            "cbc:RequiredCurriculaIndicator": "false",
+            "cbc:FundingProgramCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/FundingProgramCode-2.08.gc",
+              "@listVersionID": "2.08",
+              "@name": "No hay financiación con fondos de la UE",
+              "#text": "NO-EU"
+            },
+            "cbc:EorderingIndicator": "true",
+            "cbc:EpaymentMeansIndicator": "true",
+            "cbc:ProcurementNationalLegislationCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ProcurementNationalLegislationCode-2.08.gc",
+              "@listVersionID": "2.08",
+              "@name": "Ley 9/2017",
+              "#text": "3"
+            },
+            "cac:ProcurementLegislationDocumentReference": {
+              "cbc:ID": "N/A",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "N/A"
+            },
+            "cac:AllowedSubcontractTerms": {
+              "cbc:UnknownPriceIndicator": "true",
+              "cbc:Description": "Según Anexo II Documento de Licitación."
+            },
+            "cac:TenderPreparation": {
+              "cbc:TenderEnvelopeID": "SOBRE ÚNICO: OFERTA ECONOMICA",
+              "cbc:TenderEnvelopeTypeCode": {
+                "@languageID": "es",
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                "@listVersionID": "2.08",
+                "@name": "Oferta económica o evaluable mediante fórmulas",
+                "#text": "3"
+              },
+              "cbc:OpenEventID": "Apertura oferta económica",
+              "cbc:Description": "En el sobre se deberán incluir los siguientes documentos:\r\n\r\n - Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF).",
+              "cac:DocumentTenderRequirement": {
+                "cbc:RequiredSignatureIndicator": "true",
+                "cbc:MandatoryIndicator": "true",
+                "cac:TemplateDocumentReference": [
+                  {
+                    "cbc:ID": "ANEXO III PROPOSICIÓN ECONÓMICA",
+                    "cbc:DocumentTypeCode": {
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                      "@listVersionID": "2.07",
+                      "@name": "Documento requerido",
+                      "#text": "DOC_REQUIRED"
+                    },
+                    "cbc:DocumentType": "PDF"
+                  },
+                  {
+                    "cbc:ID": "ANEXO_III_PROP_ECONOMICA.docx",
+                    "cbc:DocumentTypeCode": {
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                      "@listVersionID": "2.07",
+                      "@name": "Plantilla",
+                      "#text": "DOC_TEMPLATE"
+                    }
+                  }
+                ]
+              }
+            },
+            "cac:ContractExecutionRequirement": [
+              {
+                "cbc:Name": "Consideraciones de tipo social",
+                "cbc:ExecutionRequirementCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
+                  "@listVersionID": "2.08",
+                  "@name": "Consideraciones de tipo social",
+                  "#text": "2"
+                },
+                "cbc:Description": "Cumplimiento de los convenios colectivos que resulten aplicables. Cumplimiento de la legislación y normativa específica sobre prevención de riesgos laborales."
+              },
+              {
+                "cbc:Name": "Consideraciones de tipo medioambiental",
+                "cbc:ExecutionRequirementCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
+                  "@listVersionID": "2.08",
+                  "@name": "Consideraciones de tipo medioambiental",
+                  "#text": "1"
+                },
+                "cbc:Description": "Cumplimiento del sistema de gestión ambiental basado en la norma ISO14001. Adecuada difusión de la normativa ambiental entre todo el personal responsable de la ejecución de la prestación contratada."
+              }
+            ],
+            "cac:AwardingTerms": {
+              "cac:AwardingCriteria": [
+                {
+                  "cbc:ID": "2733305",
+                  "cbc:AwardingCriteriaTypeCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.0/AwardingCriteriaCode-2.0.gc",
+                    "@listVersionID": "2.0",
+                    "@name": "Cuantificables Automáticamente",
+                    "#text": "OBJ"
+                  },
+                  "cbc:Description": "Criterio 1 (C1): Porcentaje sobre Beneficio Industrial",
+                  "cbc:AwardingCriteriaSubTypeCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/AwardingCriteriaAutomaticallyEvaluatedSubTypeCode-2.09.gc",
+                    "@listVersionID": "2.09",
+                    "@name": "Precio",
+                    "#text": "1"
+                  },
+                  "cbc:WeightNumeric": "80",
+                  "cbc:StructuredValueIndicator": "false"
+                },
+                {
+                  "cbc:ID": "2733304",
+                  "cbc:AwardingCriteriaTypeCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.0/AwardingCriteriaCode-2.0.gc",
+                    "@listVersionID": "2.0",
+                    "@name": "Cuantificables Automáticamente",
+                    "#text": "OBJ"
+                  },
+                  "cbc:Description": "Criterio 2 (C2): Porcentaje de Descuento sobre el resto del precio descompuesto de la obra",
+                  "cbc:AwardingCriteriaSubTypeCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/AwardingCriteriaAutomaticallyEvaluatedSubTypeCode-2.09.gc",
+                    "@listVersionID": "2.09",
+                    "@name": "Otros",
+                    "#text": "2"
+                  },
+                  "cbc:WeightNumeric": "20",
+                  "cbc:StructuredValueIndicator": "false"
+                }
+              ]
+            },
+            "cac:AdditionalInformationParty": {
+              "cac:PartyName": {
+                "cbc:Name": "Comandancia de Obras 5 Tenerife (para consultas sobre el proyecto)"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@listVersionID": "2007",
+                  "@name": "Spanish Format",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38001",
+                "cac:AddressLine": {
+                  "cbc:Line": "Rambla de Santa Cruz, Nº 165"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@listVersionID": "2.08",
+                    "@name": "España",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:ElectronicMail": "diin-tenerife@mde.es"
+              }
+            },
+            "cac:DocumentProviderParty": {
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@listVersionID": "2007",
+                  "@name": "Spanish Format",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de Julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@listVersionID": "2.08",
+                    "@name": "España",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Telephone": "+34 922843256",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              }
+            },
+            "cac:TenderRecipientParty": {
+              "cbc:EndpointID": "https://contrataciondelestado.es",
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@listVersionID": "2007",
+                  "@name": "Spanish Format",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de Julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@listVersionID": "2.08",
+                    "@name": "España",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Telephone": "+34 922843256",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              }
+            },
+            "cac:Language": {
+              "cbc:ID": "es"
+            },
+            "cac:InvoicingTerms": {
+              "cbc:ElectronicInvoicingIndicator": "true"
+            }
+          },
+          "cac:TenderingProcess": {
+            "cbc:OriginalContractingSystemID": "2024/ETJUCONET/00000027E",
+            "cbc:OriginalContractingSystemDescription": "Acuerdo Marco para la selección de empresas que ejecuten obras de primer establecimiento, de reforma, de restauración, de rehabilitación o gran reparación, de reparación simple, de conservación, de demolición y mantenimiento en las infraestructuras de las bases, acuartelamientos y establecimientos del Ejército de Tierra en Territorio Nacional.",
+            "cbc:OriginalContractingSystemLotID": "26",
+            "cbc:OriginalContractingSystemLotDescription": "LOTE 704 Obras iguales o superiores a 80.000 euros e inferiores a 500.000 euros de valor estimado (Sin impuestos). LAS PALMAS",
+            "cbc:Description": "Procedimiento Contrato Basado en el Lote 23-701 del Acuerdo Marco, Obras en las BAE,s del ET en Territorio Nacional, según Artículo 220 de la LCSP",
+            "cbc:ProcedureCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderingProcessCode-2.08.gc",
+              "@listVersionID": "2.08",
+              "@name": "Abierto",
+              "#text": "1"
+            },
+            "cbc:UrgencyCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc",
+              "@listVersionID": "2006",
+              "@name": "Ordinaria",
+              "#text": "1"
+            },
+            "cbc:ExpenseCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/ExpenseTypeCode-1.04.gc",
+              "@listVersionID": "2006",
+              "@name": "Ordinaria",
+              "#text": "1"
+            },
+            "cbc:ContractingSystemCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractingSystemTypeCode-2.08.gc",
+              "@listVersionID": "2.08",
+              "@name": "Contrato basado en un Acuerdo Marco",
+              "#text": "3"
+            },
+            "cbc:SubmissionMethodCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/TenderDeliveryCode-1.04.gc",
+              "@listVersionID": "2006",
+              "@name": "Electrónica",
+              "#text": "1"
+            },
+            "cbc:OverThresholdIndicator": "false",
+            "cac:TenderSubmissionDeadlinePeriod": {
+              "cbc:EndDate": "2026-09-03+02:00",
+              "cbc:EndTime": "17:00:00.000",
+              "cbc:Description": "Hora peninsular"
+            },
+            "cac:AdditionalDocumentReference": {
+              "cbc:ID": "Detalle_Licitacion",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "Detalle_Licitacion",
+              "cbc:DocumentTypeCode": {
+                "@languageID": "es",
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.11/TenderingDocumentTypeCode-2.11.gc",
+                "@listVersionID": "2.11",
+                "@name": "Documento de detalle del Establecimiento de Acuerdo Marco publicado en la Plataforma",
+                "#text": "LINK_EXP_FRAMEWORKAGREEMENT_PLACE"
+              },
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Vw0%2B2VjiI%2BuKeVWTb9Scog%3D%3D"
+                }
+              }
+            },
+            "cac:OpenTenderEvent": {
+              "cbc:IdentificationID": "Apertura oferta económica",
+              "cbc:OccurrenceDate": "2026-08-27+02:00",
+              "cbc:OccurrenceTime": "09:00:00.000",
+              "cbc:TypeCode": {
+                "@languageID": "es",
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                "@listVersionID": "2.09",
+                "@name": "Apertura sobre oferta económica",
+                "#text": "4"
+              },
+              "cbc:Description": "Hora insular",
+              "cac:OccurrenceLocation": {
+                "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                "cac:Address": {
+                  "cbc:AddressFormatCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                    "@listVersionID": "2007",
+                    "@name": "Spanish Format",
+                    "#text": "1"
+                  },
+                  "cbc:CityName": "Santa Cruz de Tenerife",
+                  "cbc:PostalZone": "38004",
+                  "cac:AddressLine": {
+                    "cbc:Line": "Avda. 25 de julio, 2"
+                  },
+                  "cac:Country": {
+                    "cbc:IdentificationCode": {
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                      "@listVersionID": "2.08",
+                      "@name": "España",
+                      "#text": "ES"
+                    },
+                    "cbc:Name": "España"
+                  }
+                }
+              },
+              "cac:AttendanceConditions": {
+                "cbc:AttendanceRestrictionCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
+                  "@listVersionID": "2.05",
+                  "@name": "Privado",
+                  "#text": "2"
+                }
+              }
+            },
+            "cac:AuctionTerms": {
+              "cbc:AuctionConstraintIndicator": "false"
+            }
+          },
+          "cac:ProcurementProject": {
+            "cbc:Name": "Sustitución de la cubierta del taller de mecánica de la UST 812",
+            "cbc:Description": "Sustitución de la cubierta del taller de mecánica de la UST 812 debido al deterioro sufrido por el paso natural del tiempo.",
+            "cbc:TypeCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc",
+              "@listVersionID": "2.08",
+              "@name": "Obras",
+              "#text": "3"
+            },
+            "cbc:SubTypeCode": {
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/WorksContractCode-1.04.gc",
+              "@listVersionID": "2006",
+              "@name": "Construcción",
+              "#text": "4500"
+            },
+            "cbc:MixContractIndicator": "false",
+            "cac:BudgetAmount": {
+              "cbc:EstimatedOverallContractAmount": {
+                "@currencyID": "EUR",
+                "#text": "372194.28"
+              },
+              "cbc:TotalAmount": {
+                "@currencyID": "EUR",
+                "#text": "398247.88"
+              },
+              "cbc:TaxExclusiveAmount": {
+                "@currencyID": "EUR",
+                "#text": "372194.28"
+              }
+            },
+            "cac:RequiredCommodityClassification": {
+              "cbc:ItemClassificationCode": {
+                "@listName": "CPV",
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.04/CPV2008-2.04.gc",
+                "@listVersionID": "2.04",
+                "@name": "Trabajos de construcción.",
+                "#text": "45000000"
+              }
+            },
+            "cac:RealizedLocation": {
+              "cbc:Description": "USBA BASE GAR",
+              "cbc:Conditions": "Según el Anexo II Documento de Licitación.",
+              "cbc:CountrySubentity": "Canarias",
+              "cbc:CountrySubentityCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                "@listVersionID": "2.12",
+                "@name": "Canarias",
+                "#text": "ES70"
+              },
+              "cac:Address": {
+                "cbc:AddressFormatCode": {
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@listVersionID": "2007",
+                  "@name": "Spanish Format",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Las Palmas de Gran Canaria",
+                "cbc:PostalZone": "35005",
+                "cac:AddressLine": {
+                  "cbc:Line": "Coronel Rocha s/n"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@listVersionID": "2.08",
+                    "@name": "España",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              }
+            },
+            "cac:PlannedPeriod": {
+              "cbc:DurationMeasure": {
+                "@unitCode": "MON",
+                "#text": "6"
+              },
+              "cbc:Description": "Según consta en el Anexo II Documento de Licitación, el plazo de ejecución de la obra será: seis (6) meses desde la comprobación del replanteo"
+            }
+          }
+        }
+      },
+      "resultados": [],
+      "xmlFuente": {
+        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=vJ%2B0aT6Vpj5YO4Z9ORS%2BC4VjXBqqJVEjyDY%2BiwFVRFrO0u2q36aM7mQEOEWSQPy8swxEK3Y/HRhJPZjl6JRNTSOCtM3JiOQ2WOR32AKjyfr3GVhXrFFqN7yFncy7YfRK",
+        "fecha": "26/08/2026",
+        "descripcion": "26/08/2026 17:03:30Rectificación de Pliego"
+      },
+      "idResultado": null,
+      "lote": null,
+      "resultado": null,
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": null,
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": null
+    },
     {
       "id": "2026/ETSAE0814/00002613E",
       "expediente": "2026/ETSAE0814/00002613E",
@@ -22607,6 +23349,694 @@
       "numeroOfertasRecibidas": 2.0
     },
     {
+      "id": "2025/ETSAE0814/00002137E#1-1",
+      "expediente": "2025/ETSAE0814/00002137E",
+      "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
+      "organId": "gwHbdMZ49t4=",
+      "tipoCodigo": "3",
+      "tipo": "Obras",
+      "objeto": "CG. MCANA Acondicionamiento de Seguridad zona ZAR (25/1158)",
+      "estado": "Resuelta",
+      "importe": 93205.99,
+      "importeTexto": "93,205.99",
+      "fechas": "Publicación PLACSP:Adjudicación:10/09/2025",
+      "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xcEt1exk8EOkU02jNGj1Fw%3D%3D",
+      "datosOpenPLACSP": {
+        "urn:dgpe:names:draft:codice:schema:xsd:ContractAwardNotice-2:ContractAwardNotice": {
+          "cbc:UBLVersionID": "2.3",
+          "cbc:CustomizationID": "CODICE 2.8.0",
+          "cbc:ProfileID": "CiP 2.1",
+          "cbc:ID": "0000016980175",
+          "cbc:UUID": "2025-001020568",
+          "cbc:ContractFolderID": "2025/ETSAE0814/00002137E",
+          "cbc:IssueDate": "2025-09-10+02:00",
+          "cbc:IssueTime": "13:17:22.287",
+          "cbc:Note": "En virtud de las facultades delegadas que me confiere la Orden DEF/244/2014, de 10 de febrero (BOE nº 46), por la que se delegan facultades en materia de contratos, acuerdos técnicos y otros negocios jurídicos onerosos en el ámbito del Ministerio de Defensa HE RESUELTO DECLARAR DESIERTO EL EXPEDIENTE",
+          "cac:MinutesDocumentReference": {
+            "cbc:ID": {
+              "@schemeName": "ID_DOC_PLACE",
+              "#text": "25-1158 RESOLUCION DESIERTO.pdf"
+            },
+            "cbc:CopyIndicator": "false",
+            "cbc:UUID": "DOC2025091013162425-1158 RESOLUCION DESIERTO.pdf",
+            "cbc:DocumentTypeCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.11/TenderingDocumentTypeCode-2.11.gc",
+              "@languageID": "es",
+              "@name": "Documento de Acta de Adjudicación",
+              "@listVersionID": "2.11",
+              "#text": "ACTA_ADJ"
+            },
+            "cac:Attachment": {
+              "cac:ExternalReference": {
+                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?DocumentIdParam=4mjqcTUFQE5TkV2/xLUBR0i0cEsmAPvf29HgUsqEQqpEDlJhUwGSzFYJXCG8K6/FcASQtvQ5eU4PQHEj8cCZwvXNhSrIvZ3FZg0cQ1vqfBlJOVDbGCDM%2BMigrvuVS7Rv&cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D",
+                "cbc:DocumentHash": "2M/1SYFsk5/MSLzO7wbEvYtDM4Q="
+              }
+            }
+          },
+          "cac:ContractingParty": {
+            "cbc:ContractingPartyTypeCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.10/ContractingAuthorityCode-2.10.gc",
+              "@languageID": "es",
+              "@name": "Autoridad estatal",
+              "@listVersionID": "2.10",
+              "#text": "1"
+            },
+            "cbc:ActivityCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.10/ContractingAuthorityActivityCode-2.10.gc",
+              "@languageID": "es",
+              "@name": "Defensa",
+              "@listVersionID": "2.10",
+              "#text": "2"
+            },
+            "cbc:BuyerProfileURIID": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
+            "cac:Party": {
+              "cac:PartyIdentification": [
+                {
+                  "cbc:ID": {
+                    "@schemeName": "ID_PLATAFORMA",
+                    "#text": "10000140000447"
+                  }
+                },
+                {
+                  "cbc:ID": {
+                    "@schemeName": "NIF",
+                    "#text": "S3830012E"
+                  }
+                }
+              ],
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@languageID": "es",
+                  "@name": "Spanish Format",
+                  "@listVersionID": "2007",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cbc:CountrySubentity": "Canarias",
+                "cbc:CountrySubentityCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                  "@name": "Canarias",
+                  "@listVersionID": "2.12",
+                  "#text": "ES70"
+                },
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de Julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "España",
+                    "@listVersionID": "2.08",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                "cbc:Telephone": "922845671",
+                "cbc:Telefax": "922845829",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              },
+              "cac:Person": {
+                "cbc:JobTitle": "Jefe de la Jefatura de Asuntos Económicos del Mando de Canarias"
+              }
+            }
+          },
+          "cac:TenderingTerms": {
+            "cbc:RequiredCurriculaIndicator": "false",
+            "cbc:FundingProgramCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/FundingProgramCode-2.08.gc",
+              "@languageID": "es",
+              "@name": "No hay financiación con fondos de la UE",
+              "@listVersionID": "2.08",
+              "#text": "NO-EU"
+            },
+            "cbc:EorderingIndicator": "true",
+            "cbc:EpaymentMeansIndicator": "true",
+            "cbc:ProcurementNationalLegislationCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ProcurementNationalLegislationCode-2.08.gc",
+              "@languageID": "es",
+              "@name": "Ley 9/2017",
+              "@listVersionID": "2.08",
+              "#text": "3"
+            },
+            "cac:ProcurementLegislationDocumentReference": {
+              "cbc:ID": "N/A",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "N/A"
+            },
+            "cac:TendererQualificationRequest": {
+              "cac:TechnicalEvaluationCriteria": {
+                "cbc:EvaluationCriteriaTypeCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc",
+                  "@name": "Trabajos realizados",
+                  "@listVersionID": "2.0",
+                  "#text": "OSR-COMPTASK"
+                },
+                "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación"
+              },
+              "cac:FinancialEvaluationCriteria": {
+                "cbc:EvaluationCriteriaTypeCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.0/FinancialCapabilityTypeCode-2.0.gc",
+                  "@name": "Cifra anual de negocio",
+                  "@listVersionID": "2.0",
+                  "#text": "5"
+                },
+                "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación"
+              },
+              "cac:SpecificTendererRequirement": [
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Capacidad de obrar",
+                    "@listVersionID": "2.08",
+                    "#text": "1"
+                  },
+                  "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación"
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Declaración sobre personas con discapacidad",
+                    "@listVersionID": "2.08",
+                    "#text": "12"
+                  },
+                  "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación"
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "No prohibición para contratar",
+                    "@listVersionID": "2.08",
+                    "#text": "2"
+                  },
+                  "cbc:Description": "\"Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación\""
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "No estar incurso en incompatibilidades",
+                    "@listVersionID": "2.08",
+                    "#text": "3"
+                  },
+                  "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación"
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Cumplimiento con las obligaciones con la Seguridad Social",
+                    "@listVersionID": "2.08",
+                    "#text": "4"
+                  },
+                  "cbc:Description": "\"Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación\""
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Cumplimiento con las obligaciones tributarias",
+                    "@listVersionID": "2.08",
+                    "#text": "5"
+                  },
+                  "cbc:Description": "\"Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación\""
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Estar prerregistrado en el ROLECE, y declarar que no ha habido modificaciones en los datos registrados",
+                    "@listVersionID": "2.08",
+                    "#text": "8"
+                  },
+                  "cbc:Description": "TODOS LOS LICITADORES DEBERÁN ESTAR INSCRITOS EN EL REGISTRO OFICIAL DE LICITADORES Y EMPRESAS CLASIFICADAS DEL SECTOR PÚBLICO (ROLECE). Empresas ya inscritas: Deberán presentar el certificado completo expedido por el ROLECE, en formato PDF, y una declaración responsable manifestando que los datos registrados no han sufrido variación. Empresas pendientes de inscripción: Deberán presentar documento que acredite la presentación de la solicitud de inscripción en el ROLECE."
+                },
+                {
+                  "cbc:RequirementTypeCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/DeclarationTypeCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "Para las empresas extranjeras, declaración de sometimiento a la legislación española.",
+                    "@listVersionID": "2.08",
+                    "#text": "9"
+                  },
+                  "cbc:Description": "Según consta al respecto en el Pliego de Cláusulas Administrativas Particulares (PCAP), la Declaración Responsable contenida en el ANEXO II sustituye y exime, de la necesidad de presentar inicialmente la documentación requerida para acreditar los requisitos previos exigidos en el PCAP para concurrir a la presente licitación\""
+                }
+              ]
+            },
+            "cac:AllowedSubcontractTerms": {
+              "cbc:UnknownPriceIndicator": "true",
+              "cbc:Description": "Según consta al respecto en el documento de condiciones administrativas particulares"
+            },
+            "cac:TenderPreparation": {
+              "cbc:TenderEnvelopeID": "SOBRE NUM.1 OFERTA ECONOMICA Y DECLARACION RESPONSABLE",
+              "cbc:TenderEnvelopeTypeCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                "@languageID": "es",
+                "@name": "Documentación administrativa y criterios cuantificables automáticamente",
+                "@listVersionID": "2.08",
+                "#text": "10"
+              },
+              "cbc:OpenEventID": "Apertura ofertas económicas",
+              "cbc:Description": "En el sobre deberán incluir los siguientes documentos:\r\n-Anexo II Declaración Responsable, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF)\r\n-Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF)",
+              "cac:DocumentTenderRequirement": {
+                "cbc:RequiredSignatureIndicator": "true",
+                "cbc:MandatoryIndicator": "false",
+                "cac:TemplateDocumentReference": [
+                  {
+                    "cbc:ID": "ANEXO III PROPOSICION ECONOMICA",
+                    "cbc:DocumentTypeCode": {
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                      "@languageID": "es",
+                      "@name": "Documento requerido",
+                      "@listVersionID": "2.07",
+                      "#text": "DOC_REQUIRED"
+                    },
+                    "cbc:DocumentType": "PDF"
+                  },
+                  {
+                    "cbc:ID": "ANEXO_III_PROPOSICION_ECONOMICA.docx",
+                    "cbc:DocumentTypeCode": {
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                      "@languageID": "es",
+                      "@name": "Plantilla",
+                      "@listVersionID": "2.07",
+                      "#text": "DOC_TEMPLATE"
+                    }
+                  }
+                ]
+              }
+            },
+            "cac:ContractExecutionRequirement": [
+              {
+                "cbc:Name": "Consideraciones de tipo medioambiental",
+                "cbc:ExecutionRequirementCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
+                  "@languageID": "es",
+                  "@name": "Consideraciones de tipo medioambiental",
+                  "@listVersionID": "2.08",
+                  "#text": "1"
+                },
+                "cbc:Description": "Cumplimiento del sistema de gestión ambiental basado en la norma ISO 14001. Adecuada difusión de la normativa ambiental entre todo el personal responsable de la ejecución de la prestación contratada."
+              },
+              {
+                "cbc:Name": "Consideraciones de tipo social",
+                "cbc:ExecutionRequirementCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ExecutionRequirementCode-2.08.gc",
+                  "@languageID": "es",
+                  "@name": "Consideraciones de tipo social",
+                  "@listVersionID": "2.08",
+                  "#text": "2"
+                },
+                "cbc:Description": "Cumplimiento de los convenios colectivos que resulten aplicables. Cumplimiento de la legislación y normativa específica sobre prevención de riesgos laborales."
+              }
+            ],
+            "cac:AwardingTerms": {
+              "cac:AwardingCriteria": {
+                "cbc:ID": "37657",
+                "cbc:AwardingCriteriaTypeCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.0/AwardingCriteriaCode-2.0.gc",
+                  "@languageID": "es",
+                  "@name": "Cuantificables Automáticamente",
+                  "@listVersionID": "2.0",
+                  "#text": "OBJ"
+                },
+                "cbc:Description": "CFE 1 PRECIO",
+                "cbc:AwardingCriteriaSubTypeCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/AwardingCriteriaAutomaticallyEvaluatedSubTypeCode-2.09.gc",
+                  "@languageID": "es",
+                  "@name": "Precio",
+                  "@listVersionID": "2.09",
+                  "#text": "1"
+                },
+                "cbc:WeightNumeric": "100",
+                "cbc:StructuredValueIndicator": "false"
+              }
+            },
+            "cac:AdditionalInformationParty": {
+              "cac:PartyName": {
+                "cbc:Name": "Comandancia de Obras nº 5 (para consultas sobre el proyecto)"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@languageID": "es",
+                  "@name": "Spanish Format",
+                  "@listVersionID": "2007",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38001",
+                "cac:AddressLine": {
+                  "cbc:Line": "Rambla de Santa Cruz Nº 165"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "España",
+                    "@listVersionID": "2.08",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Telephone": "+34 922298571",
+                "cbc:ElectronicMail": "diin-tenerife@mde.es"
+              }
+            },
+            "cac:DocumentProviderParty": {
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@languageID": "es",
+                  "@name": "Spanish Format",
+                  "@listVersionID": "2007",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de Julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "España",
+                    "@listVersionID": "2.08",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Telephone": "+34 922845671",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              }
+            },
+            "cac:TenderRecipientParty": {
+              "cbc:EndpointID": "https://contrataciondelestado.es",
+              "cac:PartyName": {
+                "cbc:Name": "Jefatura de Asuntos Económicos del Mando de Canarias"
+              },
+              "cac:PostalAddress": {
+                "cbc:AddressFormatCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@languageID": "es",
+                  "@name": "Spanish Format",
+                  "@listVersionID": "2007",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38004",
+                "cac:AddressLine": {
+                  "cbc:Line": "Avda. 25 de julio, 2"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "España",
+                    "@listVersionID": "2.08",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              },
+              "cac:Contact": {
+                "cbc:Telephone": "+34 922845671",
+                "cbc:ElectronicMail": "JAEMCANA-CONTRATACION@mde.es"
+              }
+            },
+            "cac:Language": {
+              "cbc:ID": "es"
+            },
+            "cac:InvoicingTerms": {
+              "cbc:ElectronicInvoicingIndicator": "true"
+            }
+          },
+          "cac:TenderingProcess": {
+            "cbc:Description": "Procedimiento abierto simplificado",
+            "cbc:ProcedureCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderingProcessCode-2.08.gc",
+              "@languageID": "es",
+              "@name": "Abierto simplificado",
+              "@listVersionID": "2.08",
+              "#text": "9"
+            },
+            "cbc:UrgencyCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc",
+              "@languageID": "es",
+              "@name": "Ordinaria",
+              "@listVersionID": "2006",
+              "#text": "1"
+            },
+            "cbc:ExpenseCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/ExpenseTypeCode-1.04.gc",
+              "@languageID": "es",
+              "@name": "Ordinaria",
+              "@listVersionID": "2006",
+              "#text": "1"
+            },
+            "cbc:ContractingSystemCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractingSystemTypeCode-2.08.gc",
+              "@languageID": "es",
+              "@name": "No aplica",
+              "@listVersionID": "2.08",
+              "#text": "0"
+            },
+            "cbc:SubmissionMethodCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/TenderDeliveryCode-1.04.gc",
+              "@languageID": "es",
+              "@name": "Electrónica",
+              "@listVersionID": "2006",
+              "#text": "1"
+            },
+            "cbc:OverThresholdIndicator": "false",
+            "cac:TenderSubmissionDeadlinePeriod": {
+              "cbc:EndDate": "2025-09-10+02:00",
+              "cbc:EndTime": "08:35:00.000",
+              "cbc:Description": "Hora peninsular"
+            },
+            "cac:AdditionalDocumentReference": {
+              "cbc:ID": "Detalle_Licitacion",
+              "cbc:CopyIndicator": "false",
+              "cbc:UUID": "Detalle_Licitacion",
+              "cbc:DocumentTypeCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.11/TenderingDocumentTypeCode-2.11.gc",
+                "@languageID": "es",
+                "@name": "Documento de detalle del Expediente publicado en la Plataforma",
+                "@listVersionID": "2.11",
+                "#text": "LINK_EXP_PLACE"
+              },
+              "cac:Attachment": {
+                "cac:ExternalReference": {
+                  "cbc:URI": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xcEt1exk8EOkU02jNGj1Fw%3D%3D"
+                }
+              }
+            },
+            "cac:OpenTenderEvent": {
+              "cbc:IdentificationID": "Apertura ofertas económicas",
+              "cbc:OccurrenceDate": "2025-09-12+02:00",
+              "cbc:OccurrenceTime": "10:00:00.000",
+              "cbc:TypeCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                "@languageID": "es",
+                "@name": "Apertura sobre oferta económica",
+                "@listVersionID": "2.09",
+                "#text": "4"
+              },
+              "cbc:Description": "Hora Insular",
+              "cac:OccurrenceLocation": {
+                "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                "cac:Address": {
+                  "cbc:AddressFormatCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                    "@languageID": "es",
+                    "@name": "Spanish Format",
+                    "@listVersionID": "2007",
+                    "#text": "1"
+                  },
+                  "cbc:CityName": "Santa Cruz de Tenerife",
+                  "cbc:PostalZone": "38004",
+                  "cac:AddressLine": {
+                    "cbc:Line": "Avda. 25 de julio, 2"
+                  },
+                  "cac:Country": {
+                    "cbc:IdentificationCode": {
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                      "@languageID": "es",
+                      "@name": "España",
+                      "@listVersionID": "2.08",
+                      "#text": "ES"
+                    },
+                    "cbc:Name": "España"
+                  }
+                }
+              },
+              "cac:AttendanceConditions": {
+                "cbc:AttendanceRestrictionCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
+                  "@languageID": "es",
+                  "@name": "Privado",
+                  "@listVersionID": "2.05",
+                  "#text": "2"
+                }
+              }
+            }
+          },
+          "cac:ProcurementProject": {
+            "cbc:Name": "CG. MCANA Acondicionamiento de Seguridad zona ZAR (25/1158)",
+            "cbc:Description": "El presente proyecto tiene como objeto el acondicionamiento de las Zonas de Acceso Restringido (ZAR) según los criterios y requerimientos de seguridad definidos en la Norma Técnica 01/12 sustituyendo puertas y ventanas por otras de carpintería blindada y/o acorazada según la información que se pueda almacenar en cada zona del Cuartel General del Mando de Canarias (Santa Cruz de Tenerife).",
+            "cbc:TypeCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc",
+              "@languageID": "es",
+              "@name": "Obras",
+              "@listVersionID": "2.08",
+              "#text": "3"
+            },
+            "cbc:SubTypeCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/WorksContractCode-1.04.gc",
+              "@languageID": "es",
+              "@name": "Otras construcciones especializadas",
+              "@listVersionID": "2006",
+              "#text": "4525"
+            },
+            "cbc:MixContractIndicator": "false",
+            "cac:BudgetAmount": {
+              "cbc:EstimatedOverallContractAmount": {
+                "@currencyID": "EUR",
+                "#text": "93205.99"
+              },
+              "cbc:TotalAmount": {
+                "@currencyID": "EUR",
+                "#text": "99730.41"
+              },
+              "cbc:TaxExclusiveAmount": {
+                "@currencyID": "EUR",
+                "#text": "93205.99"
+              }
+            },
+            "cac:RequiredCommodityClassification": {
+              "cbc:ItemClassificationCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.04/CPV2008-2.04.gc",
+                "@name": "Trabajos de construcción de edificios e instalaciones militares.",
+                "@listVersionID": "2.04",
+                "@listName": "CPV",
+                "#text": "45216200"
+              }
+            },
+            "cac:RealizedLocation": {
+              "cbc:Description": "Capitanía General de Santa Cruz de Tenerife",
+              "cbc:Conditions": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP).",
+              "cbc:CountrySubentity": "Tenerife",
+              "cbc:CountrySubentityCode": {
+                "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                "@name": "Tenerife",
+                "@listVersionID": "2.12",
+                "#text": "ES709"
+              },
+              "cac:Address": {
+                "cbc:AddressFormatCode": {
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                  "@languageID": "es",
+                  "@name": "Spanish Format",
+                  "@listVersionID": "2007",
+                  "#text": "1"
+                },
+                "cbc:CityName": "Santa Cruz de Tenerife",
+                "cbc:PostalZone": "38003",
+                "cac:AddressLine": {
+                  "cbc:Line": "Plaza Weyler s/n"
+                },
+                "cac:Country": {
+                  "cbc:IdentificationCode": {
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                    "@languageID": "es",
+                    "@name": "España",
+                    "@listVersionID": "2.08",
+                    "#text": "ES"
+                  },
+                  "cbc:Name": "España"
+                }
+              }
+            },
+            "cac:PlannedPeriod": {
+              "cbc:DurationMeasure": {
+                "@unitCode": "MON",
+                "#text": "3"
+              },
+              "cbc:Description": "Según consta al respecto en el PCAP, EL PLAZO TOTAL de ejecución de la prestación objeto de este contrato será de 3 meses desde la comprobación del replanteo."
+            }
+          },
+          "cac:TenderResult": {
+            "cbc:ResultCode": {
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/TenderResultCode-2.09.gc",
+              "@languageID": "es",
+              "@name": "Desierto",
+              "@listVersionID": "2.09",
+              "#text": "3"
+            },
+            "cbc:Description": "Haber transcurrido el plazo de recepción de ofertas sin haber recibido ninguna proposición económica.",
+            "cbc:AwardDate": "2025-09-10+02:00",
+            "cbc:AwardTime": "00:00:00.000",
+            "cbc:ReceivedTenderQuantity": "0",
+            "cbc:HigherTenderAmount": {
+              "@currencyID": "EUR",
+              "#text": "0"
+            },
+            "cbc:SMEsReceivedTenderQuantity": "0"
+          }
+        }
+      },
+      "resultados": [
+        {
+          "idResultado": "1-1",
+          "lote": null,
+          "resultado": "Desierto",
+          "adjudicatario": null,
+          "nifAdjudicatario": null,
+          "importeAdjudicacionSinIVA": null,
+          "importeAdjudicacionConIVA": null,
+          "fechaAcuerdoAdjudicacion": "2025-09-10+02:00",
+          "fechaFormalizacion": null,
+          "fechaEntradaVigor": null,
+          "numeroOfertasRecibidas": 0.0
+        }
+      ],
+      "xmlFuente": {
+        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=zzKxmEyWCHu72duvwdIRo07yj/WLpIICoeTeN/gSquuPKxu5eJLWosY3RQhjKUu9lzrUfMeG0hPb7u/0GW1k163AuKuFpfjEGQv9z04cf2tt/o8fNevwsujgRzaBbugn",
+        "fecha": "10/09/2025",
+        "descripcion": "10/09/2025 13:17:21Adjudicación"
+      },
+      "idResultado": "1-1",
+      "lote": null,
+      "resultado": "Desierto",
+      "adjudicatario": null,
+      "nifAdjudicatario": null,
+      "importeAdjudicacionSinIVA": null,
+      "importeAdjudicacionConIVA": null,
+      "fechaAcuerdoAdjudicacion": "2025-09-10+02:00",
+      "fechaFormalizacion": null,
+      "fechaEntradaVigor": null,
+      "numeroOfertasRecibidas": 0.0
+    },
+    {
       "id": "2025/ETSAE0814/00001902E#1-1",
       "expediente": "2025/ETSAE0814/00001902E",
       "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -26065,8 +27495,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-08-26T05:53:26.977209Z",
-  "sourceUpdated": "2026-08-26T05:53:26.977209Z",
+  "generatedAt": "2026-08-27T09:22:36.895978Z",
+  "sourceUpdated": "2026-08-27T09:22:36.895978Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -26074,10 +27504,11 @@
     "tipo": "Obras",
     "tipoCodigo": "3",
     "objetoContieneAcronimo": "TC",
+    "oImporteSuperiorA": 40000.0,
     "desdeAnio": 2025
   },
-  "count": 34,
-  "expedientesCount": 34,
+  "count": 36,
+  "expedientesCount": 36,
   "rowModel": "una fila por resultado y lote",
   "profileWorksScanned": 324,
   "mode": "perfil-contratante",
