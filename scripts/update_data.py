@@ -29,6 +29,7 @@ PROFILE_URL = (
 )
 TARGET_ORGAN = "Jefatura de Asuntos Económicos del Mando de Canarias"
 TARGET_ACRONYM = "TC"
+MIN_AMOUNT_WITHOUT_ACRONYM = 40_000.0
 WORKS_CODE = "3"
 START_YEAR = 2025
 ROOT = Path(__file__).resolve().parents[1]
@@ -498,7 +499,10 @@ def select_rows(rows, start_year=START_YEAR):
         for row in rows
         if (expediente_year(str(row.get("expediente", ""))) or 0) >= start_year
         and str(row.get("tipoCodigo")) == WORKS_CODE
-        and matches_acronym(str(row.get("objeto", "")))
+        and (
+            matches_acronym(str(row.get("objeto", "")))
+            or (row.get("importe") is not None and row["importe"] > MIN_AMOUNT_WITHOUT_ACRONYM)
+        )
     ]
 
 
@@ -548,7 +552,11 @@ def main() -> None:
                     f"XML {number}/{len(pending)}: {row['expediente']}",
                     flush=True,
                 )
-    print(f"Seleccionadas: {len(selected)} licitaciones TC", flush=True)
+    print(
+        f"Seleccionadas: {len(selected)} obras con TC o importe superior a "
+        f"{MIN_AMOUNT_WITHOUT_ACRONYM:.2f} EUR",
+        flush=True,
+    )
 
     enriched.sort(key=lambda row: str(row["expediente"]), reverse=True)
     output_rows = flatten_result_rows(enriched)
@@ -559,7 +567,7 @@ def main() -> None:
     generated = utc_now()
     write_json(
         {
-            "schemaVersion": 4,
+            "schemaVersion": 5,
             "data": output_rows,
             "generatedAt": generated,
             "sourceUpdated": generated,
@@ -570,6 +578,7 @@ def main() -> None:
                 "tipo": "Obras",
                 "tipoCodigo": WORKS_CODE,
                 "objetoContieneAcronimo": TARGET_ACRONYM,
+                "oImporteSuperiorA": MIN_AMOUNT_WITHOUT_ACRONYM,
                 "desdeAnio": args.start_year,
             },
             "count": len(output_rows),
