@@ -5,9 +5,9 @@ Genera diariamente un JSON con las licitaciones que cumplen estos criterios:
 - Perfil de contratante: **Jefatura de Asuntos Económicos del Mando de Canarias** (`idBp=gwHbdMZ49t4=`).
 - Año del expediente: **2025 o posterior**.
 - Tipo de contrato: **Obras**.
-- El objeto contiene el acrónimo completo **TC**.
+- El objeto contiene el acrónimo completo **TC**, o el importe de licitación es **superior a 40.000 €**.
 
-El scraper abre exclusivamente ese perfil público de la Plataforma de Contratación del Sector Público, selecciona «Obras», recorre sus páginas y aplica localmente el filtro de texto. No descarga los ZIP nacionales, no usa capturas de pantalla y no utiliza OCR.
+El scraper abre exclusivamente ese perfil público de la Plataforma de Contratación del Sector Público, selecciona «Obras», recorre sus páginas y aplica localmente el filtro de texto o importe. Un importe de 40.000,00 € exactos no entra por cuantía, aunque sí entraría si el objeto contiene TC. No descarga los ZIP nacionales, no usa capturas de pantalla y no utiliza OCR.
 
 ## Archivos
 

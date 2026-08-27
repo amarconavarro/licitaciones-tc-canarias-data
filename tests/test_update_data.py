@@ -57,12 +57,24 @@ class UpdateDataTests(unittest.TestCase):
         self.assertEqual(row["importe"], 329999.10)
         self.assertEqual(row["fechas"], "Present. Oferta: 29/07/2026")
 
-    def test_filters_by_year_works_and_tc(self):
+    def test_filters_by_year_works_and_tc_or_amount_over_40000(self):
         row = parse_listing(html.fromstring(LISTING))[0]
         old = dict(row, expediente="2024/OLD")
         service = dict(row, expediente="2026/S", tipoCodigo="2")
-        no_tc = dict(row, expediente="2026/N", objeto="Reforma general")
-        self.assertEqual(select_rows([row, old, service, no_tc]), [row])
+        no_tc_high = dict(
+            row, expediente="2026/N-HIGH", objeto="Reforma general", importe=40000.01
+        )
+        no_tc_exact = dict(
+            row, expediente="2026/N-EXACT", objeto="Reforma general", importe=40000.0
+        )
+        no_tc_low = dict(
+            row, expediente="2026/N-LOW", objeto="Reforma general", importe=39999.99
+        )
+        tc_low = dict(row, expediente="2026/TC-LOW", importe=1000.0)
+        self.assertEqual(
+            select_rows([row, old, service, no_tc_high, no_tc_exact, no_tc_low, tc_low]),
+            [row, no_tc_high, tc_low],
+        )
 
     def test_selects_newest_xml_document(self):
         detail = html.fromstring('''<table>
