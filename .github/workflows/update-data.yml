@@ -9,7 +9,10 @@ on:
       - "scripts/update_data.py"
       - "tests/test_update_data.py"
   schedule:
-    - cron: "23 5 * * *"
+    - cron: "23 6 * * *"
+      timezone: "Atlantic/Canary"
+    - cron: "23 16 * * *"
+      timezone: "Atlantic/Canary"
   workflow_dispatch:
 
 permissions:
