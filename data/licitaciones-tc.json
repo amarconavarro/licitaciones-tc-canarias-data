@@ -6463,146 +6463,50 @@
       "numeroOfertasRecibidas": null
     },
     {
-      "id": "2026/ETSAE0814/00001412E",
+      "id": "2026/ETSAE0814/00001412E#1-1",
       "expediente": "2026/ETSAE0814/00001412E",
       "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
       "organId": "gwHbdMZ49t4=",
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "ESTO \"GENETO\"_TC 507-50/24_Sustitución de grupo electrógeno de emergencia y adecuación del cuarto.(26/0071)",
-      "estado": "Evaluación",
+      "estado": "Resuelta",
       "importe": 75496.13,
       "importeTexto": "75,496.13",
-      "fechas": "Present. Oferta:28/07/2026",
+      "fechas": "Publicación PLACSP:Adjudicación:31/08/2026",
       "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=CDC8lxzTBnc2wEhQbcAqug%3D%3D",
       "datosOpenPLACSP": {
-        "urn:dgpe:names:draft:codice:schema:xsd:CallforTenders-2:CallForTenders": {
+        "urn:dgpe:names:draft:codice:schema:xsd:ContractAwardNotice-2:ContractAwardNotice": {
           "cbc:UBLVersionID": "2.3",
           "cbc:CustomizationID": "CODICE 2.8.0",
           "cbc:ProfileID": "CiP 2.1",
-          "cbc:ID": "0000019496307",
-          "cbc:UUID": "2026-000307576",
+          "cbc:ID": "0000019812886",
+          "cbc:UUID": "2026-000472866",
           "cbc:ContractFolderID": "2026/ETSAE0814/00001412E",
-          "cbc:IssueDate": "2026-07-14+02:00",
-          "cbc:IssueTime": "14:14:19.650",
-          "cac:LegalDocumentReference": {
+          "cbc:IssueDate": "2026-08-31+02:00",
+          "cbc:IssueTime": "10:17:43.828",
+          "cbc:Note": "ACTUANDO como Órgano de Contratación, en uso de las facultades delegadas por el Director General de Asuntos Económicos, en virtud de la Orden DEF/244/2014, de 10 de febrero (B.O.E. nº46, de 22/03/2014) de delegación de facultades en materia de\r\ncontratos, acuerdos técnicos y otros negocios jurídicos onerosos en el ámbito del Ministerio de Defensa HE RESUELTO ADJUDICAR",
+          "cac:MinutesDocumentReference": {
             "cbc:ID": {
               "@schemeName": "ID_DOC_PLACE",
-              "#text": "26-0071 ANEXO II DOC LICITACION.pdf"
+              "#text": "RES ADJUDICACION.pdf"
             },
             "cbc:CopyIndicator": "false",
-            "cbc:UUID": "DOC2026071413513826-0071 ANEXO II DOC LICITACION.pdf",
+            "cbc:UUID": "DOC20260831101141RES ADJUDICACION.pdf",
+            "cbc:DocumentTypeCode": {
+              "@listVersionID": "2.11",
+              "@name": "Documento de Acta de Adjudicación",
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.11/TenderingDocumentTypeCode-2.11.gc",
+              "#text": "ACTA_ADJ"
+            },
             "cac:Attachment": {
               "cac:ExternalReference": {
-                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=C08xJkcnNDeNtpp4ZmmGeiK6ObogNNGYXwlhgFKtH0lJZ6kqNzFwmLZf19mG5fEJwF8FSqtPpa/ogvt75tn5Krm0EVoG04fHmWIviT3byOf3GVhXrFFqN7yFncy7YfRK",
-                "cbc:DocumentHash": "F1YC5HJApRSKClM2bZzXh1avHPU="
+                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=J5mXNaJ2OOjaytBaToZMIBjaLVVgVVD5fVkiBNhuweykWUGxQ6EzyylDvxmunmUQAyyJbGpuFcI8JmzPRYpqHZOimZd5JZ4lWRNu7L5Vo/xt/o8fNevwsujgRzaBbugn",
+                "cbc:DocumentHash": "qhVtBJATFVIRfRo9W5aciDzWLdo="
               }
             }
           },
-          "cac:TechnicalDocumentReference": {
-            "cbc:ID": {
-              "@schemeName": "ID_DOC_PLACE",
-              "#text": "26-0071 PPT Y PROYECTO.pdf"
-            },
-            "cbc:CopyIndicator": "false",
-            "cbc:UUID": "DOC2026071413512526-0071 PPT Y PROYECTO.pdf",
-            "cac:Attachment": {
-              "cac:ExternalReference": {
-                "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=QZS4vXJcoY9T2y5k3CTu5n0gPhfyIA0fIFZPFwjFjBIlUAVYh1elhnMrTJompuycGT01bPf05szNAf%2B2Qgjuc6BN1jLR7JkGSyhWl/kKgK%2BB0nvVKRzfe4rpHcnlPhSZ",
-                "cbc:DocumentHash": "WTl04KIz9PVNt/rvgWhyzmFINRA="
-              }
-            }
-          },
-          "cac:AdditionalDocumentReference": [
-            {
-              "cbc:ID": "ANEXO III PROP ECONOMICA.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714140847ANEXO III PROP ECONOMICA.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=aTvqM2DmRoIWAeHiTqSe02lPQTJw08e0gwjGoMsoR3v%2Blwa/4GLjYgFIXfgs7KvEjH9LTYQo/euIqVsX8%2B1AOOolt4eiPV9cmLqQmZIc6AEZyAJWGsSt0OzTSTyw9JAs",
-                  "cbc:DocumentHash": "Nnu2MMYHItthuWMdL+KFYmZHzo0="
-                }
-              }
-            },
-            {
-              "cbc:ID": "CODIGO ETICO.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714140911CODIGO ETICO.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=btXSpFC1oiInmetBzPx4czqPC7Dw7hN1iIeHHC4wKy3Vhqi4nZLgvTCzeZIbvYAw1PlUExCa9X87AqNSbK2y2Y2eZhpLdX8wPXEtp6k5nIP6CYyL7SIrUOBFfNf52ZqA",
-                  "cbc:DocumentHash": "tszfZZsDwjg79HXSrkwk9aOVt3s="
-                }
-              }
-            },
-            {
-              "cbc:ID": "COMPR INTEGR SOLV MED EXT.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714140926COMPR INTEGR SOLV MED EXT.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=XSQYOP0nFk4nBLoQeuXDqAiUEoTebz7rLQcs7SAboV/IPx1JWER%2BSZvVBmAbbzR4T0%2BogQ0/8KHVBxYBOwkcK1XODjAth0e8obw2esej0RKHAj0WEJrB5sP7amrh2jBD",
-                  "cbc:DocumentHash": "XfLJuRzBiYGUnJePcmciO2wiwjc="
-                }
-              }
-            },
-            {
-              "cbc:ID": "COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714140939COMPROMISO DE ADSCRIPCION DE MEDIOS.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=iXeISGMSiVOjk1zMScdlxxR4P/GIOrceZlcFFNmk%2BPTKuJL88%2BXYjLrvAJj8Uy%2B%2BFjC9gWr4fuHlsq2B5f55KXOTqIWVfwprL8nn%2Bgzg0YH3GVhXrFFqN7yFncy7YfRK",
-                  "cbc:DocumentHash": "8vYz5zEMd4dVEnNjxDUMXchd1Hw="
-                }
-              }
-            },
-            {
-              "cbc:ID": "COMPROMISO UTE.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714140952COMPROMISO UTE.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0jsYJyOL9qAtNknnJleZCfPLHWy2Uzha5%2B4hlHs62Mjhuam6cyk7go/H7DdbmPuU3DCIUNbH2/jatXNvPQDO47E755kR6BgNSU3px%2BJjCAeB0nvVKRzfe4rpHcnlPhSZ",
-                  "cbc:DocumentHash": "eBi5I7VRAzCGXYa147X+PoiSCY0="
-                }
-              }
-            },
-            {
-              "cbc:ID": "DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714141004DECLARACION PERTENENCIA GRUPO EMPRESAS.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=rYkPP0xUxOP9qh/5LPz8zE7tvJunu8o5nvb7yzYiFUk9O0Qm9zkUyhJREF%2Bxx%2BBmZ3aOb3bV6xwFBnNmAXQP38I8WaL/ISdXJPTj98W/Hcm1aXEvq3KHa/AEHgtDrQw0",
-                  "cbc:DocumentHash": "Ra22Zv3VnFJQiayK7vm5BfD4tYQ="
-                }
-              }
-            },
-            {
-              "cbc:ID": "DR DISC E IGUAL.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714141016DR DISC E IGUAL.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=dukR42F0Q0IGYpoBq1SxA8MzpcTO4TGUTxtB%2BNi3wJEQquPdqX4lQxnCL3eHnai%2BSmHoOWul6J7P4GhSakQmO2qpYnfH3rl5P/3pVg19b5r3GVhXrFFqN7yFncy7YfRK",
-                  "cbc:DocumentHash": "o5EBoBSf1PS9HBqOvrbxb1LQo7g="
-                }
-              }
-            },
-            {
-              "cbc:ID": "SUBCONTRATACION.docx",
-              "cbc:CopyIndicator": "false",
-              "cbc:UUID": "DOC20260714141040SUBCONTRATACION.docx",
-              "cac:Attachment": {
-                "cac:ExternalReference": {
-                  "cbc:URI": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=iuPJVtSvub8QzyzsI3hsdsr%2BJSxN2KaI39r1VBOxNE8Oafe4A9Alg37BgfTmZhtOdw2cIoPMYiuuECqpsNN/a3D4oZi1JyG3qEqG0TN6JJ545ClyWkoJ44mKM70IFcOu",
-                  "cbc:DocumentHash": "vR4CLKTJNml1sKVLFqNnANnOYjQ="
-                }
-              }
-            }
-          ],
           "cac:ContractingParty": {
             "cbc:ContractingPartyTypeCode": {
               "@listVersionID": "2.10",
@@ -6707,44 +6611,276 @@
               "cbc:UnknownPriceIndicator": "true",
               "cbc:Description": "Según consta al respecto en el Anexo II Documento de Licitación y en el Pliego de Cláusulas Administrativas Particulares del AM"
             },
-            "cac:TenderPreparation": {
-              "cbc:TenderEnvelopeID": "SOBRE UNICO: OFERTA ECONOMICA",
-              "cbc:TenderEnvelopeTypeCode": {
-                "@listVersionID": "2.08",
-                "@name": "Oferta económica o evaluable mediante fórmulas",
-                "@languageID": "es",
-                "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
-                "#text": "3"
-              },
-              "cbc:Description": "En el sobre se deberán incluir los siguientes documentos :\r\n\r\n-Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF).\"",
-              "cac:DocumentTenderRequirement": {
-                "cbc:RequiredSignatureIndicator": "true",
-                "cbc:MandatoryIndicator": "false",
-                "cac:TemplateDocumentReference": [
-                  {
-                    "cbc:ID": "ANEXO III PROPOSICION ECONOMICA",
-                    "cbc:DocumentTypeCode": {
-                      "@listVersionID": "2.07",
-                      "@name": "Documento requerido",
-                      "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
-                      "#text": "DOC_REQUIRED"
+            "cac:TenderPreparation": [
+              {
+                "cbc:TenderEnvelopeID": "SOBRE UNICO: OFERTA ECONOMICA",
+                "cbc:TenderEnvelopeTypeCode": {
+                  "@listVersionID": "2.08",
+                  "@name": "Oferta económica o evaluable mediante fórmulas",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                  "#text": "3"
+                },
+                "cbc:OpenEventID": "Apertura criterios evaluables automáticamente",
+                "cbc:Description": "En el sobre se deberán incluir los siguientes documentos :\r\n\r\n-Anexo III Proposición Económica, debidamente cumplimentado y firmado mediante firma electrónica (EN FORMATO PDF).\"",
+                "cac:DocumentTenderRequirement": {
+                  "cbc:RequiredSignatureIndicator": "true",
+                  "cbc:MandatoryIndicator": "false",
+                  "cac:TemplateDocumentReference": [
+                    {
+                      "cbc:ID": "ANEXO III PROPOSICION ECONOMICA",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF"
                     },
-                    "cbc:DocumentType": "PDF"
+                    {
+                      "cbc:ID": "ANEXO_III_PROP_ECONOMICA.docx",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Plantilla",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_TEMPLATE"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "cbc:TenderEnvelopeID": "REQ. DOC. PROPUESTA ADJUDICACION",
+                "cbc:TenderEnvelopeTypeCode": {
+                  "@listVersionID": "2.08",
+                  "@name": "Requerimiento de documentación",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/TenderEnvelopeTypeCode-2.08.gc",
+                  "#text": "6"
+                },
+                "cbc:Description": "Deberá acreditar, a tenor de la Clausula 22 del AM de Obras, en el plazo de DIEZ días hábiles a contar desde el siguiente a aquel en que hubiera recibido el requerimiento.",
+                "cac:DocumentTenderRequirement": [
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": [
+                      {
+                        "cbc:ID": "Compromiso de adscripción de medios materiales y personales al contrato",
+                        "cbc:DocumentTypeCode": {
+                          "@listVersionID": "2.07",
+                          "@name": "Documento requerido",
+                          "@languageID": "es",
+                          "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                          "#text": "DOC_REQUIRED"
+                        },
+                        "cbc:DocumentType": "PDF",
+                        "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                      },
+                      {
+                        "cbc:ID": "MODELO_DR_COMPROMISO_ADSCRIPCION_MEDIOS_MAT_Y_PERS.odt",
+                        "cbc:DocumentTypeCode": {
+                          "@listVersionID": "2.07",
+                          "@name": "Plantilla",
+                          "@languageID": "es",
+                          "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                          "#text": "DOC_TEMPLATE"
+                        }
+                      }
+                    ]
                   },
                   {
-                    "cbc:ID": "ANEXO_III_PROP_ECONOMICA.docx",
-                    "cbc:DocumentTypeCode": {
-                      "@listVersionID": "2.07",
-                      "@name": "Plantilla",
-                      "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
-                      "#text": "DOC_TEMPLATE"
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de estar al día en las obligaciones Tributarias",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Anexo de protección de datos de carácter personal",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": [
+                      {
+                        "cbc:ID": "Declaración responsable del cumplimiento de las obligaciones en cuestión de igualdad y discapacidad.",
+                        "cbc:DocumentTypeCode": {
+                          "@listVersionID": "2.07",
+                          "@name": "Documento requerido",
+                          "@languageID": "es",
+                          "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                          "#text": "DOC_REQUIRED"
+                        },
+                        "cbc:DocumentType": "PDF",
+                        "cbc:Description": "En el caso de que la empresa cuente con Plan de igualdad, deberá aportarlo."
+                      },
+                      {
+                        "cbc:ID": "DECLARACION_RESPONSABLE_DISCAPACIDAD_E_IGUALDAD.docx",
+                        "cbc:DocumentTypeCode": {
+                          "@listVersionID": "2.07",
+                          "@name": "Plantilla",
+                          "@languageID": "es",
+                          "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                          "#text": "DOC_TEMPLATE"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de ADHESIÓN AL CÓDIGO ÉTICO O DE CONDUCTA DE LA FUNCIÓN COMPRAS DEL MINISTERIO DE DEFENSA",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "DECLARACION DE ADHESIÓN AL CÓDIGO ÉTICO O DE CONDUCTA DE LA FUNCIÓN COMPRAS DEL MINISTERIO DE DEFENSA (según anexo publicado en la licitación)."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Justificante pago del Impuesto de Actividades Económicas (o declaración de no estar obligado al pago del IAE.)",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Manifestación de la voluntad de celebrar subcontratos y, si procede, identificación de los subcontratistas",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Datos de persona de contacto durante la ejecución del contrato",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Deberá aportar un documento, firmado mediante firma digital, donde consten los datos completos  (nombre y apellidos, teléfono, correo electrónico)."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Original o copia compulsada del Alta en el Impuesto de Actividades Económicas",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Copia de póliza de seguro de responsabilidad civil y justificante de pago así como una Declaración Responsable de vigencia del seguro durante toda la ejecución del contrato",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de estar al día en el IGIC. (adjudicación de contratos con las AA.PP.)",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación.."
+                    }
+                  },
+                  {
+                    "cbc:RequiredSignatureIndicator": "true",
+                    "cbc:MandatoryIndicator": "false",
+                    "cac:TemplateDocumentReference": {
+                      "cbc:ID": "Certificado de estar al día en las obligaciones con la Seguridad Social",
+                      "cbc:DocumentTypeCode": {
+                        "@listVersionID": "2.07",
+                        "@name": "Documento requerido",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.07/EvidenceDocumentTypeCode-2.07.gc",
+                        "#text": "DOC_REQUIRED"
+                      },
+                      "cbc:DocumentType": "PDF",
+                      "cbc:Description": "Según consta al respecto en el Pliego de Clausulas Administrativas Particulares (PCAP) / Documento de Licitación."
                     }
                   }
                 ]
               }
-            },
+            ],
             "cac:ContractExecutionRequirement": [
               {
                 "cbc:Name": "Consideraciones de tipo social",
@@ -6983,55 +7119,96 @@
                 }
               }
             },
-            "cac:OpenTenderEvent": {
-              "cbc:IdentificationID": "Apertura oferta económica",
-              "cbc:OccurrenceDate": "2026-07-29+02:00",
-              "cbc:OccurrenceTime": "09:00:00.000",
-              "cbc:TypeCode": {
-                "@listVersionID": "2.09",
-                "@name": "Apertura sobre oferta económica",
-                "@languageID": "es",
-                "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
-                "#text": "4"
-              },
-              "cbc:Description": "Hora insular",
-              "cac:OccurrenceLocation": {
-                "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
-                "cac:Address": {
-                  "cbc:AddressFormatCode": {
-                    "@listVersionID": "2007",
-                    "@name": "Spanish Format",
-                    "@languageID": "es",
-                    "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
-                    "#text": "1"
-                  },
-                  "cbc:CityName": "Santa Cruz de Tenerife",
-                  "cbc:PostalZone": "38004",
-                  "cac:AddressLine": {
-                    "cbc:Line": "Avda. 25 de julio, 2"
-                  },
-                  "cac:Country": {
-                    "cbc:IdentificationCode": {
-                      "@listVersionID": "2.08",
-                      "@name": "España",
+            "cac:OpenTenderEvent": [
+              {
+                "cbc:IdentificationID": "Apertura oferta económica",
+                "cbc:OccurrenceDate": "2026-07-29+02:00",
+                "cbc:OccurrenceTime": "09:00:00.000",
+                "cbc:TypeCode": {
+                  "@listVersionID": "2.09",
+                  "@name": "Apertura sobre oferta económica",
+                  "@languageID": "es",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                  "#text": "4"
+                },
+                "cbc:Description": "Hora insular",
+                "cac:OccurrenceLocation": {
+                  "cbc:Description": "Jefatura de Asuntos Económicos del Mando de Canarias",
+                  "cac:Address": {
+                    "cbc:AddressFormatCode": {
+                      "@listVersionID": "2007",
+                      "@name": "Spanish Format",
                       "@languageID": "es",
-                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
-                      "#text": "ES"
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                      "#text": "1"
                     },
-                    "cbc:Name": "España"
+                    "cbc:CityName": "Santa Cruz de Tenerife",
+                    "cbc:PostalZone": "38004",
+                    "cac:AddressLine": {
+                      "cbc:Line": "Avda. 25 de julio, 2"
+                    },
+                    "cac:Country": {
+                      "cbc:IdentificationCode": {
+                        "@listVersionID": "2.08",
+                        "@name": "España",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                        "#text": "ES"
+                      },
+                      "cbc:Name": "España"
+                    }
+                  }
+                },
+                "cac:AttendanceConditions": {
+                  "cbc:AttendanceRestrictionCode": {
+                    "@listVersionID": "2.05",
+                    "@name": "Privado",
+                    "@languageID": "es",
+                    "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
+                    "#text": "2"
                   }
                 }
               },
-              "cac:AttendanceConditions": {
-                "cbc:AttendanceRestrictionCode": {
-                  "@listVersionID": "2.05",
-                  "@name": "Privado",
+              {
+                "cbc:IdentificationID": "Apertura criterios evaluables automáticamente",
+                "cbc:OccurrenceDate": "2026-07-30+02:00",
+                "cbc:OccurrenceTime": "00:00:00.000",
+                "cbc:TypeCode": {
+                  "@listVersionID": "2.09",
+                  "@name": "Apertura sobre oferta económica",
                   "@languageID": "es",
-                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.05/AttendanceRestrictionCode-2.05.gc",
-                  "#text": "2"
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/EventTypeCode-2.09.gc",
+                  "#text": "4"
+                },
+                "cbc:Description": "Apertura de criterios cuantificables automáticamente",
+                "cac:OccurrenceLocation": {
+                  "cac:Address": {
+                    "cbc:AddressFormatCode": {
+                      "@listVersionID": "2007",
+                      "@name": "Spanish Format",
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc",
+                      "#text": "1"
+                    },
+                    "cbc:CityName": "Santa Cruz de Tenerife",
+                    "cbc:PostalZone": "38004",
+                    "cac:AddressLine": {
+                      "cbc:Line": "AVDA. 25 DE JULIO Nº2"
+                    },
+                    "cac:Country": {
+                      "cbc:IdentificationCode": {
+                        "@listVersionID": "2.08",
+                        "@name": "España",
+                        "@languageID": "es",
+                        "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                        "#text": "ES"
+                      },
+                      "cbc:Name": "España"
+                    }
+                  }
                 }
               }
-            }
+            ]
           },
           "cac:ProcurementProject": {
             "cbc:Name": "ESTO \"GENETO\"_TC 507-50/24_Sustitución de grupo electrógeno de emergencia y adecuación del cuarto.(26/0071)",
@@ -7117,26 +7294,122 @@
               },
               "cbc:Description": "La fecha de inicio es estimada, según consta en el Anexo II Documento de Licitación, el plazo de ejecución de la obra será: CINCO (5) MESES DESDE LA COMPROBACIÓN DEL REPLANTEO."
             }
+          },
+          "cac:TenderResult": {
+            "cbc:ResultCode": {
+              "@listVersionID": "2.09",
+              "@name": "Adjudicado",
+              "@languageID": "es",
+              "@listURI": "http://contrataciondelestado.es/codice/cl/2.09/TenderResultCode-2.09.gc",
+              "#text": "8"
+            },
+            "cbc:Description": "Empresa adjudicataria del Acuerdo Marco",
+            "cbc:AwardDate": "2026-08-31+02:00",
+            "cbc:AwardTime": "00:00:00.000",
+            "cbc:ReceivedTenderQuantity": "3",
+            "cbc:LowerTenderAmount": {
+              "@currencyID": "EUR",
+              "#text": "72662.86"
+            },
+            "cbc:HigherTenderAmount": {
+              "@currencyID": "EUR",
+              "#text": "75267.74"
+            },
+            "cbc:SMEsReceivedTenderQuantity": "3",
+            "cbc:SMEAwardedIndicator": "true",
+            "cac:WinningParty": {
+              "cac:PartyIdentification": {
+                "cbc:ID": {
+                  "@schemeName": "NIF",
+                  "#text": "B38624656"
+                }
+              },
+              "cac:PartyName": {
+                "cbc:Name": "LAHIDRO DEL SIGLO XXI SL"
+              },
+              "cac:PhysicalLocation": {
+                "cbc:CountrySubentity": "Tenerife",
+                "cbc:CountrySubentityCode": {
+                  "@listVersionID": "2.12",
+                  "@name": "Tenerife",
+                  "@listURI": "http://contrataciondelestado.es/codice/cl/2.12/NUTS-2024.gc",
+                  "#text": "ES709"
+                },
+                "cac:Address": {
+                  "cbc:CityName": "Güímar",
+                  "cbc:PostalZone": "38500",
+                  "cac:AddressLine": {
+                    "cbc:Line": "Carretera Güímar-Arafo, 12"
+                  },
+                  "cac:Country": {
+                    "cbc:IdentificationCode": {
+                      "@listVersionID": "2.08",
+                      "@name": "España",
+                      "@languageID": "es",
+                      "@listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc",
+                      "#text": "ES"
+                    },
+                    "cbc:Name": "España"
+                  }
+                }
+              },
+              "cac:AgentParty": {
+                "cac:Contact": {
+                  "cbc:Telephone": "+034 922511850",
+                  "cbc:ElectronicMail": "lahidro@lahidro.net"
+                }
+              }
+            },
+            "cac:AwardedTenderedProject": {
+              "cac:LegalMonetaryTotal": {
+                "cbc:TaxExclusiveAmount": {
+                  "@currencyID": "EUR",
+                  "#text": "73212.21"
+                },
+                "cbc:PayableAmount": {
+                  "@currencyID": "EUR",
+                  "#text": "78337.07"
+                }
+              }
+            },
+            "cac:ContractFormalizationPeriod": {
+              "cbc:StartDate": "2026-08-31+02:00",
+              "cbc:EndDate": "2027-01-31+01:00"
+            }
           }
         }
       },
-      "resultados": [],
+      "resultados": [
+        {
+          "idResultado": "1-1",
+          "lote": null,
+          "resultado": "Adjudicado",
+          "adjudicatario": "LAHIDRO DEL SIGLO XXI SL",
+          "nifAdjudicatario": "B38624656",
+          "importeAdjudicacionSinIVA": 73212.21,
+          "importeAdjudicacionConIVA": 78337.07,
+          "fechaAcuerdoAdjudicacion": "2026-08-31+02:00",
+          "fechaFormalizacion": null,
+          "fechaEntradaVigor": "2026-08-31+02:00",
+          "numeroOfertasRecibidas": 3.0
+        }
+      ],
       "xmlFuente": {
-        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=Kxn7XWR5rgTXqYF06%2BV8ijMDzyakyxfMs%2BVLwg3l8VhYIC1pEAK9bOVqv44EdYuV2WH2C9uRkgfKoV9U4dY8QW3qHaJaCOwRSk9BRDYFxuWHAj0WEJrB5sP7amrh2jBD",
-        "fecha": "14/07/2026",
-        "descripcion": "14/07/2026 14:14:19Pliego"
+        "url": "https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=C5IsLX00IVGBnioUHrSyBdgnOGeklEBht/AjEjpYJCP7b5pvIbswa0acYkKOrUT%2BiYdhlOe4%2BTQV3u1oPQkhVxaYbvcrcDg5biQjtrai0uVt/o8fNevwsujgRzaBbugn",
+        "fecha": "31/08/2026",
+        "descripcion": "31/08/2026 10:17:43Adjudicación"
       },
-      "idResultado": null,
+      "idResultado": "1-1",
       "lote": null,
-      "resultado": null,
-      "adjudicatario": null,
-      "nifAdjudicatario": null,
-      "importeAdjudicacionSinIVA": null,
-      "importeAdjudicacionConIVA": null,
-      "fechaAcuerdoAdjudicacion": null,
+      "resultado": "Adjudicado",
+      "adjudicatario": "LAHIDRO DEL SIGLO XXI SL",
+      "nifAdjudicatario": "B38624656",
+      "importeAdjudicacionSinIVA": 73212.21,
+      "importeAdjudicacionConIVA": 78337.07,
+      "fechaAcuerdoAdjudicacion": "2026-08-31+02:00",
       "fechaFormalizacion": null,
-      "fechaEntradaVigor": null,
-      "numeroOfertasRecibidas": null
+      "fechaEntradaVigor": "2026-08-31+02:00",
+      "numeroOfertasRecibidas": 3.0
     },
     {
       "id": "2026/ETSAE0814/00001393E#1-1",
@@ -27495,8 +27768,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-08-30T18:40:05.563478Z",
-  "sourceUpdated": "2026-08-30T18:40:05.563478Z",
+  "generatedAt": "2026-08-31T11:41:36.089239Z",
+  "sourceUpdated": "2026-08-31T11:41:36.089239Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
