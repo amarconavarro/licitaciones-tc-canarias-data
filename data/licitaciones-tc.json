@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "data": [
     {
       "id": "2026/ETSAE0814/00002696",
@@ -731,6 +731,7 @@
         "fecha": "26/08/2026",
         "descripcion": "26/08/2026 17:03:30Rectificación de Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -1482,6 +1483,7 @@
         "fecha": "14/08/2026",
         "descripcion": "14/08/2026 12:44:57Rectificación de Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -2251,6 +2253,7 @@
         "fecha": "28/07/2026",
         "descripcion": "28/07/2026 13:53:22Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -3049,6 +3052,7 @@
         "fecha": "10/07/2026",
         "descripcion": "10/07/2026 15:01:46Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -3748,6 +3752,7 @@
         "fecha": "15/07/2026",
         "descripcion": "15/07/2026 16:10:59Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -4427,6 +4432,7 @@
         "fecha": "31/07/2026",
         "descripcion": "31/07/2026 10:52:44Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -5103,6 +5109,7 @@
         "fecha": "15/07/2026",
         "descripcion": "15/07/2026 16:51:49Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -5873,6 +5880,7 @@
         "fecha": "31/08/2026",
         "descripcion": "31/08/2026 16:51:29Rectificación de Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -6550,6 +6558,7 @@
         "fecha": "02/07/2026",
         "descripcion": "02/07/2026 14:44:01Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -7499,6 +7508,7 @@
         "fecha": "31/08/2026",
         "descripcion": "31/08/2026 10:17:43Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -8136,6 +8146,7 @@
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 13:40:28Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -8797,6 +8808,7 @@
         "fecha": "06/07/2026",
         "descripcion": "06/07/2026 10:58:20Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -9654,6 +9666,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 10:52:18Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -10269,6 +10282,7 @@
         "fecha": "03/07/2026",
         "descripcion": "03/07/2026 10:07:55Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -10946,6 +10960,7 @@
         "fecha": "27/05/2026",
         "descripcion": "27/05/2026 12:42:44Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -11780,6 +11795,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 12:57:25Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -12418,6 +12434,7 @@
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 20:10:56Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -13054,6 +13071,7 @@
         "fecha": "10/07/2026",
         "descripcion": "10/07/2026 11:02:34Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -13915,6 +13933,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 12:23:40Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -14593,6 +14612,7 @@
         "fecha": "09/06/2026",
         "descripcion": "09/06/2026 15:08:36Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -15469,6 +15489,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:18:56Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -16358,6 +16379,7 @@
         "fecha": "14/08/2026",
         "descripcion": "14/08/2026 09:29:02Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -17193,6 +17215,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 14:37:53Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -18290,6 +18313,7 @@
         "fecha": "13/08/2026",
         "descripcion": "13/08/2026 12:50:20Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -19189,6 +19213,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:10:17Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -19887,6 +19912,7 @@
         "fecha": "19/05/2026",
         "descripcion": "19/05/2026 13:51:23Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -20736,6 +20762,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:40:15Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -21355,6 +21382,7 @@
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 13:13:21Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -21975,6 +22003,7 @@
         "fecha": "25/06/2026",
         "descripcion": "25/06/2026 12:42:02Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -22870,6 +22899,7 @@
         "fecha": "07/08/2026",
         "descripcion": "07/08/2026 12:31:56Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "8",
@@ -23709,6 +23739,7 @@
         "fecha": "06/08/2026",
         "descripcion": "06/08/2026 13:56:27Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -24397,6 +24428,7 @@
         "fecha": "10/09/2025",
         "descripcion": "10/09/2025 13:17:21Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -25348,6 +25380,7 @@
         "fecha": "23/10/2025",
         "descripcion": "23/10/2025 16:38:02Formalización"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Formalizado",
@@ -26379,6 +26412,7 @@
         "fecha": "19/11/2025",
         "descripcion": "19/11/2025 08:44:13Adjudicación"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -27062,6 +27096,7 @@
         "fecha": "12/09/2025",
         "descripcion": "12/09/2025 09:18:56Desistimiento"
       },
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desistimiento",
@@ -27855,6 +27890,7 @@
         "fecha": "27/08/2025",
         "descripcion": "27/08/2025 16:57:25Pliego"
       },
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -27868,8 +27904,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-08-31T20:53:08.769256Z",
-  "sourceUpdated": "2026-08-31T20:53:08.769256Z",
+  "generatedAt": "2026-09-01T09:37:01.841837Z",
+  "sourceUpdated": "2026-09-01T09:37:01.841837Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
