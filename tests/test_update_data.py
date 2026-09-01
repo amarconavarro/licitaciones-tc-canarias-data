@@ -13,6 +13,7 @@ from scripts.update_data import (
     unchanged,
     flatten_result_rows,
     result_rows_from_xml,
+    update_change_history,
 )
 from xml.etree import ElementTree as ET
 
@@ -32,6 +33,20 @@ LISTING = '''<html><table summary="Tabla de Licitaciones del Perfil del Contrata
 
 
 class UpdateDataTests(unittest.TestCase):
+    @staticmethod
+    def change_row(**overrides):
+        row = {
+            "expediente": "2026/ETSAE0814/00000001",
+            "tipo": "Obras",
+            "objeto": "Reforma TC 507-01/26",
+            "estado": "Evaluación",
+            "importe": 100000.0,
+            "fechas": "Present. Oferta:01/09/2026",
+            "resultados": [],
+        }
+        row.update(overrides)
+        return row
+
     def test_acronym_is_a_complete_token(self):
         self.assertTrue(matches_acronym("Hoya Fría_TC:507"))
         self.assertTrue(matches_acronym("TC 507-20/25"))
@@ -138,6 +153,76 @@ class UpdateDataTests(unittest.TestCase):
         self.assertFalse(unchanged(current, previous))
         previous["resultados"] = []
         self.assertTrue(unchanged(current, previous))
+
+    def test_marks_a_new_tender_without_marking_existing_baseline_rows(self):
+        detected_at = "2026-09-01T06:23:00Z"
+        new_row = self.change_row()
+        update_change_history(new_row, None, detected_at)
+        self.assertEqual(new_row["historialCambios"][0]["tipo"], "nuevo")
+
+        existing = self.change_row()
+        update_change_history(existing, self.change_row(), detected_at)
+        self.assertEqual(existing["historialCambios"], [])
+
+    def test_records_previous_and_new_values_for_visible_changes(self):
+        previous = self.change_row(
+            estado="Evaluación",
+            fechas="Present. Oferta:01/09/2026",
+        )
+        current = self.change_row(
+            estado="Resuelta",
+            fechas="Publicación PLACSP:Adjudicación:02/09/2026",
+        )
+        update_change_history(current, previous, "2026-09-02T16:23:00Z")
+        event = current["historialCambios"][0]
+        self.assertEqual(event["tipo"], "modificado")
+        self.assertEqual(
+            event["cambios"],
+            [
+                {"campo": "Estado", "anterior": "Evaluación", "nuevo": "Resuelta"},
+                {
+                    "campo": "Fechas",
+                    "anterior": "Present. Oferta:01/09/2026",
+                    "nuevo": "Publicación PLACSP:Adjudicación:02/09/2026",
+                },
+            ],
+        )
+
+    def test_result_comparison_is_stable_and_detects_the_changed_lot(self):
+        first = {"idResultado": "1-1", "lote": "1", "resultado": "Adjudicado", "adjudicatario": "Alfa"}
+        second = {"idResultado": "2-1", "lote": "2", "resultado": "Adjudicado", "adjudicatario": "Beta"}
+        previous = self.change_row(resultados=[second, first])
+        same = self.change_row(resultados=[first, second])
+        update_change_history(same, previous, "2026-09-01T06:23:00Z")
+        self.assertEqual(same["historialCambios"], [])
+
+        changed_second = dict(second, resultado="Formalizado")
+        current = self.change_row(resultados=[first, changed_second])
+        update_change_history(current, previous, "2026-09-01T16:23:00Z")
+        changes = current["historialCambios"][0]["cambios"]
+        self.assertEqual(
+            changes,
+            [{
+                "campo": "Resultado",
+                "anterior": "Lote 1: Adjudicado | Lote 2: Adjudicado",
+                "nuevo": "Lote 1: Adjudicado | Lote 2: Formalizado",
+            }],
+        )
+
+    def test_keeps_only_change_events_from_the_last_seven_days(self):
+        previous = self.change_row(
+            historialCambios=[
+                {"tipo": "nuevo", "detectadoEn": "2026-08-20T06:23:00Z", "cambios": []},
+                {"tipo": "modificado", "detectadoEn": "2026-08-30T06:23:00Z", "cambios": []},
+            ]
+        )
+        current = self.change_row()
+        update_change_history(current, previous, "2026-09-01T06:23:00Z")
+        self.assertEqual(len(current["historialCambios"]), 1)
+        self.assertEqual(
+            current["historialCambios"][0]["detectadoEn"],
+            "2026-08-30T06:23:00Z",
+        )
 
 
 if __name__ == "__main__":
