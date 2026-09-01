@@ -28,6 +28,9 @@ Además de expediente, tipo, objeto, estado, importe, fechas y enlace, cada fila
 - `importeAdjudicacionSinIVA` y `importeAdjudicacionConIVA`
 - `fechaAcuerdoAdjudicacion`, `fechaFormalizacion` y `fechaEntradaVigor`
 - `numeroOfertasRecibidas`
+- `historialCambios`: eventos detectados durante los últimos siete días. Distingue
+  expedientes `nuevo` y `modificado`; estos últimos incluyen el campo y sus valores
+  `anterior` y `nuevo` para las columnas visibles del Site.
 
 Para los expedientes seleccionados también se descarga el documento XML más reciente publicado por PLACSP y se conserva completo y recursivamente en `datosOpenPLACSP` (textos, atributos, elementos repetidos y campos adicionales). En ejecuciones sucesivas se reutiliza ese XML si los campos visibles del expediente no han cambiado. Si un documento XML puntual falla, la licitación permanece en el JSON con un aviso en vez de perderse.
 

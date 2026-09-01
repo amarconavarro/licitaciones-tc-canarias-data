@@ -13,7 +13,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -32,6 +32,7 @@ TARGET_ACRONYM = "TC"
 MIN_AMOUNT_WITHOUT_ACRONYM = 40_000.0
 WORKS_CODE = "3"
 START_YEAR = 2025
+CHANGE_HISTORY_DAYS = 7
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "data" / "licitaciones-tc.json"
 USER_AGENT = "licitaciones-tc-canarias-data/2.0 (+GitHub Actions)"
@@ -258,6 +259,131 @@ def flatten_result_rows(expedientes: list[dict[str, object]]) -> list[dict[str, 
             )
             flat.append(row)
     return flat
+
+
+VISIBLE_CHANGE_FIELDS = (
+    ("tipo", "Tipo"),
+    ("objeto", "Objeto del contrato"),
+    ("estado", "Estado"),
+    ("lote", "Lote"),
+    ("resultado", "Resultado"),
+    ("adjudicatario", "Adjudicatario"),
+    ("importe", "Importe"),
+    ("fechas", "Fechas"),
+)
+RESULT_CHANGE_FIELDS = {"lote", "resultado", "adjudicatario"}
+
+
+def result_change_value(row: dict[str, object], field: str) -> str | None:
+    """Valor visible agregado de un campo de resultado, estable ante reordenaciones."""
+    results = row.get("resultados")
+    if not isinstance(results, list):
+        return None
+    values: list[str] = []
+    ordered = sorted(
+        (result for result in results if isinstance(result, dict)),
+        key=lambda result: (
+            str(result.get("lote") or ""),
+            str(result.get("idResultado") or ""),
+            str(result.get("adjudicatario") or ""),
+        ),
+    )
+    for result in ordered:
+        value = result.get(field)
+        if value is None or value == "":
+            continue
+        text = clean_text(str(value))
+        lote = clean_text(str(result.get("lote") or ""))
+        if field != "lote" and lote:
+            text = f"Lote {lote}: {text}"
+        values.append(text)
+    return " | ".join(values) or None
+
+
+def visible_change_values(row: dict[str, object]) -> dict[str, object]:
+    """Representación comparable de las columnas que ve el usuario en el Site."""
+    values: dict[str, object] = {}
+    for field, label in VISIBLE_CHANGE_FIELDS:
+        value = (
+            result_change_value(row, field)
+            if field in RESULT_CHANGE_FIELDS
+            else row.get(field)
+        )
+        if isinstance(value, str):
+            value = clean_text(value) or None
+        values[label] = value
+    return values
+
+
+def parse_utc(value: object) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def recent_change_history(
+    previous: dict[str, object] | None,
+    detected_at: str,
+) -> list[dict[str, object]]:
+    """Conserva únicamente eventos detectados durante las últimas siete jornadas."""
+    if not previous or not isinstance(previous.get("historialCambios"), list):
+        return []
+    now = parse_utc(detected_at)
+    if now is None:
+        return []
+    cutoff = now - timedelta(days=CHANGE_HISTORY_DAYS)
+    history: list[dict[str, object]] = []
+    for event in previous["historialCambios"]:
+        if not isinstance(event, dict):
+            continue
+        event_date = parse_utc(event.get("detectadoEn"))
+        if event_date is not None and event_date >= cutoff:
+            history.append(dict(event))
+    return history
+
+
+def update_change_history(
+    current: dict[str, object],
+    previous: dict[str, object] | None,
+    detected_at: str,
+) -> None:
+    """Añade al expediente los cambios visibles detectados frente al JSON anterior."""
+    history = recent_change_history(previous, detected_at)
+    if previous is None:
+        history.append(
+            {
+                "tipo": "nuevo",
+                "detectadoEn": detected_at,
+                "cambios": [],
+            }
+        )
+    else:
+        before = visible_change_values(previous)
+        after = visible_change_values(current)
+        changes = [
+            {
+                "campo": label,
+                "anterior": before[label],
+                "nuevo": after[label],
+            }
+            for _, label in VISIBLE_CHANGE_FIELDS
+            if before[label] != after[label]
+        ]
+        if changes:
+            history.append(
+                {
+                    "tipo": "modificado",
+                    "detectadoEn": detected_at,
+                    "cambios": changes,
+                }
+            )
+    current["historialCambios"] = history
 
 def suffix(name: str) -> str:
     return name.rsplit(":", 1)[-1]
@@ -558,16 +684,23 @@ def main() -> None:
         flush=True,
     )
 
+    generated = utc_now()
+    for row in enriched:
+        update_change_history(
+            row,
+            previous.get(str(row["expediente"])),
+            generated,
+        )
+
     enriched.sort(key=lambda row: str(row["expediente"]), reverse=True)
     output_rows = flatten_result_rows(enriched)
     output_rows.sort(
         key=lambda row: (str(row["expediente"]), str(row.get("lote") or "")),
         reverse=True,
     )
-    generated = utc_now()
     write_json(
         {
-            "schemaVersion": 5,
+            "schemaVersion": 6,
             "data": output_rows,
             "generatedAt": generated,
             "sourceUpdated": generated,
