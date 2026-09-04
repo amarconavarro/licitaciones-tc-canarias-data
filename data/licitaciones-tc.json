@@ -9,7 +9,7 @@
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "Sustitución de la cubierta del taller de mecánica de la UST 812",
-      "estado": "Publicada",
+      "estado": "Evaluación",
       "importe": 372194.28,
       "importeTexto": "372,194.28",
       "fechas": "Present. Oferta:03/09/2026",
@@ -731,7 +731,19 @@
         "fecha": "26/08/2026",
         "descripcion": "26/08/2026 17:03:30Rectificación de Pliego"
       },
-      "historialCambios": [],
+      "historialCambios": [
+        {
+          "tipo": "modificado",
+          "detectadoEn": "2026-09-04T09:45:33.431298Z",
+          "cambios": [
+            {
+              "campo": "Estado",
+              "anterior": "Publicada",
+              "nuevo": "Evaluación"
+            }
+          ]
+        }
+      ],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -27904,8 +27916,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-03T18:46:02.069826Z",
-  "sourceUpdated": "2026-09-03T18:46:02.069826Z",
+  "generatedAt": "2026-09-04T09:45:33.431298Z",
+  "sourceUpdated": "2026-09-04T09:45:33.431298Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
