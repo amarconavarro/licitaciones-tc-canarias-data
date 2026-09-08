@@ -5142,7 +5142,7 @@
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "Acto. \"El fuerte\"_TC 506-02/21_Sustitución del vallado perimetral en tramos deteriorados",
-      "estado": "Publicada",
+      "estado": "Evaluación",
       "importe": 264097.7,
       "importeTexto": "264,097.70",
       "fechas": "Present. Oferta:07/09/2026",
@@ -5892,7 +5892,19 @@
         "fecha": "31/08/2026",
         "descripcion": "31/08/2026 16:51:29Rectificación de Pliego"
       },
-      "historialCambios": [],
+      "historialCambios": [
+        {
+          "tipo": "modificado",
+          "detectadoEn": "2026-09-08T09:51:18.391833Z",
+          "cambios": [
+            {
+              "campo": "Estado",
+              "anterior": "Publicada",
+              "nuevo": "Evaluación"
+            }
+          ]
+        }
+      ],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -27916,8 +27928,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-07T19:14:56.125494Z",
-  "sourceUpdated": "2026-09-07T19:14:56.125494Z",
+  "generatedAt": "2026-09-08T09:51:18.391833Z",
+  "sourceUpdated": "2026-09-08T09:51:18.391833Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
