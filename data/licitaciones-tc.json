@@ -11001,34 +11001,7 @@
         "fecha": "08/09/2026",
         "descripcion": "08/09/2026 13:34:47Adjudicación"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-09-08T18:47:50.477777Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Resuelta"
-            },
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Adjudicado"
-            },
-            {
-              "campo": "Adjudicatario",
-              "anterior": null,
-              "nuevo": "AMIANTO TRABAJOS Y CONSTRUCCIONES SL"
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:10/06/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:08/09/2026"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -27972,8 +27945,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-15T10:11:43.204035Z",
-  "sourceUpdated": "2026-09-15T10:11:43.204035Z",
+  "generatedAt": "2026-09-15T19:05:37.712052Z",
+  "sourceUpdated": "2026-09-15T19:05:37.712052Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
