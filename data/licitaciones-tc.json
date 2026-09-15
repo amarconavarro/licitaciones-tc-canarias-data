@@ -5714,17 +5714,6 @@
       "historialCambios": [
         {
           "tipo": "modificado",
-          "detectadoEn": "2026-09-08T09:51:18.391833Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Publicada",
-              "nuevo": "Evaluación"
-            }
-          ]
-        },
-        {
-          "tipo": "modificado",
           "detectadoEn": "2026-09-11T09:51:29.501440Z",
           "cambios": [
             {
@@ -27983,8 +27972,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-14T19:52:44.006573Z",
-  "sourceUpdated": "2026-09-14T19:52:44.006573Z",
+  "generatedAt": "2026-09-15T10:11:43.204035Z",
+  "sourceUpdated": "2026-09-15T10:11:43.204035Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
