@@ -28097,8 +28097,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-17T10:07:59.719139Z",
-  "sourceUpdated": "2026-09-17T10:07:59.719139Z",
+  "generatedAt": "2026-09-17T19:06:29.364382Z",
+  "sourceUpdated": "2026-09-17T19:06:29.364382Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -28112,7 +28112,7 @@
   "count": 36,
   "expedientesCount": 36,
   "rowModel": "una fila por resultado y lote",
-  "profileWorksScanned": 325,
+  "profileWorksScanned": 326,
   "mode": "perfil-contratante",
   "preservaDatosOpenPLACSP": true
 }
