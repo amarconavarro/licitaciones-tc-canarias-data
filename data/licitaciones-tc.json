@@ -5711,29 +5711,7 @@
         "fecha": "11/09/2026",
         "descripcion": "11/09/2026 11:29:01Adjudicación"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-09-11T09:51:29.501440Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Resuelta"
-            },
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Desierto"
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:07/09/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:11/09/2026"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Desierto",
@@ -28097,8 +28075,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-17T19:06:29.364382Z",
-  "sourceUpdated": "2026-09-17T19:06:29.364382Z",
+  "generatedAt": "2026-09-18T09:54:35.269091Z",
+  "sourceUpdated": "2026-09-18T09:54:35.269091Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -28112,7 +28090,7 @@
   "count": 36,
   "expedientesCount": 36,
   "rowModel": "una fila por resultado y lote",
-  "profileWorksScanned": 326,
+  "profileWorksScanned": 327,
   "mode": "perfil-contratante",
   "preservaDatosOpenPLACSP": true
 }
