@@ -4953,34 +4953,7 @@
         "fecha": "21/09/2026",
         "descripcion": "21/09/2026 10:45:53Adjudicación"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-09-21T10:51:31.834078Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Resuelta"
-            },
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Adjudicado"
-            },
-            {
-              "campo": "Adjudicatario",
-              "anterior": null,
-              "nuevo": "EXCAVACIONES MADEL S.L."
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:14/08/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:21/09/2026"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -7114,34 +7087,7 @@
         "fecha": "21/09/2026",
         "descripcion": "21/09/2026 15:58:04Adjudicación"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-09-21T20:01:56.397423Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Resuelta"
-            },
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Adjudicado"
-            },
-            {
-              "campo": "Adjudicatario",
-              "anterior": null,
-              "nuevo": "Construcciones y Reformas Jhonathan González SL"
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:16/07/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:21/09/2026"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -28805,8 +28751,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-09-26T18:38:56.939097Z",
-  "sourceUpdated": "2026-09-26T18:38:56.939097Z",
+  "generatedAt": "2026-09-28T21:17:12.173154Z",
+  "sourceUpdated": "2026-09-28T21:17:12.173154Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
