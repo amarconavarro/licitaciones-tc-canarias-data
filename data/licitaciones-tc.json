@@ -4052,34 +4052,7 @@
         "fecha": "25/09/2026",
         "descripcion": "25/09/2026 12:06:10Adjudicación"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-09-25T10:18:51.001454Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Resuelta"
-            },
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Adjudicado"
-            },
-            {
-              "campo": "Adjudicatario",
-              "anterior": null,
-              "nuevo": "PROYECTOS SIMEÓN GH. S.L.U."
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:29/07/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:25/09/2026"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Adjudicado",
@@ -28751,8 +28724,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-10-01T20:23:27.221879Z",
-  "sourceUpdated": "2026-10-01T20:23:27.221879Z",
+  "generatedAt": "2026-10-02T11:12:21.387904Z",
+  "sourceUpdated": "2026-10-02T11:12:21.387904Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
