@@ -663,13 +663,7 @@
         "fecha": "13/10/2026",
         "descripcion": "13/10/2026 14:28:16Pliego"
       },
-      "historialCambios": [
-        {
-          "tipo": "nuevo",
-          "detectadoEn": "2026-10-13T12:48:41.179045Z",
-          "cambios": []
-        }
-      ],
+      "historialCambios": [],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -29618,8 +29612,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-10-20T10:12:27.156301Z",
-  "sourceUpdated": "2026-10-20T10:12:27.156301Z",
+  "generatedAt": "2026-10-20T19:22:43.808338Z",
+  "sourceUpdated": "2026-10-20T19:22:43.808338Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
