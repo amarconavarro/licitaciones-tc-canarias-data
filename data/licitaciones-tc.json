@@ -9,10 +9,10 @@
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "CGMCANA - Adecuación Sala Polivalente Parque de Artillería",
-      "estado": "Evaluación Previa",
+      "estado": "Evaluación",
       "importe": 65509.65,
       "importeTexto": "65,509.65",
-      "fechas": "",
+      "fechas": "Present. Oferta:27/10/2026",
       "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=igF5ulmVm%2BGAAM7L03kM8A%3D%3D",
       "datosOpenPLACSP": {
         "urn:dgpe:names:draft:codice:schema:xsd:CallforTenders-2:CallForTenders": {
@@ -663,7 +663,24 @@
         "fecha": "13/10/2026",
         "descripcion": "13/10/2026 14:28:16Pliego"
       },
-      "historialCambios": [],
+      "historialCambios": [
+        {
+          "tipo": "modificado",
+          "detectadoEn": "2026-10-28T13:15:09.459377Z",
+          "cambios": [
+            {
+              "campo": "Estado",
+              "anterior": "Evaluación Previa",
+              "nuevo": "Evaluación"
+            },
+            {
+              "campo": "Fechas",
+              "anterior": null,
+              "nuevo": "Present. Oferta:27/10/2026"
+            }
+          ]
+        }
+      ],
       "idResultado": null,
       "lote": null,
       "resultado": null,
@@ -29585,8 +29602,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-10-27T12:28:28.554144Z",
-  "sourceUpdated": "2026-10-27T12:28:28.554144Z",
+  "generatedAt": "2026-10-28T13:15:09.459377Z",
+  "sourceUpdated": "2026-10-28T13:15:09.459377Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
