@@ -3135,10 +3135,10 @@
       "tipoCodigo": "3",
       "tipo": "Obras",
       "objeto": "Edificio Antiguo Gobierno Militar TC 507-30/24 Restauración completa de la fachada sur (26/0109)",
-      "estado": "Adjudicada",
+      "estado": "Resuelta",
       "importe": 434407.32,
       "importeTexto": "434,407.32",
-      "fechas": "Publicación PLACSP:Adjudicación:05/11/2026",
+      "fechas": "Publicación PLACSP:Adjudicación:05/11/2026Formalización:09/11/2026",
       "enlace": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=asiCq%2FkPN7EIYE3ZiZ%2BxmQ%3D%3D",
       "datosOpenPLACSP": null,
       "resultados": [],
@@ -3157,6 +3157,22 @@
               "campo": "Fechas",
               "anterior": "Present. Oferta:30/07/2026",
               "nuevo": "Publicación PLACSP:Adjudicación:05/11/2026"
+            }
+          ]
+        },
+        {
+          "tipo": "modificado",
+          "detectadoEn": "2026-11-09T16:40:09.186515Z",
+          "cambios": [
+            {
+              "campo": "Estado",
+              "anterior": "Adjudicada",
+              "nuevo": "Resuelta"
+            },
+            {
+              "campo": "Fechas",
+              "anterior": "Publicación PLACSP:Adjudicación:05/11/2026",
+              "nuevo": "Publicación PLACSP:Adjudicación:05/11/2026Formalización:09/11/2026"
             }
           ]
         }
@@ -28832,8 +28848,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-11-08T20:37:01.202081Z",
-  "sourceUpdated": "2026-11-08T20:37:01.202081Z",
+  "generatedAt": "2026-11-09T16:40:09.186515Z",
+  "sourceUpdated": "2026-11-09T16:40:09.186515Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
