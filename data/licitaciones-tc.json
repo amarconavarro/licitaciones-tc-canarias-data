@@ -4177,22 +4177,6 @@
       "historialCambios": [
         {
           "tipo": "modificado",
-          "detectadoEn": "2026-11-05T14:49:01.205347Z",
-          "cambios": [
-            {
-              "campo": "Estado",
-              "anterior": "Evaluación",
-              "nuevo": "Adjudicada"
-            },
-            {
-              "campo": "Fechas",
-              "anterior": "Present. Oferta:30/07/2026",
-              "nuevo": "Publicación PLACSP:Adjudicación:05/11/2026"
-            }
-          ]
-        },
-        {
-          "tipo": "modificado",
           "detectadoEn": "2026-11-09T16:40:09.186515Z",
           "cambios": [
             {
@@ -29895,8 +29879,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-11-11T22:49:02.944205Z",
-  "sourceUpdated": "2026-11-11T22:49:02.944205Z",
+  "generatedAt": "2026-11-12T15:27:16.336078Z",
+  "sourceUpdated": "2026-11-12T15:27:16.336078Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
@@ -29910,7 +29894,7 @@
   "count": 37,
   "expedientesCount": 37,
   "rowModel": "una fila por resultado y lote",
-  "profileWorksScanned": 347,
+  "profileWorksScanned": 349,
   "mode": "perfil-contratante",
   "preservaDatosOpenPLACSP": true
 }
