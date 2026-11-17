@@ -4174,24 +4174,7 @@
         "fecha": "09/11/2026",
         "descripcion": "09/11/2026 13:02:02Formalización"
       },
-      "historialCambios": [
-        {
-          "tipo": "modificado",
-          "detectadoEn": "2026-11-10T15:04:03.283120Z",
-          "cambios": [
-            {
-              "campo": "Resultado",
-              "anterior": null,
-              "nuevo": "Formalizado"
-            },
-            {
-              "campo": "Adjudicatario",
-              "anterior": null,
-              "nuevo": "FACHADAS DIMUROL SL"
-            }
-          ]
-        }
-      ],
+      "historialCambios": [],
       "idResultado": "1-1",
       "lote": null,
       "resultado": "Formalizado",
@@ -29863,8 +29846,8 @@
       "numeroOfertasRecibidas": null
     }
   ],
-  "generatedAt": "2026-11-17T00:19:37.942710Z",
-  "sourceUpdated": "2026-11-17T00:19:37.942710Z",
+  "generatedAt": "2026-11-17T16:16:44.954018Z",
+  "sourceUpdated": "2026-11-17T16:16:44.954018Z",
   "source": "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=gwHbdMZ49t4%3D",
   "filters": {
     "organ": "Jefatura de Asuntos Económicos del Mando de Canarias",
