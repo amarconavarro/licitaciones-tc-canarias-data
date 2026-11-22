@@ -1,0 +1,47 @@
+name: Diagnóstico de perfil PLACSP
+on:
+  push:
+    branches: [diagnostico/perfil-placsp-20261122]
+permissions:
+  contents: read
+jobs:
+  perfil:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Inspeccionar respuestas públicas
+        run: |
+          python - <<'PY'
+          from scripts.update_data import PortalClient, PROFILE_URL, PROFILE_LIST_URL, USER_AGENT, TARGET_ORGAN, form_request
+          from lxml import html
+          from urllib.request import Request
+          from urllib.parse import urlsplit
+          from urllib.error import HTTPError
+          import re
+          client = PortalClient()
+          for label, url in [('listado', PROFILE_LIST_URL), ('perfil', PROFILE_URL)]:
+              try:
+                  response = client.opener.open(Request(url, headers={'User-Agent':USER_AGENT,'Accept':'text/html'}), timeout=90)
+              except HTTPError as exc:
+                  response = exc
+              with response:
+                  loc = urlsplit(response.url)
+                  doc = html.fromstring(response.read())
+                  print(label, response.status, loc.hostname, loc.path.split(';')[0][:150], repr(doc.xpath('string(//title)')[:120]))
+                  print('Perfil esperado:', TARGET_ORGAN.casefold() in ' '.join(doc.text_content().split()).casefold(), 'Formularios:', len(doc.xpath('//form')))
+                  if label == 'perfil':
+                      for node in doc.xpath('//a|//button|//input[not(@type="hidden")]'):
+                          name = (node.get('name') or '').split(':')[-1]
+                          ident = (node.get('id') or '').split(':')[-1]
+                          title = ' '.join(node.text_content().split())[:80]
+                          if re.search('licita|linkPrep|pliego', ' '.join([name, ident, title]), re.I):
+                              print('Control:', node.tag, name[:80], ident[:80], repr(title))
+                      form_request(doc, 'linkPrepLic')
+          PY
