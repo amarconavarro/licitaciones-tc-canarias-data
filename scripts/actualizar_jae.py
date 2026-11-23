@@ -60,7 +60,7 @@ def run():
         while url:
             if url in visited or len(visited)>=600 or urlsplit(url).hostname not in {"contrataciondelsectorpublico.gob.es","contrataciondelestado.es"}: raise ValueError("Paginación ATOM no válida")
             visited.add(url)
-            raw=subprocess.check_output(["curl","-fsSL","--retry","2","--max-time","90","--max-filesize","80000000",url])
+            raw=subprocess.check_output(["curl","-fsSL","--retry","2","--max-time","300","--max-filesize","80000000",url])
             root=ET.fromstring(raw)
             if root.tag!="{http://www.w3.org/2005/Atom}feed": raise ValueError("No es un feed ATOM")
             times=[]
