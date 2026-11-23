@@ -1,4 +1,4 @@
-"""Carga inicial aislada: un fragmento por mes y validación final sin alterar la base."""
+"""Actualiza el índice JAE con los archivos ATOM mensuales de PLACSP."""
 import collections, datetime as dt, json, os, re, subprocess, sys, tempfile, zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -55,31 +55,45 @@ def run():
         if int(row["expediente"][:4]) in YEARS: old[row["expediente"]].append(row)
     cutoff=stamp((dt.datetime.fromisoformat(doc["cursor"])-dt.timedelta(days=1)).isoformat())
     updates={}; deleted={}; heads=[]
-    for i,feed in enumerate(FEEDS):
-        url=ROOT+feed+".atom"; visited=set(); head=None
-        while url:
-            if url in visited or len(visited)>=600 or urlsplit(url).hostname not in {"contrataciondelsectorpublico.gob.es","contrataciondelestado.es"}: raise ValueError("Paginación ATOM no válida")
-            visited.add(url)
-            raw=subprocess.check_output(["curl","-fsSL","--retry","2","--max-time","300","--max-filesize","80000000",url])
-            root=ET.fromstring(raw)
-            if root.tag!="{http://www.w3.org/2005/Atom}feed": raise ValueError("No es un feed ATOM")
-            times=[]
-            for e in root:
-                if e.tag.endswith("}entry"):
-                    at=stamp(t(e,"{*}updated")); times.append(at)
-                    if at<cutoff: continue
-                    row=parse(e,bool(i))
-                    if row and (row["expediente"] not in updates or row["actualizado"]>updates[row["expediente"]]["actualizado"]): updates[row["expediente"]]=row
-                elif e.tag.endswith("}deleted-entry"):
-                    at=stamp(e.attrib["when"]); times.append(at)
-                    if at>=cutoff: deleted[e.attrib["ref"]]=max(deleted.get(e.attrib["ref"],""),at)
-            if not times: raise ValueError("Página ATOM vacía")
-            head=max(head or "",max(times))
-            nxt=root.find("{*}link[@rel='next']")
-            if max(times)<cutoff or nxt is None: break
-            url=urljoin(url,nxt.attrib["href"])
-        heads.append(head)
-        print(feed,len(visited),"páginas",head)
+    # PLACSP packages the same ATOM entries by publication month.
+    # Read each required month once, including the overlap at month boundaries.
+    start=dt.date.fromisoformat(cutoff[:10]).replace(day=1)
+    month=start
+    newest={}
+    with tempfile.TemporaryDirectory() as tmp:
+        archive=Path(tmp)/"publicaciones.zip"
+        while month<=NOW.date():
+            for i,feed in enumerate(FEEDS):
+                url=ROOT+feed+"_"+month.strftime("%Y%m")+".zip"
+                print("Descargando",url,flush=True)
+                subprocess.run(["curl","-fsSL","--retry","2","--connect-timeout","20",
+                                "--max-time","360","--max-filesize","2500000000","-o",str(archive),url],check=True)
+                count=0
+                with zipfile.ZipFile(archive) as z:
+                    for member in z.namelist():
+                        if not member.lower().endswith(".atom"): continue
+                        with z.open(member) as stream:
+                            for _,e in ET.iterparse(stream,events=("end",)):
+                                if e.tag=="{http://www.w3.org/2005/Atom}entry":
+                                    at=stamp(t(e,"{*}updated"))
+                                    count+=1
+                                    if at>=cutoff:
+                                        row=parse(e,bool(i))
+                                        if row and at>updates.get(row["expediente"],{}).get("actualizado",""):
+                                            updates[row["expediente"]]=row
+                                elif e.tag.endswith("}deleted-entry"):
+                                    at=stamp(e.attrib["when"])
+                                    if at>=cutoff:
+                                        ref=e.attrib["ref"]
+                                        deleted[ref]=max(deleted.get(ref,""),at)
+                                else:
+                                    continue
+                                newest[feed]=max(newest.get(feed,""),at)
+                                e.clear()
+                if not count: raise ValueError("ZIP sin entradas: "+url)
+                print(count,"entradas procesadas",flush=True)
+            month=(month.replace(day=28)+dt.timedelta(days=4)).replace(day=1)
+    heads=list(newest.values())
     for exp,r in updates.items():
         prev=old.get(exp,[])
         if prev and r["actualizado"]<=max(x["actualizado"] for x in prev): continue
