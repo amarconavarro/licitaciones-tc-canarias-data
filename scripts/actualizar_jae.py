@@ -46,6 +46,49 @@ from zoneinfo import ZoneInfo
 NOW=dt.datetime.now(dt.timezone.utc)
 YEAR=NOW.astimezone(ZoneInfo("Atlantic/Canary")).year
 YEARS={y for y in [YEAR-1,YEAR] if y>=2026}
+def download_archive(url, archive):
+    """Download verified byte ranges, or stream once when ranges aren't supported."""
+    from concurrent.futures import ThreadPoolExecutor
+    import shutil
+    from urllib.request import Request, urlopen
+
+    # A strong ETag or a modification date keeps all pieces on the same version.
+    with urlopen(Request(url, method="HEAD"), timeout=45) as response:
+        size=int(response.headers.get("Content-Length") or 0)
+        etag=response.headers.get("ETag", "")
+        version=(etag if etag and not etag.startswith("W/") else response.headers.get("Last-Modified"))
+    if size>2500000000: raise ValueError("ZIP demasiado grande")
+    chunk=8*1024*1024
+    def part(start):
+        end=min(size,start+chunk)-1
+        headers={"Range":f"bytes={start}-{end}", "If-Range":version}
+        dest=archive.with_suffix(f".{start}")
+        for attempt in range(3):
+            try:
+                with urlopen(Request(url,headers=headers),timeout=90) as resp:
+                    if resp.status!=206: return None
+                    if resp.headers.get("Content-Range")!=f"bytes {start}-{end}/{size}":
+                        raise ValueError("Rango ZIP inesperado")
+                    with dest.open("wb") as f: shutil.copyfileobj(resp,f)
+                if dest.stat().st_size!=end-start+1: raise IOError("Descarga incompleta")
+                return dest
+            except OSError:
+                if attempt==2: raise
+    if size>chunk and version:
+        first=part(0)
+        if first:
+            print("Descarga por bloques:",size,"bytes",flush=True)
+            with archive.open("wb") as dest, ThreadPoolExecutor(max_workers=5) as pool:
+                for path in [first,*pool.map(part,range(chunk,size,chunk))]:
+                    if path is None: raise ValueError("El ZIP cambió durante la descarga")
+                    with path.open("rb") as f: shutil.copyfileobj(f,dest)
+                    path.unlink()
+            return
+    print("Descarga continua:",size,"bytes anunciados",flush=True)
+    subprocess.run(["curl","-fsSL","--connect-timeout","30","--speed-time","120",
+                    "--speed-limit","1024","--max-filesize","2500000000",
+                    "-o",str(archive),url],check=True)
+
 def run():
     path=Path("data/jae.json")
     doc=json.loads(path.read_text())
@@ -66,8 +109,7 @@ def run():
             for i,feed in enumerate(FEEDS):
                 url=ROOT+feed+"_"+month.strftime("%Y%m")+".zip"
                 print("Descargando",url,flush=True)
-                subprocess.run(["curl","-fsSL","--retry","2","--connect-timeout","20",
-                                "--max-time","360","--max-filesize","2500000000","-o",str(archive),url],check=True)
+                download_archive(url,archive)
                 count=0
                 with zipfile.ZipFile(archive) as z:
                     for member in z.namelist():
