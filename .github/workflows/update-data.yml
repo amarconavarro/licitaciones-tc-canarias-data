@@ -11,7 +11,7 @@ on:
   schedule:
     - cron: "23 6 * * *"
       timezone: "Atlantic/Canary"
-    - cron: "23 16 * * *"
+    - cron: "0 8 * * *"
       timezone: "Atlantic/Canary"
   workflow_dispatch:
 
