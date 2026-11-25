@@ -20,12 +20,12 @@ permissions:
 
 concurrency:
   group: update-licitaciones-tc
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
 
@@ -40,12 +40,16 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Actualizar datos oficiales
+        env:
+          ATOM_SLOT: ${{ github.event.schedule }}
         run: python scripts/actualizar_jae.py
 
       - name: Guardar cambios si existen
+        if: ${{ !cancelled() && hashFiles('data/jae-sync.json') != '' }}
         shell: bash
         run: |
-          if git diff --quiet -- data/jae.json; then
+          git add data/jae.json data/jae-sync.json
+          if git diff --cached --quiet; then
             echo "No hay cambios de datos."
             exit 0
           fi
