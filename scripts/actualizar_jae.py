@@ -89,53 +89,117 @@ def download_archive(url, archive):
                     "--speed-limit","1024","--max-filesize","2500000000",
                     "-o",str(archive),url],check=True)
 
+ATOM="{http://www.w3.org/2005/Atom}"
+SLOTS={"23 6 * * *","0 8 * * *"}
+
+def collect(index, cursor, fingerprint, mode):
+    import hashlib
+    updates, deleted = {}, {}
+    newest = cursor
+    feed = FEEDS[index]
+
+    def visit(e):
+        nonlocal newest
+        if e.tag == ATOM+"entry":
+            at = stamp(t(e,"{*}updated"))
+            if at >= cursor:
+                row = parse(e,bool(index))
+                if row and at > updates.get(row["expediente"],{}).get("actualizado",""):
+                    updates[row["expediente"]] = row
+        elif e.tag.endswith("}deleted-entry"):
+            at = stamp(e.attrib["when"])
+            if at >= cursor:
+                ref = e.attrib["ref"]
+                deleted[ref] = max(deleted.get(ref,""),at)
+        else:
+            return None
+        newest = max(newest,at)
+        return at
+
+    digest = ""
+    if mode == "atom":
+        url = ROOT+feed+".atom"
+        seen = set()
+        while url:
+            parts = urlsplit(url)
+            if url in seen or parts.scheme!="https" or parts.hostname not in {"contrataciondelsectorpublico.gob.es","contrataciondelestado.es"}:
+                raise ValueError("Paginación ATOM no válida")
+            seen.add(url)
+            raw = subprocess.check_output(["curl","-fsSL","--compressed","--connect-timeout","20","--max-time","150","--max-filesize","80000000",url])
+            root = ET.fromstring(raw)
+            if root.tag != ATOM+"feed": raise ValueError("Respuesta distinta de ATOM")
+            if len(seen)==1:
+                digest = hashlib.sha256(raw).hexdigest()
+                if digest == fingerprint: break
+            times = [at for e in root if (at:=visit(e)) is not None]
+            if not times: raise ValueError("Página ATOM vacía")
+            print(feed,"página",len(seen),min(times),flush=True)
+            link = root.find(ATOM+"link[@rel='next']")
+            if max(times)<cursor or link is None: break
+            url = urljoin(url,link.attrib["href"])
+    else:
+        month = dt.date.fromisoformat(cursor[:10]).replace(day=1)
+        with tempfile.TemporaryDirectory() as tmp:
+            archive = Path(tmp)/"mes.zip"
+            while month <= NOW.date():
+                download_archive(ROOT+feed+"_"+month.strftime("%Y%m")+".zip",archive)
+                count = 0
+                with zipfile.ZipFile(archive) as z:
+                    for name in z.namelist():
+                        if not name.lower().endswith(".atom"): continue
+                        with z.open(name) as stream:
+                            for _,e in ET.iterparse(stream,events=("end",)):
+                                if visit(e) is not None:
+                                    count += 1
+                                    e.clear()
+                if not count: raise ValueError("ZIP sin entradas")
+                month = (month.replace(day=28)+dt.timedelta(days=4)).replace(day=1)
+    return dict(updates=updates,deleted=deleted,cursor=newest,fingerprint=digest)
+
 def run():
+    from concurrent.futures import ThreadPoolExecutor
     path=Path("data/jae.json")
+    state_path=Path("data/jae-sync.json")
     doc=json.loads(path.read_text())
     if not doc.get("data"): raise ValueError("Falta base validada")
+    state=json.loads(state_path.read_text()) if state_path.exists() else {}
     old=collections.defaultdict(list)
     for row in doc["data"]:
         if int(row["expediente"][:4]) in YEARS: old[row["expediente"]].append(row)
-    cutoff=stamp((dt.datetime.fromisoformat(doc["cursor"])-dt.timedelta(days=1)).isoformat())
-    updates={}; deleted={}; heads=[]
-    # PLACSP packages the same ATOM entries by publication month.
-    # Read each required month once, including the overlap at month boundaries.
-    start=dt.date.fromisoformat(cutoff[:10]).replace(day=1)
-    month=start
-    newest={}
-    with tempfile.TemporaryDirectory() as tmp:
-        archive=Path(tmp)/"publicaciones.zip"
-        while month<=NOW.date():
-            for i,feed in enumerate(FEEDS):
-                url=ROOT+feed+"_"+month.strftime("%Y%m")+".zip"
-                print("Descargando",url,flush=True)
-                download_archive(url,archive)
-                count=0
-                with zipfile.ZipFile(archive) as z:
-                    for member in z.namelist():
-                        if not member.lower().endswith(".atom"): continue
-                        with z.open(member) as stream:
-                            for _,e in ET.iterparse(stream,events=("end",)):
-                                if e.tag=="{http://www.w3.org/2005/Atom}entry":
-                                    at=stamp(t(e,"{*}updated"))
-                                    count+=1
-                                    if at>=cutoff:
-                                        row=parse(e,bool(i))
-                                        if row and at>updates.get(row["expediente"],{}).get("actualizado",""):
-                                            updates[row["expediente"]]=row
-                                elif e.tag.endswith("}deleted-entry"):
-                                    at=stamp(e.attrib["when"])
-                                    if at>=cutoff:
-                                        ref=e.attrib["ref"]
-                                        deleted[ref]=max(deleted.get(ref,""),at)
-                                else:
-                                    continue
-                                newest[feed]=max(newest.get(feed,""),at)
-                                e.clear()
-                if not count: raise ValueError("ZIP sin entradas: "+url)
-                print(count,"entradas procesadas",flush=True)
-            month=(month.replace(day=28)+dt.timedelta(days=4)).replace(day=1)
-    heads=list(newest.values())
+    today=NOW.astimezone(ZoneInfo("Atlantic/Canary")).date().isoformat()
+    slot=os.environ.get("ATOM_SLOT","")
+    def fetch(index):
+        feed=FEEDS[index]
+        previous=state.get(feed,{})
+        cursor=previous.get("cursor",stamp(doc["cursor"]))
+        failures=dict(previous.get("failures",{}))
+        recovery=any(day<today and SLOTS.issubset(slots) for day,slots in failures.items())
+        for mode in (["atom","zip"] if recovery and previous.get("zipDay")!=today else ["atom"]):
+            if mode=="zip": previous={**previous,"zipDay":today}
+            try:
+                with tempfile.TemporaryDirectory() as tmp:
+                    output=Path(tmp)/"result.json"
+                    subprocess.run([sys.executable,__file__,str(index),cursor,previous.get("fingerprint",""),mode,str(output)],timeout=2100 if mode=="zip" else 600,check=True)
+                    result=json.loads(output.read_text())
+                return {**previous,"cursor":result["cursor"],"fingerprint":result["fingerprint"],"failures":{}},result
+            except (OSError,ValueError,subprocess.SubprocessError) as exc:
+                print(feed,mode,"falló:",exc,flush=True)
+        if slot in SLOTS:
+            failures[today]=sorted(set(failures.get(today,[]))|{slot})
+        return {**previous,"cursor":cursor,"failures":failures},None
+
+    updates,deleted={},{}
+    failed=False
+    with ThreadPoolExecutor(max_workers=len(FEEDS)) as pool:
+        for feed,(checkpoint,result) in zip(FEEDS,pool.map(fetch,range(len(FEEDS)))):
+            state[feed]=checkpoint
+            if result is None:
+                failed=True
+                continue
+            for exp,row in result["updates"].items():
+                if row["actualizado"]>updates.get(exp,{}).get("actualizado",""): updates[exp]=row
+            for ref,at in result["deleted"].items(): deleted[ref]=max(deleted.get(ref,""),at)
+    heads=[state[feed]["cursor"] for feed in FEEDS]
     for exp,r in updates.items():
         prev=old.get(exp,[])
         if prev and r["actualizado"]<=max(x["actualizado"] for x in prev): continue
@@ -153,4 +217,9 @@ def run():
     if data!=doc["data"] or cursor!=doc["cursor"]:
         put(path,dict(data=data,cursor=cursor,generatedAt=NOW.isoformat()))
     print("Expedientes:",len({x["expediente"] for x in data}),"filas:",len(data))
-if __name__=="__main__": run()
+    put(state_path,state)
+    if failed: raise SystemExit(1)
+
+if __name__=="__main__":
+    if len(sys.argv)==1: run()
+    else: put(Path(sys.argv[5]),collect(int(sys.argv[1]),*sys.argv[2:5]))
