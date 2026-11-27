@@ -92,6 +92,12 @@ def download_archive(url, archive):
 ATOM="{http://www.w3.org/2005/Atom}"
 SLOTS={"23 6 * * *","0 8 * * *"}
 
+def reject_html(sample, source):
+    prefix = sample[:1024].strip().lower()
+    if b"<html" in prefix or prefix.startswith(b"<!doctype html"):
+        reason = "Request Rejected" if b"request rejected" in prefix else "página HTML"
+        raise ValueError(f"PLACSP devolvió {reason} al descargar {source}")
+
 def collect(index, cursor, fingerprint, mode):
     import hashlib
     updates, deleted = {}, {}
@@ -126,6 +132,7 @@ def collect(index, cursor, fingerprint, mode):
                 raise ValueError("Paginación ATOM no válida")
             seen.add(url)
             raw = subprocess.check_output(["curl","-fsSL","--compressed","--connect-timeout","20","--max-time","150","--max-filesize","80000000",url])
+            reject_html(raw, url)
             root = ET.fromstring(raw)
             if root.tag != ATOM+"feed": raise ValueError("Respuesta distinta de ATOM")
             if len(seen)==1:
@@ -144,6 +151,8 @@ def collect(index, cursor, fingerprint, mode):
             while month <= NOW.date():
                 download_archive(ROOT+feed+"_"+month.strftime("%Y%m")+".zip",archive)
                 count = 0
+                with archive.open("rb") as stream:
+                    reject_html(stream.read(1024), archive.name)
                 with zipfile.ZipFile(archive) as z:
                     for name in z.namelist():
                         if not name.lower().endswith(".atom"): continue
